@@ -1,1201 +1,1201 @@
-EmployeeID,Name,Role,Cost_per_Hour,Availability,Domain_Expertise
-1001,Christopher Morales,Junior Developer,61,On Project,Fintech
-1002,James Williams,QA Engineer,79,Available,Logistics
-1003,Lawrence Davis,Data Scientist,103,Available,Cybersecurity
-1004,Daniel King,UI/UX Designer,93,Available,Retail
-1005,Holly Brown,UI/UX Designer,82,On Project,Healthcare
-1006,Mckenzie Stout,Project Manager,100,Available,Retail
-1007,Leslie Singh,Project Manager,88,Available,Healthcare
-1008,Ronald Gonzalez,Data Scientist,124,Available,Cybersecurity
-1009,Andrew Ross,UI/UX Designer,76,Available,Healthcare
-1010,Amanda Thompson,UI/UX Designer,76,Available,Retail
-1011,David Hodge,Senior Developer,86,Available,Healthcare
-1012,Sue Mclean,Data Scientist,94,Available,E-commerce
-1013,Kristen Pratt,Tech Lead,130,Available,SaaS
-1014,Susan Nunez,Senior Developer,97,On Project,Fintech
-1015,Elizabeth Schroeder,DevOps Engineer,104,On Project,Logistics
-1016,Ryan Nguyen,DevOps Engineer,100,Available,E-commerce
-1017,Jeremy Lewis,Junior Developer,64,Available,Fintech
-1018,Alex Reed,Lead Architect,116,Available,Cybersecurity
-1019,Kimberly Morales,DevOps Engineer,88,Available,SaaS
-1020,Tiffany Smith,Junior Developer,65,On Project,SaaS
-1021,Patrick Johnson,Data Scientist,103,Available,Fintech
-1022,Lisa Lewis,Junior Developer,64,Available,AI/ML
-1023,Taylor Martinez,DevOps Engineer,90,Available,SaaS
-1024,Adam Mcdaniel,DevOps Engineer,114,Available,Healthcare
-1025,Christopher Smith,Junior Developer,55,On Project,AI/ML
-1026,Linda Lambert,Tech Lead,131,Available,Healthcare
-1027,Kevin Thomas,QA Engineer,69,On Project,AI/ML
-1028,Antonio Alexander,UI/UX Designer,95,On Project,E-commerce
-1029,Cory Lambert,QA Engineer,71,On Project,E-commerce
-1030,Joshua Parker,QA Engineer,78,On Project,SaaS
-1031,Nathan Jackson,Project Manager,80,Available,Fintech
-1032,Crystal Berry,Data Scientist,93,On Project,E-commerce
-1033,Aaron Schwartz,Data Scientist,95,Available,Cybersecurity
-1034,Aaron Wade,Tech Lead,136,On Project,E-commerce
-1035,Regina Lee,Junior Developer,58,Available,Fintech
-1036,Terri Walker,Lead Architect,130,Available,Healthcare
-1037,Nancy Charles,Junior Developer,55,Available,Cybersecurity
-1038,Christopher Hughes,Junior Developer,59,Available,E-commerce
-1039,Chase Carr,Data Scientist,90,Available,Cybersecurity
-1040,Richard Rhodes,Junior Developer,65,Available,SaaS
-1041,Brendan Baldwin,Tech Lead,131,Available,E-commerce
-1042,Michael Marshall,Lead Architect,111,Available,Fintech
-1043,Daniel Jones,DevOps Engineer,115,On Project,Logistics
-1044,Kimberly Jenkins,Senior Developer,104,Available,E-commerce
-1045,Charles Noble,Tech Lead,100,On Project,Logistics
-1046,Lisa White,Senior Developer,87,Available,Healthcare
-1047,Kathryn Kennedy,DevOps Engineer,100,Available,AI/ML
-1048,Jerry Black,Project Manager,99,Available,Cybersecurity
-1049,Derrick Myers,UI/UX Designer,73,Available,SaaS
-1050,Michael Frederick,Project Manager,109,On Project,SaaS
-1051,Olivia Schneider,QA Engineer,67,On Project,Logistics
-1052,John Roberts,DevOps Engineer,113,On Project,Retail
-1053,Neil Gutierrez,QA Engineer,83,On Project,Fintech
-1054,Jennifer Newman,Senior Developer,107,Available,Logistics
-1055,Andrew Robles,Senior Developer,102,On Project,Logistics
-1056,Kimberly Miller,Junior Developer,62,On Project,Retail
-1057,Derrick Jordan,Senior Developer,111,Available,Retail
-1058,Shannon Maxwell,QA Engineer,74,On Project,Cybersecurity
-1059,Jo Sanchez,Project Manager,110,Available,E-commerce
-1060,Gregory Berger,QA Engineer,79,On Project,SaaS
-1061,Matthew Ballard,Senior Developer,90,Available,Cybersecurity
-1062,David Lowery,QA Engineer,83,Available,Retail
-1063,Douglas Fernandez,Junior Developer,72,Available,E-commerce
-1064,Dennis Lucas,UI/UX Designer,94,On Project,E-commerce
-1065,Lisa Mcdonald,UI/UX Designer,67,Available,Healthcare
-1066,Bethany Turner,DevOps Engineer,110,Available,Cybersecurity
-1067,Marc Morse,Data Scientist,119,On Project,Healthcare
-1068,Michael Williamson,Senior Developer,98,Available,Retail
-1069,Sheena Harrison,Tech Lead,136,On Project,Cybersecurity
-1070,Joshua Brown,Senior Developer,114,Available,Fintech
-1071,Edward Johnson,UI/UX Designer,94,Available,Fintech
-1072,Scott Colon,Senior Developer,103,On Project,Fintech
-1073,Brian Holland,Tech Lead,101,Available,Healthcare
-1074,Diane Reeves,Data Scientist,103,Available,AI/ML
-1075,Mark Walter,Lead Architect,150,Available,E-commerce
-1076,David Robinson,Senior Developer,111,Available,AI/ML
-1077,James Hernandez,Data Scientist,123,Available,Logistics
-1078,Abigail Mcmahon,Junior Developer,64,Available,Cybersecurity
-1079,Danielle Wright,Lead Architect,120,Available,Logistics
-1080,Tiffany Roberts,UI/UX Designer,84,Available,E-commerce
-1081,James Thompson,Data Scientist,118,On Project,Retail
-1082,Nicole Ingram,Senior Developer,96,On Project,Fintech
-1083,Monica Blair,Senior Developer,100,Available,Retail
-1084,Laura Miller,Data Scientist,94,On Project,Retail
-1085,Duane Harris,DevOps Engineer,92,Available,Retail
-1086,Rachel Cook,Data Scientist,109,Available,SaaS
-1087,Jennifer Small,Tech Lead,136,On Project,E-commerce
-1088,Jennifer Curtis,Data Scientist,125,Available,SaaS
-1089,Austin Dougherty,DevOps Engineer,106,On Project,Fintech
-1090,Christine Love,Project Manager,95,Available,AI/ML
-1091,Paula Buchanan,Tech Lead,118,On Project,AI/ML
-1092,Joshua Scott,DevOps Engineer,94,On Project,E-commerce
-1093,Jonathan Lawrence,Data Scientist,116,Available,Fintech
-1094,Cynthia Turner,Project Manager,101,Available,Cybersecurity
-1095,Diamond Atkins,Tech Lead,113,Available,AI/ML
-1096,Cheryl Hall,DevOps Engineer,92,On Project,AI/ML
-1097,Don Dillon,Data Scientist,96,Available,Cybersecurity
-1098,Jessica Daugherty,QA Engineer,70,On Project,SaaS
-1099,Thomas Ware,Tech Lead,126,On Project,Retail
-1100,Daniel Whitney,Tech Lead,127,On Project,Fintech
-1101,Tammy Taylor,Data Scientist,104,On Project,Cybersecurity
-1102,Brittany Schwartz,Project Manager,101,On Project,Logistics
-1103,Kevin Esparza,DevOps Engineer,98,Available,Fintech
-1104,Brittany Jordan,Tech Lead,118,Available,Healthcare
-1105,Nathaniel Gilbert,DevOps Engineer,100,Available,SaaS
-1106,Kathryn Shelton,Data Scientist,104,Available,Fintech
-1107,Hannah Spencer,Tech Lead,128,Available,SaaS
-1108,Jessica Sullivan,Lead Architect,143,On Project,Retail
-1109,Mark Weaver,QA Engineer,84,Available,Cybersecurity
-1110,Crystal Woods,QA Engineer,78,On Project,Retail
-1111,Joseph Mckenzie,Senior Developer,95,Available,AI/ML
-1112,Andrew Smith,DevOps Engineer,81,On Project,Healthcare
-1113,Christopher Edwards,Junior Developer,70,Available,Retail
-1114,Robert Holloway,QA Engineer,69,Available,Retail
-1115,Michael Rose,DevOps Engineer,87,On Project,SaaS
-1116,Jacob Thompson,Project Manager,86,Available,Healthcare
-1117,Daniel Brown,Tech Lead,115,Available,E-commerce
-1118,Patricia Castillo,Senior Developer,98,On Project,Fintech
-1119,Dawn Wood,Lead Architect,130,Available,AI/ML
-1120,Thomas Flores,DevOps Engineer,106,On Project,E-commerce
-1121,Andrew Thomas,Tech Lead,138,On Project,Retail
-1122,Meghan Peters,UI/UX Designer,72,On Project,E-commerce
-1123,Kara Mercado,Tech Lead,122,On Project,SaaS
-1124,Amanda Oneill,Data Scientist,125,On Project,E-commerce
-1125,Sandra Miles,QA Engineer,67,On Project,Logistics
-1126,Heidi Farmer,QA Engineer,70,On Project,Fintech
-1127,Vincent Carroll,UI/UX Designer,82,On Project,Healthcare
-1128,Bryan Drake,Lead Architect,113,On Project,AI/ML
-1129,Jonathan Blair,Project Manager,86,Available,E-commerce
-1130,Jason Martin,QA Engineer,65,Available,Cybersecurity
-1131,Peter Harris,Senior Developer,113,Available,Retail
-1132,Kenneth Vasquez,UI/UX Designer,87,On Project,Cybersecurity
-1133,Susan Norman,DevOps Engineer,93,Available,SaaS
-1134,Robert Rivera,Tech Lead,114,Available,Logistics
-1135,Robert Smith,DevOps Engineer,107,Available,E-commerce
-1136,Beth Osborne,Data Scientist,119,On Project,AI/ML
-1137,Lori Howard,Data Scientist,125,Available,Logistics
-1138,Robert Peterson,UI/UX Designer,88,Available,Healthcare
-1139,Kimberly Perry,Tech Lead,136,On Project,E-commerce
-1140,Mr. Richard Taylor DVM,QA Engineer,67,On Project,Retail
-1141,Kelsey Gonzalez,Senior Developer,117,On Project,Cybersecurity
-1142,Paul Bishop,Junior Developer,60,Available,Healthcare
-1143,George White,Junior Developer,70,Available,Healthcare
-1144,Brenda Bernard,Data Scientist,128,On Project,E-commerce
-1145,Derek Johns,Tech Lead,117,Available,Logistics
-1146,Mark Jackson,QA Engineer,74,Available,Healthcare
-1147,Carl Jones,Project Manager,99,Available,Logistics
-1148,Ann Vaughan,Junior Developer,58,Available,Retail
-1149,Ashley Ferguson,DevOps Engineer,88,Available,AI/ML
-1150,Rachel Larson,Lead Architect,136,Available,Cybersecurity
-1151,Michael Clark,Project Manager,80,Available,Healthcare
-1152,Jean Combs,QA Engineer,69,On Project,SaaS
-1153,Nicole Holt,Project Manager,108,Available,SaaS
-1154,James Simmons,Lead Architect,137,Available,AI/ML
-1155,Deborah Holloway,UI/UX Designer,92,On Project,Cybersecurity
-1156,Michael Webster,Project Manager,93,Available,Healthcare
-1157,Jill Adkins,DevOps Engineer,113,On Project,Healthcare
-1158,Patrick Chan,Junior Developer,59,On Project,Retail
-1159,Kimberly Kirk,Data Scientist,95,Available,Cybersecurity
-1160,Billy Patterson,Project Manager,80,On Project,Healthcare
-1161,Hector Vasquez,Lead Architect,136,Available,Logistics
-1162,Colleen Shaw,UI/UX Designer,67,Available,SaaS
-1163,Daniel Paul,QA Engineer,67,On Project,Fintech
-1164,Leonard Chavez,Junior Developer,57,Available,Cybersecurity
-1165,Geoffrey Torres,Lead Architect,123,On Project,Healthcare
-1166,Christopher Williams,Senior Developer,95,Available,Healthcare
-1167,Kimberly Welch,Data Scientist,111,Available,SaaS
-1168,Raymond Johnson,Lead Architect,132,On Project,Retail
-1169,Carolyn Silva,Junior Developer,70,Available,Cybersecurity
-1170,Jesus Lee,Project Manager,96,Available,AI/ML
-1171,Megan Burnett,Senior Developer,109,Available,Logistics
-1172,Erik Short,Junior Developer,59,On Project,Retail
-1173,Frank Jackson,DevOps Engineer,89,Available,Retail
-1174,Rachel Ellis,Tech Lead,102,Available,Healthcare
-1175,Jonathan Cabrera,Junior Developer,72,Available,Cybersecurity
-1176,Keith Hernandez,Senior Developer,110,Available,SaaS
-1177,Joshua Hale,Project Manager,81,Available,Cybersecurity
-1178,Pamela Garcia,DevOps Engineer,81,Available,Retail
-1179,Linda Wells,Senior Developer,98,Available,SaaS
-1180,Daniel Williams,Senior Developer,115,On Project,Fintech
-1181,Jason Jones,QA Engineer,69,Available,Retail
-1182,Mrs. Jaime Gordon MD,Junior Developer,65,On Project,SaaS
-1183,Brian Ward,Senior Developer,105,Available,AI/ML
-1184,Dustin Herring,QA Engineer,65,On Project,SaaS
-1185,Holly Aguilar,Tech Lead,101,Available,Healthcare
-1186,Donald Rodriguez,Senior Developer,113,On Project,AI/ML
-1187,Micheal Martin,Junior Developer,62,On Project,Logistics
-1188,Judy Mcclain,DevOps Engineer,109,On Project,E-commerce
-1189,Mr. Timothy Thomas,DevOps Engineer,104,Available,Retail
-1190,Dr. Michael Stanley,Tech Lead,129,On Project,Retail
-1191,Mrs. Colleen Johnson,Senior Developer,111,On Project,SaaS
-1192,Jeffrey Tate,DevOps Engineer,91,On Project,Healthcare
-1193,Nancy Castro,Senior Developer,116,On Project,Retail
-1194,Mary Ramirez,UI/UX Designer,68,Available,E-commerce
-1195,Jennifer Cole,Data Scientist,97,Available,Retail
-1196,Anthony Padilla,Project Manager,90,Available,Logistics
-1197,Michelle Mcbride,QA Engineer,78,Available,SaaS
-1198,Gary Ellis,Junior Developer,72,Available,SaaS
-1199,Amy Ward,Junior Developer,57,Available,Healthcare
-1200,Sharon Smith,Junior Developer,68,On Project,Fintech
-1201,Heather Huerta,QA Engineer,67,Available,Retail
-1202,Angela Martinez,UI/UX Designer,82,On Project,E-commerce
-1203,Michael Harrington,QA Engineer,73,Available,Healthcare
-1204,Jonathan Reilly,Junior Developer,63,On Project,E-commerce
-1205,Michelle Martin,DevOps Engineer,85,On Project,Cybersecurity
-1206,Courtney Miller,DevOps Engineer,88,Available,Fintech
-1207,Wayne Hanson,Lead Architect,113,Available,SaaS
-1208,Bradley Ferguson,Project Manager,93,On Project,E-commerce
-1209,Brittany Espinoza,Data Scientist,108,Available,Cybersecurity
-1210,Kelly Weber,Lead Architect,125,Available,AI/ML
-1211,Alexis Brown,Lead Architect,129,Available,Logistics
-1212,Vincent Holland,Senior Developer,87,Available,AI/ML
-1213,Lindsey Goodman,QA Engineer,71,On Project,AI/ML
-1214,Kiara Phillips,Project Manager,95,On Project,Healthcare
-1215,Kevin Walsh,Data Scientist,102,Available,Fintech
-1216,Jeffrey Chapman,DevOps Engineer,97,Available,Logistics
-1217,Roberto Phillips,DevOps Engineer,83,Available,Cybersecurity
-1218,Amber Acevedo,DevOps Engineer,81,Available,Healthcare
-1219,John Fernandez,Tech Lead,119,On Project,Healthcare
-1220,Theresa Orr,Tech Lead,135,Available,Retail
-1221,Jeffrey Conley,DevOps Engineer,108,Available,Retail
-1222,Kelly Moore,Project Manager,110,Available,Cybersecurity
-1223,Manuel Smith,Data Scientist,98,Available,Cybersecurity
-1224,Travis Allen,DevOps Engineer,110,Available,Retail
-1225,Elizabeth Drake,Senior Developer,99,On Project,Cybersecurity
-1226,Paul Morrison,QA Engineer,70,On Project,Healthcare
-1227,Nancy Hunter,QA Engineer,61,Available,E-commerce
-1228,Carol Ortega,UI/UX Designer,67,Available,Healthcare
-1229,Bridget Gonzales,Lead Architect,136,On Project,Fintech
-1230,Ryan Brown,Data Scientist,114,Available,Fintech
-1231,Jeffrey Rojas,Data Scientist,120,Available,AI/ML
-1232,Kimberly Edwards,Junior Developer,68,On Project,Healthcare
-1233,Todd Jenkins,QA Engineer,85,Available,E-commerce
-1234,Brenda Benton,DevOps Engineer,102,Available,E-commerce
-1235,John Krause,Lead Architect,132,Available,Retail
-1236,Amanda Romero,DevOps Engineer,95,On Project,Logistics
-1237,Michelle Garcia,Lead Architect,119,On Project,Logistics
-1238,Marcia Gillespie,Junior Developer,55,Available,SaaS
-1239,Richard Williamson,Tech Lead,130,Available,Fintech
-1240,Thomas Walker,Lead Architect,125,Available,Cybersecurity
-1241,Andrew Ewing,Project Manager,99,Available,SaaS
-1242,Jacob Snyder,Junior Developer,55,Available,E-commerce
-1243,Stephanie Wood,QA Engineer,65,Available,Retail
-1244,John Hernandez,Junior Developer,62,On Project,AI/ML
-1245,Jason Jenkins,QA Engineer,78,Available,Fintech
-1246,David Davis,UI/UX Designer,94,Available,AI/ML
-1247,Kimberly French,Tech Lead,126,Available,AI/ML
-1248,Michelle Price,Tech Lead,139,Available,AI/ML
-1249,Nancy Gilmore,Lead Architect,129,Available,SaaS
-1250,Brandon Collier,Senior Developer,108,On Project,E-commerce
-1251,Ryan Lawson,UI/UX Designer,93,Available,SaaS
-1252,Lisa Dalton,Project Manager,88,Available,SaaS
-1253,Alexander Morris,Senior Developer,95,On Project,AI/ML
-1254,Catherine Murphy,DevOps Engineer,91,On Project,Logistics
-1255,Ann Smith,Lead Architect,129,On Project,Logistics
-1256,Megan Brown DVM,Tech Lead,117,Available,SaaS
-1257,Heather Perry,Data Scientist,95,Available,Fintech
-1258,Nicole Perez,DevOps Engineer,95,Available,Logistics
-1259,Alexander Murray,UI/UX Designer,90,Available,Logistics
-1260,John Nelson,Lead Architect,112,Available,Fintech
-1261,Michele Sanchez,DevOps Engineer,103,Available,Retail
-1262,Leslie Buchanan,DevOps Engineer,106,Available,Retail
-1263,Patricia Hatfield,Data Scientist,93,Available,Retail
-1264,Joseph Smith,Senior Developer,91,On Project,Retail
-1265,Matthew Smith,Tech Lead,117,On Project,SaaS
-1266,Phyllis Chen,DevOps Engineer,111,Available,Cybersecurity
-1267,John Gonzalez,QA Engineer,78,Available,SaaS
-1268,Amy Hickman,Project Manager,103,Available,Healthcare
-1269,Steven Larson,QA Engineer,61,Available,Fintech
-1270,John Wilson,Senior Developer,98,Available,AI/ML
-1271,Zachary Porter,Project Manager,81,On Project,Healthcare
-1272,John Rodriguez,Lead Architect,134,Available,SaaS
-1273,Charles Wood,DevOps Engineer,95,On Project,Retail
-1274,Sonya Rivera,Data Scientist,111,On Project,Healthcare
-1275,Tina Adams,UI/UX Designer,93,On Project,Fintech
-1276,Andrew Palmer,UI/UX Designer,76,Available,Logistics
-1277,Kim Pham,Senior Developer,111,Available,Retail
-1278,Christina Acosta PhD,DevOps Engineer,86,Available,E-commerce
-1279,Michael Ryan,Tech Lead,116,On Project,Logistics
-1280,Sarah Mcclain,UI/UX Designer,83,Available,AI/ML
-1281,Amanda Glover,Junior Developer,58,Available,Retail
-1282,Scott Mclaughlin,Data Scientist,119,Available,AI/ML
-1283,Stephanie Hall,Lead Architect,140,Available,Fintech
-1284,Joan Gilbert,Junior Developer,63,Available,Logistics
-1285,Thomas Gallagher,QA Engineer,82,Available,Retail
-1286,Nicole Jenkins,Tech Lead,130,Available,E-commerce
-1287,Gina Hodge,Project Manager,95,On Project,AI/ML
-1288,April Kramer,Senior Developer,113,Available,E-commerce
-1289,Mathew Cook,Junior Developer,69,Available,E-commerce
-1290,Janet Hinton,DevOps Engineer,105,On Project,SaaS
-1291,David Watson DDS,Project Manager,96,Available,Logistics
-1292,Joseph Whitney,Junior Developer,63,Available,Healthcare
-1293,Katie Spencer,QA Engineer,72,On Project,E-commerce
-1294,Jocelyn Moore,Tech Lead,101,On Project,Logistics
-1295,Laura Bell,UI/UX Designer,70,Available,Logistics
-1296,Rebecca Jones,Data Scientist,115,Available,E-commerce
-1297,Elizabeth Downs,Tech Lead,116,Available,Fintech
-1298,Angela Rodriguez,Senior Developer,118,Available,Cybersecurity
-1299,Anthony Baker,Project Manager,95,On Project,SaaS
-1300,Emily Gardner,DevOps Engineer,108,Available,E-commerce
-1301,Beth Molina,Tech Lead,105,On Project,AI/ML
-1302,Michael Petty,QA Engineer,71,Available,Healthcare
-1303,Jennifer Thomas,QA Engineer,67,Available,Fintech
-1304,Joshua Reed,Data Scientist,107,Available,Cybersecurity
-1305,Sabrina Williams,Data Scientist,95,Available,AI/ML
-1306,Diamond Jones,Tech Lead,122,On Project,AI/ML
-1307,Tanner Williams,Lead Architect,135,Available,Healthcare
-1308,Samuel Jones,DevOps Engineer,88,Available,Logistics
-1309,Mark Higgins,Project Manager,110,Available,SaaS
-1310,Michael Ramos,UI/UX Designer,80,Available,AI/ML
-1311,Michael Taylor,DevOps Engineer,89,On Project,SaaS
-1312,Jason Thompson,Senior Developer,107,On Project,Cybersecurity
-1313,Tommy Bennett,UI/UX Designer,72,Available,Fintech
-1314,Amanda Shepard,Project Manager,86,Available,SaaS
-1315,Albert Small,DevOps Engineer,113,Available,E-commerce
-1316,April Anderson,Senior Developer,104,On Project,Cybersecurity
-1317,Patricia Greene,DevOps Engineer,99,Available,Cybersecurity
-1318,Riley Quinn,Data Scientist,122,Available,Retail
-1319,Carolyn Cole,Project Manager,106,On Project,Cybersecurity
-1320,Angela Moore,DevOps Engineer,97,On Project,Fintech
-1321,Danny Lee Jr.,UI/UX Designer,91,Available,Retail
-1322,Mr. Frank Middleton,QA Engineer,74,On Project,AI/ML
-1323,David Garcia,Project Manager,80,On Project,E-commerce
-1324,Karen Salas,UI/UX Designer,78,Available,Logistics
-1325,Douglas Harris,Data Scientist,120,Available,SaaS
-1326,Michael Harris,Project Manager,81,Available,E-commerce
-1327,William Gray,Senior Developer,105,On Project,Logistics
-1328,Alexander Hernandez,DevOps Engineer,94,Available,SaaS
-1329,Robert Reyes,Project Manager,84,On Project,Fintech
-1330,Michael Lawson,QA Engineer,70,On Project,Logistics
-1331,Robin Smith,Senior Developer,96,On Project,Cybersecurity
-1332,Lisa Wolfe,UI/UX Designer,69,Available,AI/ML
-1333,Alice Nelson,Data Scientist,128,On Project,Fintech
-1334,Arthur Collins,Senior Developer,99,On Project,Cybersecurity
-1335,Rose Hodges,QA Engineer,69,Available,SaaS
-1336,Judith Boyer,Junior Developer,72,Available,AI/ML
-1337,Kelsey Yang,Tech Lead,128,On Project,Cybersecurity
-1338,Joseph Hill,Senior Developer,111,On Project,E-commerce
-1339,Ryan Barker,Lead Architect,125,Available,Cybersecurity
-1340,Emily Rogers,Lead Architect,113,Available,E-commerce
-1341,Julia Stanton,Data Scientist,120,On Project,AI/ML
-1342,Victoria Mercado,Senior Developer,88,Available,Healthcare
-1343,Austin Watkins,Data Scientist,124,On Project,SaaS
-1344,Brian Garcia,Tech Lead,110,Available,SaaS
-1345,Brandon Bell,Lead Architect,130,Available,Logistics
-1346,Jennifer Garcia,DevOps Engineer,96,Available,SaaS
-1347,Joseph Duke,Junior Developer,73,Available,E-commerce
-1348,Joseph Smith,Senior Developer,115,Available,Logistics
-1349,Victoria Myers,Project Manager,91,On Project,Cybersecurity
-1350,Emily Baker,Tech Lead,122,Available,Logistics
-1351,Paul Sandoval,DevOps Engineer,97,Available,Healthcare
-1352,Dr. Susan Powell,DevOps Engineer,82,On Project,E-commerce
-1353,Bruce Davis DDS,QA Engineer,83,Available,Retail
-1354,Connie Hayden,DevOps Engineer,113,On Project,Fintech
-1355,Isabella Gordon,Junior Developer,62,Available,AI/ML
-1356,Nicole Moore,DevOps Engineer,94,Available,AI/ML
-1357,Cameron Munoz,QA Engineer,70,On Project,SaaS
-1358,Peter Mcclain,Lead Architect,147,Available,Fintech
-1359,Gina Fox,QA Engineer,82,Available,E-commerce
-1360,Tiffany Nguyen,UI/UX Designer,74,Available,E-commerce
-1361,Mrs. Melissa Banks,Tech Lead,140,On Project,AI/ML
-1362,Sarah Williams,QA Engineer,76,On Project,Healthcare
-1363,April George,Junior Developer,55,On Project,E-commerce
-1364,Jessica Cook,Tech Lead,115,On Project,AI/ML
-1365,Ricardo Gross,Data Scientist,108,Available,E-commerce
-1366,Cristian Keller,QA Engineer,72,On Project,Fintech
-1367,Frank Yates,Data Scientist,106,Available,Logistics
-1368,Francisco Nolan,Lead Architect,141,On Project,E-commerce
-1369,Kimberly King,Tech Lead,100,On Project,Retail
-1370,Brian Ayala,Project Manager,98,Available,Logistics
-1371,Ashley Grant,Tech Lead,128,Available,Cybersecurity
-1372,Peter Cook,QA Engineer,64,Available,Healthcare
-1373,Elizabeth Thompson,UI/UX Designer,70,Available,Cybersecurity
-1374,Michael Fleming,Lead Architect,115,Available,AI/ML
-1375,Isabel Marshall,Project Manager,107,Available,Retail
-1376,Alexandra Sparks,Junior Developer,60,Available,E-commerce
-1377,Allison Obrien,Lead Architect,115,On Project,Cybersecurity
-1378,Luke Jenkins,Data Scientist,101,Available,Retail
-1379,Ms. Melanie Elliott,QA Engineer,75,On Project,Cybersecurity
-1380,Christopher Allen,Senior Developer,120,On Project,Logistics
-1381,Sabrina Powers,Tech Lead,109,Available,Retail
-1382,Eric Burns,Tech Lead,120,Available,Retail
-1383,Gregory Watson,QA Engineer,84,Available,E-commerce
-1384,Melissa Avery,Lead Architect,139,On Project,Healthcare
-1385,Patricia Smith,DevOps Engineer,103,On Project,SaaS
-1386,Jonathan Hernandez,Senior Developer,112,On Project,SaaS
-1387,Amber Andersen,Data Scientist,97,Available,E-commerce
-1388,Tammy Marquez,UI/UX Designer,88,Available,SaaS
-1389,Jennifer Robertson,QA Engineer,78,Available,Fintech
-1390,John Bray,Project Manager,107,Available,Logistics
-1391,Scott Hendrix,Junior Developer,59,Available,SaaS
-1392,William Grimes,DevOps Engineer,113,On Project,SaaS
-1393,Hannah Gibbs,Lead Architect,127,Available,AI/ML
-1394,Kevin Valdez,QA Engineer,83,Available,Fintech
-1395,Scott Allen,Project Manager,85,Available,E-commerce
-1396,Carrie Robinson,UI/UX Designer,92,Available,SaaS
-1397,Beth Hendricks,Senior Developer,93,On Project,Cybersecurity
-1398,Mr. Andrew Peterson,Tech Lead,101,On Project,Retail
-1399,Sandra Garcia,Project Manager,80,Available,AI/ML
-1400,Lucas Smith,Junior Developer,70,On Project,Fintech
-1401,Melissa Barnett,QA Engineer,81,Available,SaaS
-1402,Angelica Skinner,Project Manager,92,Available,SaaS
-1403,Michael Carr,Tech Lead,113,Available,Healthcare
-1404,Brandon Ramirez,Junior Developer,59,Available,Logistics
-1405,Gina Haley,DevOps Engineer,90,Available,Cybersecurity
-1406,Randy Garrison,QA Engineer,62,Available,Logistics
-1407,Joseph Lopez DDS,Lead Architect,148,Available,AI/ML
-1408,John Bradley,Project Manager,108,On Project,Retail
-1409,Denise Walker,Project Manager,100,On Project,Logistics
-1410,Jennifer Adams,Junior Developer,72,Available,Retail
-1411,Mr. Joseph Cox DDS,DevOps Engineer,87,Available,Retail
-1412,Nathan Barber,Lead Architect,122,On Project,AI/ML
-1413,Jennifer Harrison,QA Engineer,78,On Project,Retail
-1414,Erica Lewis,Lead Architect,142,Available,E-commerce
-1415,Chris Jordan,Junior Developer,63,Available,E-commerce
-1416,Marissa Pearson,QA Engineer,73,Available,AI/ML
-1417,Ernest Rollins,Senior Developer,110,On Project,Retail
-1418,John Reynolds,Lead Architect,128,Available,E-commerce
-1419,Bonnie Roberts,UI/UX Designer,72,On Project,Retail
-1420,Erin Mcconnell,Senior Developer,110,Available,Retail
-1421,Edward Walker,Lead Architect,130,On Project,Retail
-1422,David Roberson,Senior Developer,109,Available,Retail
-1423,Terry Hays,Project Manager,110,Available,AI/ML
-1424,Ruth Alexander,QA Engineer,78,Available,Fintech
-1425,Lee Farrell,Data Scientist,93,On Project,Logistics
-1426,Amanda Welch MD,Junior Developer,65,Available,Healthcare
-1427,Ashley Dunn,DevOps Engineer,88,Available,Healthcare
-1428,Patrick Johnson,Senior Developer,91,On Project,Logistics
-1429,Kelly Mitchell,Lead Architect,137,On Project,Retail
-1430,Samantha Tran,Project Manager,108,Available,Healthcare
-1431,Rachel Spencer,Project Manager,97,On Project,E-commerce
-1432,Sean Bryant,Project Manager,110,On Project,Cybersecurity
-1433,Cathy Cooper,Senior Developer,110,Available,Healthcare
-1434,Christine Garcia,Lead Architect,125,Available,Fintech
-1435,Amy Jones,UI/UX Designer,67,On Project,Retail
-1436,Ashley Webster,Senior Developer,115,Available,Cybersecurity
-1437,Elizabeth Rogers,DevOps Engineer,104,On Project,E-commerce
-1438,Donald Finley,Project Manager,89,Available,Retail
-1439,David Miller,Lead Architect,123,Available,Fintech
-1440,Michael Bell,QA Engineer,79,On Project,Healthcare
-1441,Scott Molina,Lead Architect,145,On Project,Fintech
-1442,Terry Walsh,DevOps Engineer,83,Available,E-commerce
-1443,Christopher Sanchez,Data Scientist,112,Available,AI/ML
-1444,Kimberly Collins,UI/UX Designer,91,Available,AI/ML
-1445,Laura Stanley,Tech Lead,112,On Project,SaaS
-1446,Cody Parker,Junior Developer,70,Available,AI/ML
-1447,Julie Williams,Lead Architect,137,Available,AI/ML
-1448,Allison Joseph,Tech Lead,106,Available,Healthcare
-1449,Michelle Marks,Junior Developer,61,Available,Retail
-1450,Tracey Torres,QA Engineer,63,Available,SaaS
-1451,Ashley Sawyer,QA Engineer,66,Available,SaaS
-1452,Jacob King,UI/UX Designer,84,Available,Cybersecurity
-1453,Sarah Rodriguez,QA Engineer,73,Available,Cybersecurity
-1454,Courtney Villa,Lead Architect,137,On Project,SaaS
-1455,Ronald Cox,UI/UX Designer,85,On Project,Retail
-1456,Katelyn Hernandez,Data Scientist,100,On Project,Cybersecurity
-1457,Scott Lopez,Senior Developer,97,Available,Healthcare
-1458,Zachary Combs,UI/UX Designer,93,Available,AI/ML
-1459,Jessica Gill,Lead Architect,145,On Project,Logistics
-1460,Angie Burns,Senior Developer,89,On Project,Cybersecurity
-1461,Wendy Romero,QA Engineer,82,Available,Healthcare
-1462,Carrie Rodriguez,UI/UX Designer,92,On Project,Retail
-1463,Kevin Weiss,Senior Developer,100,Available,Cybersecurity
-1464,Russell Diaz,Data Scientist,104,Available,Retail
-1465,Miss Tiffany Castro,Senior Developer,110,Available,Retail
-1466,Renee Reyes MD,Junior Developer,68,Available,AI/ML
-1467,Jessica Miller,Project Manager,87,Available,SaaS
-1468,Nancy Jones,UI/UX Designer,92,Available,E-commerce
-1469,Megan Rodriguez,Junior Developer,57,Available,E-commerce
-1470,Eric Russell,UI/UX Designer,80,Available,Logistics
-1471,Sandra Sanchez,QA Engineer,75,On Project,Fintech
-1472,Nicole Price,DevOps Engineer,99,Available,E-commerce
-1473,Susan Jarvis,UI/UX Designer,89,Available,Logistics
-1474,Evan Martinez,Data Scientist,98,Available,Fintech
-1475,Brandon Cummings,UI/UX Designer,90,Available,Cybersecurity
-1476,Madeline Riddle,Senior Developer,101,Available,E-commerce
-1477,Glenda Murray,Senior Developer,94,Available,E-commerce
-1478,Danielle Castro,Tech Lead,123,Available,AI/ML
-1479,Steven Randall,Tech Lead,100,Available,AI/ML
-1480,Mandy Bush,Lead Architect,118,Available,Logistics
-1481,Robert Sosa,Tech Lead,123,On Project,E-commerce
-1482,Judith Johnston,Data Scientist,128,On Project,Cybersecurity
-1483,Sierra Nichols,DevOps Engineer,106,Available,Healthcare
-1484,John Dickerson,Senior Developer,85,Available,Retail
-1485,Jessica King,UI/UX Designer,74,Available,Healthcare
-1486,Annette Bauer,Lead Architect,149,On Project,AI/ML
-1487,Laura Richards,Project Manager,102,Available,E-commerce
-1488,Allen Ortiz,QA Engineer,81,Available,Retail
-1489,Michael Reed,QA Engineer,74,Available,Healthcare
-1490,Tammy Hobbs,DevOps Engineer,91,Available,Logistics
-1491,Christopher Leblanc,QA Engineer,79,On Project,AI/ML
-1492,Heather Barnes,Tech Lead,138,Available,AI/ML
-1493,Alexis Hill,Tech Lead,122,Available,Healthcare
-1494,Jocelyn Gallagher,Junior Developer,67,Available,AI/ML
-1495,Michael Grant,Tech Lead,123,Available,Cybersecurity
-1496,Melinda Bonilla,Junior Developer,57,Available,SaaS
-1497,Kristin Wallace,UI/UX Designer,91,Available,SaaS
-1498,Steven Edwards,Senior Developer,117,On Project,Healthcare
-1499,Michael Sanchez,Tech Lead,121,On Project,SaaS
-1500,Alex Sims,QA Engineer,62,Available,Healthcare
-1501,Sean Johnson,Tech Lead,116,On Project,E-commerce
-1502,Joshua Holmes,Data Scientist,110,Available,Retail
-1503,Julia Levy,UI/UX Designer,93,Available,Retail
-1504,Alicia Watson,Junior Developer,75,Available,E-commerce
-1505,Angela Hooper,Junior Developer,69,Available,Fintech
-1506,Mary Moore,Tech Lead,125,On Project,E-commerce
-1507,Sarah Figueroa,Tech Lead,126,Available,Fintech
-1508,Laura Newman,Junior Developer,66,Available,SaaS
-1509,Alexander Keller,Senior Developer,116,On Project,E-commerce
-1510,Robert Chase,Lead Architect,139,Available,Fintech
-1511,William Barnett,Senior Developer,114,On Project,Logistics
-1512,James Gregory,Senior Developer,112,Available,SaaS
-1513,Mark Sanchez,Senior Developer,89,Available,Logistics
-1514,Paul Jenkins,Data Scientist,124,On Project,E-commerce
-1515,Alejandro Garcia,DevOps Engineer,112,On Project,SaaS
-1516,Jessica Johnson,QA Engineer,78,On Project,Healthcare
-1517,Kyle Hernandez,Junior Developer,69,On Project,Logistics
-1518,Rebecca Guzman,Lead Architect,120,Available,AI/ML
-1519,Gregory Bernard,UI/UX Designer,68,Available,E-commerce
-1520,Mitchell Fernandez,UI/UX Designer,91,On Project,Fintech
-1521,Nicole Hudson,QA Engineer,82,Available,AI/ML
-1522,George Perez,Tech Lead,101,Available,E-commerce
-1523,Christopher Morales,QA Engineer,83,Available,AI/ML
-1524,Heather Howard,Project Manager,81,Available,Healthcare
-1525,Christina Brown,UI/UX Designer,82,Available,E-commerce
-1526,Catherine Martinez,Data Scientist,118,Available,Fintech
-1527,Natalie Johnson,DevOps Engineer,99,On Project,E-commerce
-1528,Angela Buchanan,Senior Developer,113,Available,Cybersecurity
-1529,Charles Owens,DevOps Engineer,97,Available,Healthcare
-1530,Marcus Mueller,Senior Developer,103,Available,E-commerce
-1531,Jennifer Sweeney,Senior Developer,103,On Project,Healthcare
-1532,Alexander Sanchez,Senior Developer,101,On Project,Cybersecurity
-1533,Steven Green,Lead Architect,126,On Project,E-commerce
-1534,Ashley Perez,Lead Architect,136,Available,E-commerce
-1535,Andrew Jordan PhD,Lead Architect,146,Available,Cybersecurity
-1536,Anthony Adams,Senior Developer,104,Available,Cybersecurity
-1537,Crystal Powell,Tech Lead,131,On Project,Fintech
-1538,Reginald Wilson,QA Engineer,71,Available,AI/ML
-1539,Austin Molina,Junior Developer,74,Available,Fintech
-1540,Shane Travis,DevOps Engineer,86,Available,E-commerce
-1541,Michael Mills,Senior Developer,85,On Project,Retail
-1542,Debbie Vega,Tech Lead,106,Available,Cybersecurity
-1543,Alicia Butler,UI/UX Designer,85,Available,Logistics
-1544,Stephanie Flores,UI/UX Designer,75,Available,SaaS
-1545,Amanda Sanchez,Lead Architect,124,Available,Fintech
-1546,Bonnie Randall DDS,Senior Developer,106,Available,Healthcare
-1547,Jillian Bowman,QA Engineer,81,Available,AI/ML
-1548,Ryan Little,QA Engineer,73,Available,SaaS
-1549,Jason King,DevOps Engineer,99,Available,Fintech
-1550,Thomas Meyers,DevOps Engineer,83,On Project,Cybersecurity
-1551,Morgan Williams,Project Manager,88,Available,Retail
-1552,Nicole Carroll,Data Scientist,128,Available,Logistics
-1553,David Holmes,Lead Architect,134,Available,Cybersecurity
-1554,Sean Bridges,DevOps Engineer,98,Available,Retail
-1555,Frederick White,Lead Architect,134,Available,AI/ML
-1556,Christopher Kline,UI/UX Designer,92,On Project,Cybersecurity
-1557,David Schmidt,QA Engineer,85,Available,Fintech
-1558,Leah May,Tech Lead,110,Available,Cybersecurity
-1559,Austin Dixon,UI/UX Designer,77,Available,Retail
-1560,Selena Mayer,Senior Developer,100,Available,Fintech
-1561,Bryan Hayes,DevOps Engineer,107,Available,Healthcare
-1562,Shannon Adkins,Project Manager,108,Available,E-commerce
-1563,Vincent Bentley,Junior Developer,61,Available,Logistics
-1564,Patricia Robertson,Tech Lead,135,On Project,Logistics
-1565,Philip Hughes,Data Scientist,108,Available,AI/ML
-1566,Raymond Mccarthy,Lead Architect,144,Available,Logistics
-1567,Joseph Tucker,UI/UX Designer,76,Available,SaaS
-1568,Robert Farrell,Tech Lead,134,Available,Logistics
-1569,John Carroll,Tech Lead,129,Available,Logistics
-1570,Paul Allen,Project Manager,87,On Project,Healthcare
-1571,Tyler Rodriguez,QA Engineer,65,On Project,Logistics
-1572,Barbara Frost,Senior Developer,108,On Project,E-commerce
-1573,Danielle Stewart,Data Scientist,129,On Project,Healthcare
-1574,Justin Matthews,DevOps Engineer,90,Available,Fintech
-1575,Tyler Bryan,Project Manager,107,Available,Logistics
-1576,Tracy Lopez,DevOps Engineer,88,Available,Fintech
-1577,Michelle Ali,DevOps Engineer,111,On Project,SaaS
-1578,Michael Miller,UI/UX Designer,86,On Project,SaaS
-1579,Mr. Peter Gonzales,QA Engineer,78,On Project,Logistics
-1580,Ryan Morris,Data Scientist,111,Available,Cybersecurity
-1581,Madeline Powers,UI/UX Designer,74,Available,Logistics
-1582,Ryan Hogan,Junior Developer,61,Available,Healthcare
-1583,Dr. Randy Alexander,QA Engineer,79,Available,AI/ML
-1584,Michelle Forbes,DevOps Engineer,93,On Project,E-commerce
-1585,Michael Blake,DevOps Engineer,99,Available,AI/ML
-1586,Kristina Hartman,DevOps Engineer,85,Available,Fintech
-1587,Jeremy Taylor,Senior Developer,93,On Project,AI/ML
-1588,Kelly Jones,UI/UX Designer,65,Available,E-commerce
-1589,Stephen Lyons,Data Scientist,101,On Project,Logistics
-1590,Michelle Brown,Tech Lead,110,On Project,Healthcare
-1591,Timothy Hall,Lead Architect,116,Available,Cybersecurity
-1592,Jeremy Rodriguez,UI/UX Designer,87,Available,AI/ML
-1593,Ruth Bryant,Lead Architect,133,Available,Healthcare
-1594,Casey Watson,Project Manager,91,On Project,Retail
-1595,Richard Mckinney,Tech Lead,104,On Project,Healthcare
-1596,Timothy Blanchard,Data Scientist,119,Available,Fintech
-1597,Kevin Thomas,Senior Developer,86,On Project,Logistics
-1598,Zoe Edwards,DevOps Engineer,110,Available,E-commerce
-1599,Ryan Fleming,Senior Developer,117,Available,Cybersecurity
-1600,Shane Johnson,Tech Lead,102,Available,AI/ML
-1601,Jamie Love,DevOps Engineer,104,Available,Healthcare
-1602,Brett Romero,DevOps Engineer,83,Available,Cybersecurity
-1603,Chad Rivas,Project Manager,92,On Project,Logistics
-1604,Katie Jackson,Data Scientist,112,Available,Fintech
-1605,Margaret Contreras,Tech Lead,110,Available,SaaS
-1606,David Davis,UI/UX Designer,79,Available,Fintech
-1607,Krystal Terry,Tech Lead,109,Available,Retail
-1608,Kim Davis,Junior Developer,72,On Project,Healthcare
-1609,David Wright DDS,Data Scientist,105,Available,Retail
-1610,Dana Bell,Project Manager,92,On Project,Cybersecurity
-1611,Carlos Russell,Tech Lead,105,Available,Cybersecurity
-1612,William Francis,UI/UX Designer,87,Available,Logistics
-1613,Pamela Pittman,DevOps Engineer,110,On Project,Fintech
-1614,Teresa Mclaughlin,Senior Developer,98,On Project,Fintech
-1615,Joseph Davenport,UI/UX Designer,91,On Project,AI/ML
-1616,Elizabeth Medina,Senior Developer,94,Available,E-commerce
-1617,Meghan Gutierrez,Lead Architect,130,Available,Fintech
-1618,Jason Smith,Lead Architect,122,Available,Logistics
-1619,Anthony Harrell,Senior Developer,114,On Project,Fintech
-1620,David Long,Project Manager,89,Available,AI/ML
-1621,Stephanie Harper,DevOps Engineer,106,On Project,AI/ML
-1622,Kimberly Meyers,Senior Developer,97,Available,Fintech
-1623,Erika Harris,Tech Lead,132,On Project,AI/ML
-1624,Heather Barajas,QA Engineer,76,Available,Cybersecurity
-1625,Mathew Reyes,QA Engineer,67,Available,Retail
-1626,Walter Lee,Senior Developer,92,On Project,Logistics
-1627,Nancy Hampton,QA Engineer,78,Available,AI/ML
-1628,Phillip Thomas,Tech Lead,139,Available,E-commerce
-1629,Jason Rice,Junior Developer,66,On Project,SaaS
-1630,Stephen Stafford,QA Engineer,85,Available,E-commerce
-1631,Richard Chapman,Tech Lead,128,On Project,AI/ML
-1632,Jennifer King,Project Manager,104,Available,E-commerce
-1633,Robin Jackson,UI/UX Designer,76,Available,Logistics
-1634,Christina Barnes,Lead Architect,129,On Project,E-commerce
-1635,Joel Lambert,Project Manager,105,On Project,Fintech
-1636,Edward Watson,Project Manager,91,On Project,Retail
-1637,Alison Singh,Junior Developer,55,On Project,Cybersecurity
-1638,Regina Juarez,Junior Developer,55,Available,Logistics
-1639,Mrs. April Miller,Tech Lead,136,Available,Logistics
-1640,Shelly Strickland,Data Scientist,96,Available,Retail
-1641,Douglas Lee,UI/UX Designer,83,Available,Cybersecurity
-1642,Michael Brewer,Project Manager,86,On Project,Retail
-1643,Kathryn Edwards,Project Manager,89,Available,Logistics
-1644,Sarah Romero,QA Engineer,80,Available,Logistics
-1645,Jason Smith MD,Project Manager,82,Available,Retail
-1646,Stephanie Hill,QA Engineer,83,On Project,E-commerce
-1647,Dawn Moyer,Lead Architect,127,On Project,SaaS
-1648,Nancy Garcia,Senior Developer,117,Available,Logistics
-1649,Leslie Jackson,DevOps Engineer,114,Available,Logistics
-1650,Matthew Barajas,Data Scientist,112,Available,Logistics
-1651,Megan Phillips,QA Engineer,81,On Project,Cybersecurity
-1652,Rebecca Kline,UI/UX Designer,92,On Project,Fintech
-1653,Karen Carr,Data Scientist,129,On Project,E-commerce
-1654,Lauren Carson,Project Manager,89,On Project,Fintech
-1655,Wanda Mejia,Project Manager,85,On Project,Logistics
-1656,Jasmine Sullivan,DevOps Engineer,84,Available,E-commerce
-1657,Mark Martin,Senior Developer,97,On Project,Logistics
-1658,Desiree Flores,QA Engineer,61,Available,E-commerce
-1659,Robert Sanders,Project Manager,103,Available,E-commerce
-1660,Julie Francis,Tech Lead,127,On Project,AI/ML
-1661,Mackenzie Martinez,Tech Lead,118,On Project,SaaS
-1662,James Franco,UI/UX Designer,70,Available,Retail
-1663,Cheryl Rice,Junior Developer,66,On Project,Cybersecurity
-1664,Jordan Moore,DevOps Engineer,103,On Project,E-commerce
-1665,Victoria Hunter,Junior Developer,74,Available,AI/ML
-1666,Joshua Fisher,Tech Lead,118,Available,SaaS
-1667,Christine Clark MD,Junior Developer,75,Available,SaaS
-1668,Brandy Wise,Tech Lead,121,Available,Logistics
-1669,Jo Clements,Junior Developer,72,Available,Fintech
-1670,Pam Alvarez,Project Manager,106,Available,AI/ML
-1671,Laura Day,UI/UX Designer,80,Available,Cybersecurity
-1672,Michael Medina,Project Manager,95,On Project,AI/ML
-1673,Michael Frye,Senior Developer,93,Available,SaaS
-1674,Gina Bailey,QA Engineer,65,On Project,Fintech
-1675,Timothy Smith,Data Scientist,104,On Project,E-commerce
-1676,Christine Hopkins,DevOps Engineer,106,Available,Logistics
-1677,Mark Middleton,DevOps Engineer,111,Available,Cybersecurity
-1678,Kelly Johnson,QA Engineer,77,On Project,Logistics
-1679,Cindy Harrison,Senior Developer,87,On Project,AI/ML
-1680,April Davis,Junior Developer,70,Available,AI/ML
-1681,Cynthia Howell,UI/UX Designer,67,Available,Cybersecurity
-1682,Ellen Espinoza,Lead Architect,110,On Project,AI/ML
-1683,Aaron Hubbard,Senior Developer,91,Available,Fintech
-1684,Shannon Young,Project Manager,93,Available,AI/ML
-1685,Jennifer Young,Senior Developer,120,Available,AI/ML
-1686,Megan Mcdonald,Data Scientist,119,On Project,E-commerce
-1687,Joseph Jones MD,Project Manager,94,Available,Retail
-1688,Philip Dickerson,Senior Developer,107,On Project,SaaS
-1689,David Jacobs,QA Engineer,69,On Project,Logistics
-1690,Kimberly Morrison,Tech Lead,121,Available,Retail
-1691,Matthew Franco,Project Manager,99,Available,Healthcare
-1692,Jamie Cameron,UI/UX Designer,76,Available,Cybersecurity
-1693,Erin Owens,Junior Developer,56,On Project,AI/ML
-1694,Diana Watson,Lead Architect,129,On Project,Cybersecurity
-1695,Amber Jackson,Data Scientist,98,Available,SaaS
-1696,John Thomas,Project Manager,96,Available,E-commerce
-1697,Alexandra Garrison,Tech Lead,100,On Project,Cybersecurity
-1698,Gina Sexton,UI/UX Designer,84,Available,Retail
-1699,Kenneth Sanchez,Project Manager,92,On Project,Fintech
-1700,Karen Walker,QA Engineer,75,Available,Fintech
-1701,Mary Parker,QA Engineer,74,On Project,Fintech
-1702,Dennis Parsons,DevOps Engineer,106,On Project,Fintech
-1703,Tamara Thomas,QA Engineer,78,Available,Fintech
-1704,Brian Mills,Project Manager,96,On Project,Fintech
-1705,Regina Martin,Lead Architect,129,Available,AI/ML
-1706,Cynthia Singleton,Tech Lead,130,On Project,SaaS
-1707,Julie Quinn,Junior Developer,71,On Project,AI/ML
-1708,Lori Simpson,DevOps Engineer,94,Available,AI/ML
-1709,Lisa Harris,Senior Developer,110,On Project,Fintech
-1710,James Patrick,Junior Developer,60,Available,E-commerce
-1711,Natalie Wilson,Data Scientist,110,On Project,E-commerce
-1712,Timothy Clark,QA Engineer,77,Available,Retail
-1713,Corey Carpenter,Data Scientist,123,Available,E-commerce
-1714,Diana Knight,Senior Developer,115,On Project,Healthcare
-1715,Joshua Morris,Data Scientist,104,Available,Retail
-1716,Andrew Camacho,QA Engineer,60,Available,Logistics
-1717,Christopher Brown,DevOps Engineer,106,Available,AI/ML
-1718,Lauren Wiggins,Senior Developer,114,Available,E-commerce
-1719,Antonio Rocha,Tech Lead,107,Available,Logistics
-1720,Tammy Day,Tech Lead,114,On Project,E-commerce
-1721,Paula Ochoa,DevOps Engineer,104,On Project,Retail
-1722,Tyler Williams,Tech Lead,137,Available,Fintech
-1723,Cameron Brown,Data Scientist,94,Available,E-commerce
-1724,Natasha Anthony,Tech Lead,123,Available,Fintech
-1725,Brandon Randolph,Data Scientist,118,Available,E-commerce
-1726,John Weaver,Lead Architect,149,Available,AI/ML
-1727,Lisa Wade,QA Engineer,81,On Project,Healthcare
-1728,Carolyn Rogers,DevOps Engineer,94,On Project,Healthcare
-1729,Becky Rojas,QA Engineer,80,Available,Fintech
-1730,Alan Flores,Senior Developer,102,Available,Retail
-1731,Wanda Morrison,QA Engineer,73,On Project,E-commerce
-1732,Thomas Martinez,Lead Architect,120,Available,E-commerce
-1733,Lisa Ramos,Lead Architect,145,Available,Retail
-1734,Patricia Gallegos,Lead Architect,131,Available,E-commerce
-1735,Daniel Ballard MD,Junior Developer,72,On Project,Logistics
-1736,Tina Griffin,Tech Lead,140,Available,Retail
-1737,Jeffery Ruiz,DevOps Engineer,113,On Project,E-commerce
-1738,Mary Wilson,QA Engineer,84,Available,E-commerce
-1739,James Benitez,Junior Developer,74,Available,Fintech
-1740,Judy Combs,DevOps Engineer,91,Available,Healthcare
-1741,Dawn Castillo,UI/UX Designer,76,On Project,Cybersecurity
-1742,Miss Kim Wagner,QA Engineer,83,Available,Cybersecurity
-1743,Ann Colon,DevOps Engineer,104,Available,AI/ML
-1744,Diana Goodman,Data Scientist,101,On Project,Retail
-1745,James Brown,UI/UX Designer,92,Available,SaaS
-1746,Elizabeth Martinez,DevOps Engineer,82,On Project,Retail
-1747,Cynthia Johnson,Data Scientist,92,Available,AI/ML
-1748,Charles Williams,UI/UX Designer,72,On Project,AI/ML
-1749,Amber Trevino,QA Engineer,85,On Project,Cybersecurity
-1750,Mark Jenkins,QA Engineer,61,Available,Cybersecurity
-1751,James Bullock,UI/UX Designer,69,On Project,Healthcare
-1752,Kyle Hammond,QA Engineer,79,Available,Healthcare
-1753,Mr. William Soto,Project Manager,96,Available,Healthcare
-1754,Justin Carter,Project Manager,94,On Project,Healthcare
-1755,Scott Garza,Senior Developer,105,Available,Fintech
-1756,Mark Forbes,Data Scientist,125,Available,Healthcare
-1757,Kristina Davis,UI/UX Designer,70,Available,Fintech
-1758,Kayla English,Project Manager,81,On Project,AI/ML
-1759,Tiffany Johnson,QA Engineer,73,Available,Healthcare
-1760,Christopher Sweeney,Lead Architect,138,Available,Logistics
-1761,Jennifer Davis,Lead Architect,124,Available,Cybersecurity
-1762,Michaela Bailey,Project Manager,109,Available,Retail
-1763,Ashley Wilson,QA Engineer,67,Available,Cybersecurity
-1764,Courtney Chavez,DevOps Engineer,87,Available,AI/ML
-1765,Jessica Collins,Junior Developer,61,Available,Retail
-1766,Joshua Smith,Senior Developer,101,Available,AI/ML
-1767,Aimee Wiley,Senior Developer,95,Available,Fintech
-1768,Trevor Montoya,Lead Architect,112,Available,SaaS
-1769,William Lara,DevOps Engineer,96,Available,Retail
-1770,Derrick Parsons,Senior Developer,114,Available,Healthcare
-1771,Laura Dixon,Data Scientist,94,Available,Healthcare
-1772,Steven Fuller,Senior Developer,85,Available,Retail
-1773,Molly Tucker,Junior Developer,57,On Project,AI/ML
-1774,Lauren Castillo,QA Engineer,74,On Project,Fintech
-1775,Devon Bailey,Senior Developer,94,Available,Healthcare
-1776,Eric Baldwin,DevOps Engineer,91,On Project,Cybersecurity
-1777,Raymond Taylor,Data Scientist,100,On Project,E-commerce
-1778,Andrea Lewis,Project Manager,84,Available,Fintech
-1779,Paul Johnson,UI/UX Designer,70,Available,Retail
-1780,Shelby Byrd DVM,Lead Architect,116,Available,Retail
-1781,Renee Melton,Junior Developer,62,On Project,Logistics
-1782,Jodi Garrison,QA Engineer,62,Available,AI/ML
-1783,Glen Medina,Tech Lead,139,On Project,Healthcare
-1784,Jose Smith,UI/UX Designer,78,On Project,Retail
-1785,Kari Park,Data Scientist,94,Available,Retail
-1786,Michael Hensley,Senior Developer,95,Available,Retail
-1787,Caroline Fisher,Lead Architect,131,Available,SaaS
-1788,David Whitney,Tech Lead,139,Available,Cybersecurity
-1789,David Smith,Junior Developer,58,Available,Cybersecurity
-1790,Matthew Hall,Project Manager,100,Available,Cybersecurity
-1791,Ryan Williams,Senior Developer,101,Available,AI/ML
-1792,Debbie Williams,DevOps Engineer,115,Available,Fintech
-1793,Arthur Pierce,Data Scientist,116,Available,Healthcare
-1794,Matthew Barker,Lead Architect,110,On Project,Retail
-1795,Heather Jones,Project Manager,105,On Project,Logistics
-1796,Heather Williams,Junior Developer,67,On Project,SaaS
-1797,Rebecca Hayes,Junior Developer,64,Available,Cybersecurity
-1798,Susan Collins,Project Manager,104,Available,AI/ML
-1799,Rebecca Whitehead,Project Manager,100,Available,Logistics
-1800,Alejandra Anderson,Tech Lead,107,Available,SaaS
-1801,Dakota Smith,UI/UX Designer,88,Available,SaaS
-1802,Susan Lane,Lead Architect,124,Available,Cybersecurity
-1803,Jennifer Wall,Senior Developer,90,On Project,Fintech
-1804,Colleen Price,Project Manager,104,Available,AI/ML
-1805,Brenda Jimenez,QA Engineer,75,Available,Cybersecurity
-1806,Jennifer Fernandez,DevOps Engineer,104,Available,SaaS
-1807,Anthony Wells,Lead Architect,136,On Project,Healthcare
-1808,Mitchell Bryant,Junior Developer,68,On Project,AI/ML
-1809,William Bryan,Lead Architect,144,On Project,SaaS
-1810,Michelle Hoffman,UI/UX Designer,78,On Project,SaaS
-1811,Amy Colon,Senior Developer,118,Available,SaaS
-1812,Lisa Moreno,UI/UX Designer,95,On Project,E-commerce
-1813,Steven Werner,DevOps Engineer,104,Available,E-commerce
-1814,Keith Osborn,Lead Architect,121,Available,Retail
-1815,Theresa Garrett,Data Scientist,118,Available,SaaS
-1816,Amanda Webb,Junior Developer,59,Available,Fintech
-1817,Leah Lawrence,Data Scientist,116,Available,SaaS
-1818,James Cook MD,UI/UX Designer,95,On Project,Healthcare
-1819,Joseph Carney,Senior Developer,94,On Project,Retail
-1820,Cristian Martinez,Data Scientist,125,Available,Logistics
-1821,Elizabeth Thompson,Lead Architect,135,On Project,AI/ML
-1822,Carolyn Brown,UI/UX Designer,80,Available,Healthcare
-1823,Kylie Jackson,Data Scientist,96,Available,Fintech
-1824,Sarah Solis,Data Scientist,113,On Project,Healthcare
-1825,Cameron Fleming,Data Scientist,98,On Project,Fintech
-1826,Mary Burns,Data Scientist,110,On Project,Retail
-1827,Cheryl Sherman,QA Engineer,68,Available,E-commerce
-1828,Scott Weiss,Project Manager,102,Available,Logistics
-1829,Christopher Brown,QA Engineer,71,Available,Cybersecurity
-1830,Jesse Lewis,Data Scientist,109,Available,E-commerce
-1831,Rachel Clark,QA Engineer,68,Available,Healthcare
-1832,James Sutton,Tech Lead,112,On Project,Cybersecurity
-1833,Karen Oneill,QA Engineer,66,Available,Fintech
-1834,Zachary Alvarez,Tech Lead,110,Available,SaaS
-1835,Matthew Collins,QA Engineer,83,On Project,Logistics
-1836,William Joyce,Junior Developer,57,Available,Logistics
-1837,Tammy Murray,Data Scientist,96,Available,E-commerce
-1838,Jason Griffin,Data Scientist,126,Available,SaaS
-1839,Philip Watson,Junior Developer,64,Available,E-commerce
-1840,David Miller,UI/UX Designer,84,On Project,SaaS
-1841,Jennifer Lewis,UI/UX Designer,90,Available,Logistics
-1842,Teresa Taylor,QA Engineer,78,Available,Logistics
-1843,Rose Conner,Tech Lead,114,Available,SaaS
-1844,Joseph Berg,DevOps Engineer,96,On Project,Logistics
-1845,Sandra Spencer,Tech Lead,107,On Project,SaaS
-1846,Erica Cain,Tech Lead,121,On Project,Fintech
-1847,Erika Hart,Project Manager,82,Available,E-commerce
-1848,David Roberts,Tech Lead,124,Available,Fintech
-1849,Patricia Jacobs,Lead Architect,130,Available,Healthcare
-1850,Mrs. Michelle Clark,Lead Architect,111,Available,Logistics
-1851,Stephanie Murray,Lead Architect,146,Available,Logistics
-1852,Micheal Jackson,Junior Developer,72,On Project,Logistics
-1853,Jessica Hart,DevOps Engineer,85,On Project,AI/ML
-1854,Michelle Shaw,DevOps Engineer,106,On Project,Fintech
-1855,Shari Harris,Senior Developer,99,Available,E-commerce
-1856,Leslie Cook,Tech Lead,125,Available,Cybersecurity
-1857,Dylan Martinez,Senior Developer,87,On Project,AI/ML
-1858,Lori Dawson,DevOps Engineer,106,On Project,Retail
-1859,Shawn Hardin,Project Manager,108,On Project,Cybersecurity
-1860,Sara Hardy,Junior Developer,58,Available,Retail
-1861,Bill Hudson,Data Scientist,90,Available,Cybersecurity
-1862,Sarah Mckinney,Tech Lead,134,Available,Logistics
-1863,Maxwell Baker,Tech Lead,118,Available,E-commerce
-1864,Emily Marks,Junior Developer,74,Available,Fintech
-1865,Patricia Cook,Tech Lead,111,Available,AI/ML
-1866,Marcus Saunders,Junior Developer,71,On Project,Healthcare
-1867,Michael Singh,Senior Developer,91,Available,Logistics
-1868,Eric Williams,Lead Architect,127,On Project,SaaS
-1869,Anthony Rogers,DevOps Engineer,109,On Project,Healthcare
-1870,Lauren Wright,Data Scientist,116,Available,Healthcare
-1871,Kevin Fitzgerald,QA Engineer,67,Available,Healthcare
-1872,Chase Mann,Lead Architect,130,Available,E-commerce
-1873,Paige Flores,Junior Developer,70,Available,AI/ML
-1874,Mary Smith,Project Manager,89,Available,Healthcare
-1875,Mark Armstrong,Project Manager,97,On Project,Logistics
-1876,Ruth Lawrence,Lead Architect,130,Available,Retail
-1877,William Dunn,Senior Developer,87,Available,E-commerce
-1878,Erika Holden,Tech Lead,128,Available,Cybersecurity
-1879,Kenneth Horn,Tech Lead,137,Available,E-commerce
-1880,Christopher Yang,Senior Developer,114,Available,Healthcare
-1881,Jennifer Delgado,Junior Developer,62,On Project,Cybersecurity
-1882,Rachel Johnson,QA Engineer,71,Available,Retail
-1883,Kenneth Kaufman,Senior Developer,112,Available,AI/ML
-1884,Vincent Morgan,Junior Developer,56,Available,Fintech
-1885,Todd Castaneda,Senior Developer,117,On Project,Retail
-1886,Michelle Howard,QA Engineer,85,On Project,AI/ML
-1887,Joseph Ingram,Senior Developer,102,Available,Logistics
-1888,Miranda Rodriguez MD,Lead Architect,117,On Project,Cybersecurity
-1889,Laura Brown,QA Engineer,66,Available,AI/ML
-1890,Cheryl Watson,Data Scientist,118,On Project,E-commerce
-1891,Yvonne Thomas,Tech Lead,114,Available,Healthcare
-1892,Patricia Fisher,Senior Developer,89,Available,Cybersecurity
-1893,Jon Myers DDS,Junior Developer,64,Available,Healthcare
-1894,Karen Kennedy,Project Manager,85,Available,SaaS
-1895,Troy Clay,QA Engineer,81,On Project,AI/ML
-1896,Debbie Johnson,QA Engineer,68,On Project,Healthcare
-1897,William Cole,Junior Developer,74,Available,Retail
-1898,Jasmine Cain,QA Engineer,65,Available,Logistics
-1899,Robert Carroll,UI/UX Designer,91,On Project,Fintech
-1900,Ronald Wood,Project Manager,88,Available,Cybersecurity
-1901,Lori Foster,Project Manager,107,Available,AI/ML
-1902,Amy Chavez,Data Scientist,107,Available,Fintech
-1903,Regina Ross,DevOps Engineer,106,Available,Logistics
-1904,Todd Green,Senior Developer,112,Available,Healthcare
-1905,Steven Mills,Data Scientist,113,On Project,Fintech
-1906,Christopher Irwin,UI/UX Designer,86,Available,AI/ML
-1907,James Owens,QA Engineer,67,Available,Healthcare
-1908,Marilyn Washington,Senior Developer,119,Available,Retail
-1909,Angela Rivera,Junior Developer,58,Available,AI/ML
-1910,Virginia Mitchell,Data Scientist,120,Available,Retail
-1911,Colin Harper,Lead Architect,133,On Project,SaaS
-1912,Melanie Gomez,UI/UX Designer,74,Available,Retail
-1913,Kyle Jones,QA Engineer,83,Available,Healthcare
-1914,Pamela Lozano,Data Scientist,109,On Project,Cybersecurity
-1915,Brenda Hooper,Lead Architect,112,Available,Healthcare
-1916,Darren Perez,DevOps Engineer,84,On Project,E-commerce
-1917,Keith Clark,UI/UX Designer,84,Available,AI/ML
-1918,James Wells,UI/UX Designer,65,Available,AI/ML
-1919,Adam Garcia,Senior Developer,114,On Project,Fintech
-1920,Alyssa Allen,Senior Developer,97,Available,Logistics
-1921,Crystal Campbell,Junior Developer,68,On Project,Fintech
-1922,Erin Wilson,QA Engineer,63,On Project,AI/ML
-1923,Suzanne Gill,QA Engineer,75,Available,E-commerce
-1924,John Robertson,QA Engineer,79,On Project,Fintech
-1925,Lee Shaw,QA Engineer,76,Available,Healthcare
-1926,Joan Cannon,UI/UX Designer,68,On Project,Healthcare
-1927,John Diaz,Data Scientist,93,Available,Retail
-1928,Ariel Mays DVM,Tech Lead,133,Available,Cybersecurity
-1929,Kenneth Whitehead,Data Scientist,121,On Project,Logistics
-1930,Angela Lynch,Lead Architect,115,Available,Fintech
-1931,Christina Parker,Senior Developer,105,Available,Healthcare
-1932,Carla Gonzalez,Junior Developer,70,On Project,AI/ML
-1933,Mr. Mitchell Rogers Jr.,Junior Developer,59,On Project,Retail
-1934,Robert Sloan,Senior Developer,97,Available,SaaS
-1935,Krista Buckley,DevOps Engineer,111,Available,AI/ML
-1936,Ralph Hernandez,Data Scientist,116,Available,E-commerce
-1937,Nina Williams,Project Manager,92,On Project,AI/ML
-1938,Douglas Curtis,UI/UX Designer,75,Available,Cybersecurity
-1939,Mrs. Ashley Kelley,Project Manager,80,On Project,Cybersecurity
-1940,Janice Kelly,UI/UX Designer,74,On Project,Retail
-1941,Michael Peters,DevOps Engineer,82,Available,Healthcare
-1942,John Ross,Senior Developer,105,On Project,AI/ML
-1943,Brittany James,Junior Developer,62,On Project,AI/ML
-1944,Brian Copeland,Data Scientist,127,On Project,AI/ML
-1945,Brian Stark,Project Manager,96,On Project,E-commerce
-1946,Ethan Moore,Tech Lead,140,Available,Retail
-1947,Latoya Reyes,UI/UX Designer,79,Available,Retail
-1948,Jessica Hooper,Lead Architect,147,Available,Healthcare
-1949,Mr. James Rodriguez,Junior Developer,74,Available,SaaS
-1950,Maurice Phillips,Data Scientist,98,On Project,Retail
-1951,Jacqueline Ryan,UI/UX Designer,69,Available,Retail
-1952,Alexandria Hamilton,Lead Architect,120,Available,Cybersecurity
-1953,Carrie Martin,DevOps Engineer,91,On Project,Cybersecurity
-1954,Heather Brown,Junior Developer,63,On Project,Logistics
-1955,Michelle Paul,Junior Developer,70,Available,Logistics
-1956,William Turner,QA Engineer,85,Available,SaaS
-1957,Laura Price,Project Manager,89,Available,Cybersecurity
-1958,Sandra Carter,Data Scientist,96,Available,Retail
-1959,Kelli Smith,UI/UX Designer,92,On Project,Retail
-1960,Crystal Lewis,UI/UX Designer,80,Available,E-commerce
-1961,Amber Rodriguez,Data Scientist,107,On Project,Fintech
-1962,Brenda Barnes,Data Scientist,122,On Project,Fintech
-1963,Neil Houston,Junior Developer,58,On Project,Healthcare
-1964,Gabrielle Sanchez,Senior Developer,100,On Project,Retail
-1965,Jessica Porter,Junior Developer,64,On Project,Cybersecurity
-1966,Kenneth Sherman,Lead Architect,148,Available,Cybersecurity
-1967,Yvette Santana,QA Engineer,79,On Project,Retail
-1968,Teresa Edwards,UI/UX Designer,71,Available,SaaS
-1969,Patrick Diaz,DevOps Engineer,92,On Project,Retail
-1970,Anna Wilson,Junior Developer,61,On Project,Fintech
-1971,Nathaniel Jones,QA Engineer,77,Available,AI/ML
-1972,Shane Rivas,Tech Lead,127,Available,E-commerce
-1973,Troy Barry,Lead Architect,119,On Project,AI/ML
-1974,Jennifer Anderson,Senior Developer,92,Available,SaaS
-1975,Joseph Reyes,Tech Lead,134,Available,Logistics
-1976,James Thompson,Senior Developer,112,On Project,SaaS
-1977,Carolyn Thornton,UI/UX Designer,71,On Project,E-commerce
-1978,Nancy Miller,DevOps Engineer,91,Available,Healthcare
-1979,Amanda Hernandez,UI/UX Designer,80,On Project,E-commerce
-1980,Dylan Ellis,Lead Architect,119,Available,Cybersecurity
-1981,Sabrina Wilson,QA Engineer,81,On Project,Fintech
-1982,Brian Rodriguez,Data Scientist,114,Available,Logistics
-1983,Sharon Yates,UI/UX Designer,85,Available,Cybersecurity
-1984,Ruben Richards,QA Engineer,83,Available,E-commerce
-1985,Jacob Brown,UI/UX Designer,75,Available,SaaS
-1986,Patrick Gay,Tech Lead,117,Available,Retail
-1987,Scott Flores,UI/UX Designer,70,Available,E-commerce
-1988,Richard Ray,Tech Lead,115,Available,Logistics
-1989,Elizabeth Gould,Junior Developer,57,Available,Retail
-1990,Andre Leblanc,Project Manager,95,Available,Logistics
-1991,Melvin Cunningham,QA Engineer,72,Available,Cybersecurity
-1992,Brandon Barrera,UI/UX Designer,81,On Project,SaaS
-1993,Sarah Mckee,Junior Developer,56,Available,Cybersecurity
-1994,William Young,Data Scientist,101,Available,Cybersecurity
-1995,George Roberts,QA Engineer,83,Available,Cybersecurity
-1996,Matthew Williams,Tech Lead,120,Available,SaaS
-1997,Michael Meyer,Data Scientist,102,Available,SaaS
-1998,Allen Carter,Project Manager,91,Available,AI/ML
-1999,Sean Perez,Lead Architect,111,Available,Cybersecurity
-2000,Richard Bean,UI/UX Designer,82,Available,E-commerce
-2001,Daniel Cooper,Project Manager,108,Available,Healthcare
-2002,Michael Moore,Senior Developer,93,On Project,Logistics
-2003,Sherri Richard,UI/UX Designer,95,Available,Fintech
-2004,Emily Smith,Tech Lead,106,On Project,Retail
-2005,Erin Miller,Tech Lead,121,Available,Healthcare
-2006,Ryan Smith,DevOps Engineer,81,Available,AI/ML
-2007,Karen Blake,Lead Architect,144,Available,Fintech
-2008,Antonio Pruitt,Junior Developer,62,On Project,Healthcare
-2009,Wendy Le,Lead Architect,117,Available,Retail
-2010,Kathleen Howard,Project Manager,95,Available,AI/ML
-2011,Todd Becker,DevOps Engineer,83,Available,Fintech
-2012,Brian Travis,Tech Lead,124,Available,SaaS
-2013,Joseph Knight,Project Manager,97,On Project,Cybersecurity
-2014,Richard Holmes,Tech Lead,129,Available,Cybersecurity
-2015,Lacey Taylor,Senior Developer,102,Available,E-commerce
-2016,Felicia Smith,Data Scientist,96,On Project,Fintech
-2017,Alexander Harrison,QA Engineer,78,Available,Fintech
-2018,Carl Williamson,UI/UX Designer,76,On Project,Logistics
-2019,Keith Espinoza,QA Engineer,83,Available,Cybersecurity
-2020,Melanie Mcgee,UI/UX Designer,66,On Project,Fintech
-2021,Caitlin Wood,Project Manager,81,Available,Fintech
-2022,Christopher Medina,Data Scientist,109,Available,Healthcare
-2023,Anthony Powell,DevOps Engineer,98,Available,Healthcare
-2024,Mr. Gerald Parker,Data Scientist,119,On Project,E-commerce
-2025,Herbert Cortez,Junior Developer,65,Available,Healthcare
-2026,Summer Gross MD,UI/UX Designer,80,Available,AI/ML
-2027,Sheri Morrow,Lead Architect,127,Available,AI/ML
-2028,Michelle Flores,Junior Developer,59,On Project,AI/ML
-2029,Tyrone Harrington,Data Scientist,101,Available,Retail
-2030,Kristen Turner,Senior Developer,88,On Project,Retail
-2031,Leslie Crane,Data Scientist,108,Available,Cybersecurity
-2032,Karen Wright,Junior Developer,71,Available,SaaS
-2033,Mary Graham,Senior Developer,110,Available,SaaS
-2034,Jacqueline Brown,Senior Developer,86,Available,AI/ML
-2035,Sean Young,UI/UX Designer,89,Available,Logistics
-2036,Cody Christensen,Tech Lead,110,Available,Cybersecurity
-2037,Barbara Fuller,QA Engineer,66,Available,Logistics
-2038,Patrick Brooks,Data Scientist,120,On Project,Healthcare
-2039,Billy Boone,Junior Developer,55,Available,Logistics
-2040,Heather White,Data Scientist,110,Available,SaaS
-2041,David Lynch,Senior Developer,109,On Project,Logistics
-2042,Kimberly Williams,Lead Architect,134,On Project,Cybersecurity
-2043,William Spencer,DevOps Engineer,93,Available,Healthcare
-2044,Michelle Wallace,DevOps Engineer,103,On Project,Healthcare
-2045,Sandra Chavez,Lead Architect,133,Available,E-commerce
-2046,Denise Hampton,Junior Developer,62,Available,Healthcare
-2047,Jesse Jackson,Tech Lead,109,Available,E-commerce
-2048,Steven Howard,Senior Developer,100,Available,SaaS
-2049,Victor Maxwell,Data Scientist,125,Available,SaaS
-2050,Desiree Thomas MD,Lead Architect,124,Available,AI/ML
-2051,Ian Jones,Project Manager,108,Available,Logistics
-2052,Michael Coleman DDS,Senior Developer,103,Available,E-commerce
-2053,John Palmer,Data Scientist,113,On Project,SaaS
-2054,Cheryl Schroeder,Senior Developer,111,On Project,Logistics
-2055,Amber Jackson,Tech Lead,139,Available,Logistics
-2056,Seth Juarez,Senior Developer,104,Available,AI/ML
-2057,Paula Brown,UI/UX Designer,82,Available,AI/ML
-2058,Cassandra Jacobs,DevOps Engineer,82,Available,E-commerce
-2059,David Becker,UI/UX Designer,84,On Project,Cybersecurity
-2060,Dr. Monica White,DevOps Engineer,112,On Project,Fintech
-2061,Michelle Reeves,DevOps Engineer,107,Available,Fintech
-2062,April Powell,Senior Developer,85,Available,E-commerce
-2063,Stephanie Knight,Data Scientist,92,Available,Logistics
-2064,Dennis Cortez,DevOps Engineer,95,Available,Retail
-2065,Ashley Oneill,Lead Architect,150,On Project,Retail
-2066,Candace Hill,Data Scientist,107,Available,E-commerce
-2067,Terry Brown,Junior Developer,64,Available,Logistics
-2068,Dawn Stewart,QA Engineer,72,Available,Fintech
-2069,Nicole Trevino,Project Manager,103,On Project,Retail
-2070,Melissa Dennis,Lead Architect,139,Available,SaaS
-2071,John Fleming,Senior Developer,91,Available,Logistics
-2072,Rebecca Smith,Lead Architect,115,Available,Fintech
-2073,Gregory Kelly,Lead Architect,123,On Project,Fintech
-2074,Michael Williams,QA Engineer,76,On Project,AI/ML
-2075,Tyrone Randall,Lead Architect,120,Available,Logistics
-2076,Robert Bates,DevOps Engineer,93,On Project,SaaS
-2077,Ethan Stanley,Project Manager,85,Available,Cybersecurity
-2078,Laura Vasquez,Data Scientist,100,Available,E-commerce
-2079,Desiree Walker,UI/UX Designer,86,Available,Cybersecurity
-2080,David Lopez,Tech Lead,137,Available,Cybersecurity
-2081,Amanda Guzman,Project Manager,110,Available,AI/ML
-2082,Michael Rodriguez,DevOps Engineer,105,Available,Healthcare
-2083,Donna Ray,Junior Developer,68,On Project,Retail
-2084,Tara Farrell,QA Engineer,66,On Project,Healthcare
-2085,Seth Perez,Junior Developer,62,On Project,AI/ML
-2086,Brenda Powell,Senior Developer,104,Available,Healthcare
-2087,Mary Wilkins,DevOps Engineer,87,Available,AI/ML
-2088,Ashley Vasquez,Senior Developer,87,Available,SaaS
-2089,Nicholas Tran,QA Engineer,82,Available,Logistics
-2090,Michael Neal,UI/UX Designer,77,Available,SaaS
-2091,Francis Simmons,QA Engineer,82,Available,Logistics
-2092,Felicia Marshall,Project Manager,84,Available,Logistics
-2093,Bryan Cain,Data Scientist,91,Available,Retail
-2094,David Reed,Project Manager,104,Available,SaaS
-2095,Robert Hansen,Senior Developer,98,Available,Cybersecurity
-2096,John Baker,Junior Developer,58,Available,E-commerce
-2097,Annette Houston DDS,QA Engineer,66,On Project,E-commerce
-2098,Laura Marsh,DevOps Engineer,80,On Project,Fintech
-2099,Jason Berry,UI/UX Designer,81,On Project,Cybersecurity
-2100,Monica Smith,UI/UX Designer,93,Available,Logistics
-2101,Vickie Walker,Junior Developer,59,On Project,Fintech
-2102,Nicole Taylor,Lead Architect,130,Available,Logistics
-2103,Linda Farmer,Junior Developer,70,Available,Retail
-2104,Ann Galvan,UI/UX Designer,86,Available,E-commerce
-2105,Krista Watson,Senior Developer,99,Available,AI/ML
-2106,Alicia Weeks,Data Scientist,121,Available,SaaS
-2107,Helen Wang,UI/UX Designer,91,Available,E-commerce
-2108,Charles Miller,Lead Architect,144,On Project,Cybersecurity
-2109,Scott Morgan,Project Manager,80,Available,AI/ML
-2110,Nancy Martin,Junior Developer,59,Available,Retail
-2111,Stacie Robles,Senior Developer,96,Available,Fintech
-2112,Samuel Lawson,Data Scientist,129,On Project,Healthcare
-2113,Kyle Evans,Junior Developer,66,Available,Healthcare
-2114,Elizabeth Strickland,Senior Developer,91,Available,Fintech
-2115,Amanda Rodriguez,DevOps Engineer,100,Available,SaaS
-2116,Danny Ray,UI/UX Designer,89,Available,AI/ML
-2117,Jaime Preston,Lead Architect,130,On Project,Fintech
-2118,Austin Morales,UI/UX Designer,79,Available,Logistics
-2119,Melissa Watkins,Tech Lead,136,On Project,Healthcare
-2120,Todd Stewart,Lead Architect,150,Available,Logistics
-2121,Courtney Stevens,Tech Lead,127,Available,E-commerce
-2122,John Calhoun,DevOps Engineer,96,Available,Logistics
-2123,James Gamble,Junior Developer,66,Available,Healthcare
-2124,Crystal Sherman,Lead Architect,116,Available,SaaS
-2125,Jeffrey Smith,UI/UX Designer,67,On Project,Cybersecurity
-2126,Dave Lopez,Data Scientist,100,Available,Fintech
-2127,Angela Bryant,Data Scientist,102,Available,SaaS
-2128,Shane Taylor,Lead Architect,120,Available,Healthcare
-2129,Tonya Gonzalez,Lead Architect,144,Available,Fintech
-2130,Martha Munoz,Tech Lead,107,Available,Healthcare
-2131,Tina Miller,UI/UX Designer,79,Available,Fintech
-2132,Cody Miller,Tech Lead,109,Available,Healthcare
-2133,Patricia Ortiz,Data Scientist,113,Available,Fintech
-2134,Andrew Sherman,Junior Developer,67,Available,Healthcare
-2135,Tammy Sherman,QA Engineer,63,On Project,SaaS
-2136,Raven Thomas,Junior Developer,73,Available,Healthcare
-2137,Ashley Anderson,QA Engineer,77,Available,E-commerce
-2138,Michelle Chen,QA Engineer,82,Available,Logistics
-2139,Pamela White,Senior Developer,110,Available,SaaS
-2140,Zachary Johnson,Junior Developer,75,Available,AI/ML
-2141,John Bowman,QA Engineer,71,Available,Cybersecurity
-2142,Laura Wilson,Project Manager,102,On Project,Retail
-2143,Dawn Bernard,Junior Developer,60,Available,E-commerce
-2144,Dawn Smith,Project Manager,110,Available,Fintech
-2145,Anthony Knox,DevOps Engineer,113,On Project,E-commerce
-2146,Donald Rodriguez,Lead Architect,130,On Project,Logistics
-2147,Donna Moore,Senior Developer,87,Available,Fintech
-2148,Cynthia Fuller,UI/UX Designer,67,On Project,Logistics
-2149,Christopher Waters,DevOps Engineer,88,Available,Logistics
-2150,Megan Boyer,Project Manager,106,Available,Cybersecurity
-2151,James Alvarez,Project Manager,110,Available,Logistics
-2152,Victor Howe,Tech Lead,115,On Project,SaaS
-2153,Lauren Scott,Data Scientist,120,Available,Retail
-2154,Reginald Mahoney,Project Manager,96,On Project,AI/ML
-2155,Kerry Robinson,Junior Developer,62,Available,Healthcare
-2156,Joshua Rose DDS,Senior Developer,119,On Project,Healthcare
-2157,Randy Wilson,Senior Developer,88,Available,SaaS
-2158,Louis Macdonald,Senior Developer,109,Available,Healthcare
-2159,Roger Thompson,Lead Architect,140,On Project,SaaS
-2160,Thomas Foster,Data Scientist,105,On Project,Cybersecurity
-2161,David Davis,QA Engineer,72,On Project,Fintech
-2162,Jeff Walsh,DevOps Engineer,99,Available,Fintech
-2163,Nichole Pham,Senior Developer,89,On Project,AI/ML
-2164,Timothy Cobb,QA Engineer,83,Available,Healthcare
-2165,Rachael Baird,Project Manager,97,On Project,Fintech
-2166,Ryan Haynes,DevOps Engineer,89,Available,SaaS
-2167,Bryan Patterson,Junior Developer,60,On Project,Fintech
-2168,Jay White,DevOps Engineer,106,Available,SaaS
-2169,Mr. Justin Francis,Data Scientist,91,Available,Retail
-2170,Brittany Morris,QA Engineer,70,Available,E-commerce
-2171,Dwayne Burke,Lead Architect,146,Available,Cybersecurity
-2172,Kara Hughes,Project Manager,95,Available,Fintech
-2173,Stephen Mills,Senior Developer,109,Available,SaaS
-2174,Donald Vasquez,Tech Lead,104,Available,Healthcare
-2175,Diana Austin,Project Manager,83,Available,Healthcare
-2176,Andre Clark,Project Manager,80,Available,AI/ML
-2177,Michelle Murillo,Junior Developer,68,On Project,E-commerce
-2178,Jean Mccormick,Senior Developer,109,Available,Logistics
-2179,Denise Zuniga,Data Scientist,118,Available,Retail
-2180,Jane Jordan,Junior Developer,63,Available,Healthcare
-2181,Heather Torres,Senior Developer,95,On Project,Healthcare
-2182,David Ryan,DevOps Engineer,91,On Project,Cybersecurity
-2183,Francisco Simmons,Tech Lead,117,Available,Healthcare
-2184,Jonathan Simmons,Tech Lead,123,On Project,SaaS
-2185,Alexandra French,Junior Developer,68,Available,Cybersecurity
-2186,Cheryl Coleman,Tech Lead,133,On Project,Cybersecurity
-2187,Katherine Castro,UI/UX Designer,70,Available,Cybersecurity
-2188,Kristen Nash,DevOps Engineer,80,On Project,Logistics
-2189,Sharon Brown,Junior Developer,64,Available,Retail
-2190,Beverly Henderson,QA Engineer,76,Available,Cybersecurity
-2191,Travis Wolf,Data Scientist,112,Available,E-commerce
-2192,Jessica Smith,DevOps Engineer,87,Available,Logistics
-2193,Mrs. Sabrina Johnson,QA Engineer,60,Available,Cybersecurity
-2194,Veronica Edwards,Senior Developer,116,Available,AI/ML
-2195,Gregory Reid,UI/UX Designer,75,Available,Fintech
-2196,Katie Lindsey,Data Scientist,116,Available,Healthcare
-2197,Eric Collins,Data Scientist,93,On Project,Healthcare
-2198,Sandra Todd,Data Scientist,128,On Project,E-commerce
-2199,William Reyes,Junior Developer,74,Available,E-commerce
-2200,Mr. Benjamin Landry,DevOps Engineer,83,On Project,Logistics
+EmployeeID,Name,Age,Role,Cost_per_Hour,Availability,Domain_Expertise,Skills
+1001,Kimberly Foster,54,Project Manager,99,Available,SaaS,"PostgreSQL,Python"
+1002,William Goodman,43,Senior Developer,115,On Project,SaaS,"Angular,PostgreSQL,Python,Kubernetes"
+1003,Christine Jimenez,22,DevOps Engineer,96,On Project,Healthcare,"Azure,Java,TensorFlow"
+1004,Kyle Beasley,60,QA Engineer,82,On Project,E-commerce,"Vue.js,MongoDB"
+1005,Miranda Oconnor,28,DevOps Engineer,88,Available,SaaS,"Angular,AWS,Go,Kubernetes"
+1006,Michele Smith,35,Tech Lead,109,On Project,Logistics,"GCP,PostgreSQL,Kafka,Java"
+1007,Jacqueline Saunders,23,DevOps Engineer,86,Available,Logistics,"Java,Kafka,React,GCP"
+1008,Hannah Garcia,28,Lead Architect,138,Available,E-commerce,"Java,SQL,GCP,MongoDB"
+1009,Michael Foster,23,Data Scientist,92,Available,Fintech,"Python,PostgreSQL,Java"
+1010,John Wilson,22,Senior Developer,117,Available,SaaS,"Kubernetes,Go,PostgreSQL,Python"
+1011,Robert Graham,36,Senior Developer,94,On Project,AI/ML,"PyTorch,Spark,TensorFlow,Kubernetes"
+1012,Stephen Nielsen,28,Tech Lead,138,On Project,AI/ML,"Python,PyTorch,Kubernetes,TensorFlow"
+1013,Paul Harris,37,QA Engineer,71,Available,Logistics,"Docker,Python,React"
+1014,Alexander Hunt,22,Junior Developer,56,Available,E-commerce,"MongoDB,Java,SQL"
+1015,Tina Thomas,24,QA Engineer,60,Available,Fintech,"AWS,PostgreSQL,Java,React"
+1016,Anthony Brown,60,Junior Developer,56,Available,AI/ML,"TensorFlow,PyTorch,Kubernetes,Spark"
+1017,Cynthia Harris,51,UI/UX Designer,73,Available,Fintech,"Kubernetes,Python"
+1018,William Walker,56,Senior Developer,86,On Project,Retail,"React,Kafka,SQL"
+1019,Emily Rollins,47,QA Engineer,79,Available,Logistics,"GCP,Python,Kafka,Docker"
+1020,Heather Fisher,46,Junior Developer,62,Available,E-commerce,"GCP,Vue.js,Java,SQL"
+1021,Cameron Ortiz,37,DevOps Engineer,105,On Project,E-commerce,"GCP,Java,React,MongoDB"
+1022,Joshua Mack,51,QA Engineer,79,Available,Fintech,"Java,Python,PostgreSQL"
+1023,Julie Tran,51,QA Engineer,66,Available,Fintech,"AWS,React,PostgreSQL"
+1024,Kenneth Reynolds,41,Lead Architect,133,On Project,Logistics,"Docker,GCP"
+1025,Joshua Bradley,38,Tech Lead,101,Available,Healthcare,"SQL,TensorFlow,Java"
+1026,Wayne Thomas,43,Project Manager,93,Available,Cybersecurity,"Python,Go"
+1027,Misty Watson,60,DevOps Engineer,91,Available,E-commerce,"Docker,SQL"
+1028,Vicki Burke,59,Data Scientist,102,Available,Retail,"React,MongoDB,Azure,SQL"
+1029,Christina Gonzalez,27,Lead Architect,115,Available,Retail,"SQL,Kafka,React,Azure"
+1030,Kathryn Weaver,57,Junior Developer,64,On Project,AI/ML,"Python,Kubernetes,AWS,PyTorch"
+1031,Lindsey Farrell,31,Project Manager,91,Available,Healthcare,"Python,Docker"
+1032,Melinda Martin,31,UI/UX Designer,67,On Project,Cybersecurity,"Python,Kubernetes,AWS,Bash"
+1033,Jeffrey Lane,38,DevOps Engineer,91,On Project,SaaS,"Angular,Python,Go,PostgreSQL"
+1034,Perry Ward,41,UI/UX Designer,89,Available,Fintech,"Python,AWS"
+1035,John Hogan,49,Junior Developer,56,Available,Retail,"Java,Azure"
+1036,Ariana Jones,44,DevOps Engineer,91,On Project,Retail,"MongoDB,Azure,SQL"
+1037,Veronica West,41,Project Manager,89,On Project,E-commerce,"Docker,Vue.js,Java"
+1038,Michelle Harris,25,UI/UX Designer,90,Available,AI/ML,"Kubernetes,SQL"
+1039,Kristin Brown,31,Lead Architect,144,Available,Cybersecurity,"Bash,Python,AWS"
+1040,Norman Daniel,33,DevOps Engineer,101,On Project,Retail,"Kafka,Java,SQL"
+1041,Kristi Mcdonald,23,Project Manager,91,Available,Healthcare,"Java,TensorFlow"
+1042,Gary Pierce,51,UI/UX Designer,74,On Project,Fintech,"AWS,Kafka,React"
+1043,Shirley Watson,51,UI/UX Designer,80,Available,Cybersecurity,"Bash,Kubernetes"
+1044,Heather Hall,48,Senior Developer,120,Available,E-commerce,"Java,SQL,Docker"
+1045,Danielle Rush,30,DevOps Engineer,81,On Project,Retail,"MongoDB,Kafka,React"
+1046,Sherry Pierce,37,Junior Developer,69,Available,AI/ML,"AWS,PyTorch,Kubernetes"
+1047,Tiffany Young,56,Data Scientist,124,Available,Logistics,"GCP,PostgreSQL,Kafka,Python"
+1048,Patricia Anderson,37,Tech Lead,121,Available,Healthcare,"FHIR,Java,TensorFlow"
+1049,Anthony Lowe,25,Lead Architect,111,On Project,Cybersecurity,"Python,AWS"
+1050,Mark Carrillo,26,DevOps Engineer,112,Available,AI/ML,"Spark,TensorFlow"
+1051,Mary Duran,51,QA Engineer,70,Available,Cybersecurity,"Kubernetes,AWS"
+1052,Brooke Price,55,Senior Developer,105,Available,SaaS,"AWS,PostgreSQL,Python"
+1053,Wesley Bryan,55,Data Scientist,129,Available,Cybersecurity,"AWS,Bash"
+1054,Thomas Gonzalez,44,Senior Developer,106,Available,SaaS,"Kubernetes,Angular"
+1055,Jordan Perry,57,Lead Architect,112,Available,AI/ML,"Kubernetes,TensorFlow,PyTorch"
+1056,Gary White,26,Senior Developer,105,Available,E-commerce,"SQL,GCP,React"
+1057,Christopher Hall,35,Senior Developer,89,On Project,Retail,"Kafka,MongoDB,SQL"
+1058,Mary Brown,30,Junior Developer,67,On Project,Logistics,"Kafka,GCP,PostgreSQL,Docker"
+1059,Lisa Bowen,45,Lead Architect,111,On Project,Retail,"Java,Kafka,SQL"
+1060,Karen Gonzales,54,Data Scientist,107,Available,Logistics,"PostgreSQL,Kafka"
+1061,Brooke Andrews,55,Lead Architect,110,On Project,AI/ML,"PyTorch,Python,SQL,Kubernetes"
+1062,John Gonzales,32,Tech Lead,133,Available,Logistics,"Docker,Kafka"
+1063,Dustin Acosta,49,QA Engineer,72,Available,Fintech,"Java,Kubernetes,React,Kafka"
+1064,Kimberly Orr,50,Senior Developer,114,Available,Cybersecurity,"Bash,AWS,Python,Elasticsearch"
+1065,Donald Aguirre,39,Junior Developer,69,On Project,Fintech,"AWS,Kubernetes,PostgreSQL,Java"
+1066,Katie Phelps,58,Lead Architect,134,Available,Cybersecurity,"Go,AWS,Python,Bash"
+1067,Bryan Vaughan,38,Project Manager,87,Available,Logistics,"Docker,Kafka,PostgreSQL"
+1068,Catherine Watson,31,DevOps Engineer,100,On Project,E-commerce,"MongoDB,Java,GCP"
+1069,Jonathan Moore,22,UI/UX Designer,85,On Project,E-commerce,"GCP,SQL,Docker,Vue.js"
+1070,Brian Richards,47,Lead Architect,146,On Project,E-commerce,"MongoDB,Vue.js,React,Docker"
+1071,Timothy Winters,26,Junior Developer,57,Available,Cybersecurity,"Python,Bash"
+1072,Michael Young,37,Project Manager,90,Available,AI/ML,"Kubernetes,AWS,Spark"
+1073,Christopher Coleman,39,UI/UX Designer,66,Available,Logistics,"GCP,React,Docker,Java"
+1074,William Scott,34,Lead Architect,114,Available,SaaS,"Go,Kubernetes,Angular,AWS"
+1075,Adam Jones,53,QA Engineer,83,On Project,Healthcare,"FHIR,TensorFlow,SQL"
+1076,Molly Anderson,59,UI/UX Designer,95,Available,Fintech,"PostgreSQL,Python,Kubernetes"
+1077,Shannon Sutton,48,Senior Developer,109,Available,SaaS,"AWS,Go,Angular,Python"
+1078,Robert Grimes,24,Lead Architect,118,Available,Fintech,"React,AWS,Kafka,Java"
+1079,Stanley Thompson,22,Lead Architect,128,Available,SaaS,"Kubernetes,AWS"
+1080,Laura Johnson,42,Tech Lead,116,Available,AI/ML,"Spark,SQL,PyTorch"
+1081,Mindy Bernard,47,Lead Architect,115,Available,AI/ML,"TensorFlow,SQL"
+1082,Joan Clayton,24,UI/UX Designer,66,Available,E-commerce,"SQL,MongoDB"
+1083,Brian Christensen,44,Lead Architect,134,Available,SaaS,"Python,Go"
+1084,Melissa Ellis,31,Data Scientist,125,Available,Fintech,"AWS,Kubernetes,Python"
+1085,Clayton Kelley,58,Tech Lead,134,On Project,Retail,"Azure,React"
+1086,Gabriel Norris,26,Data Scientist,116,Available,E-commerce,"Docker,Java"
+1087,Amber Valencia,52,Tech Lead,101,On Project,Retail,"MongoDB,Kafka,React,SQL"
+1088,Michael Andrews,47,QA Engineer,83,Available,AI/ML,"SQL,PyTorch,AWS,Kubernetes"
+1089,Antonio Butler,56,Junior Developer,58,Available,AI/ML,"AWS,Spark,Python,SQL"
+1090,Richard Bradley,45,Junior Developer,72,Available,Retail,"React,Java"
+1091,Amanda Brown,34,Data Scientist,113,On Project,E-commerce,"MongoDB,Java,Vue.js,Docker"
+1092,Jason Bass,48,UI/UX Designer,65,On Project,SaaS,"Python,AWS"
+1093,Timothy Stark,31,Lead Architect,131,On Project,Cybersecurity,"Kubernetes,Bash"
+1094,Clifford Johnson,40,Junior Developer,72,On Project,Logistics,"Docker,GCP,Python"
+1095,Samantha Lewis,33,Project Manager,87,Available,Healthcare,"SQL,Azure,Java,FHIR"
+1096,Kristina Carey,49,Lead Architect,138,Available,Fintech,"Kubernetes,Kafka"
+1097,Mark Mcpherson,45,Senior Developer,120,Available,E-commerce,"SQL,GCP,MongoDB"
+1098,William Johnson,55,Senior Developer,117,Available,SaaS,"PostgreSQL,Kubernetes,Python"
+1099,John Olson,53,Project Manager,86,Available,E-commerce,"Docker,Java,GCP,MongoDB"
+1100,Sandra Mclaughlin,38,Lead Architect,127,Available,AI/ML,"SQL,Kubernetes,Python,Spark"
+1101,David Rogers,27,QA Engineer,64,Available,Retail,"React,Kafka,MongoDB,SQL"
+1102,Adam Woodard,23,Tech Lead,127,On Project,AI/ML,"TensorFlow,AWS"
+1103,Catherine Delacruz,28,QA Engineer,80,On Project,Cybersecurity,"Bash,AWS,Python"
+1104,Wendy Wilson,34,UI/UX Designer,73,Available,SaaS,"Angular,Kubernetes,Python"
+1105,Cassandra Bauer,27,Project Manager,84,Available,SaaS,"Go,Python,Kubernetes,PostgreSQL"
+1106,Christopher King,50,DevOps Engineer,82,On Project,SaaS,"AWS,Angular"
+1107,Laura Stafford,57,Junior Developer,64,Available,Logistics,"Docker,GCP,Java"
+1108,Matthew Atkins,48,Project Manager,84,On Project,Retail,"React,SQL,Java"
+1109,Sherry Jordan,28,Data Scientist,120,Available,Logistics,"React,Docker,Java,Kafka"
+1110,Amanda Todd,36,UI/UX Designer,94,Available,Cybersecurity,"AWS,Kubernetes"
+1111,Gary Hall,56,Project Manager,88,Available,Cybersecurity,"Python,Elasticsearch,AWS"
+1112,Stacey Murray,34,Senior Developer,94,Available,Cybersecurity,"Go,AWS,Elasticsearch,Bash"
+1113,Pamela Jones,44,UI/UX Designer,76,On Project,Logistics,"React,PostgreSQL,Java,Docker"
+1114,Taylor Barajas,49,QA Engineer,81,Available,Healthcare,"Azure,Docker,Java"
+1115,Christopher Hoffman,58,Data Scientist,92,On Project,E-commerce,"GCP,MongoDB,Vue.js"
+1116,Jennifer Morton,55,Junior Developer,62,On Project,SaaS,"Angular,AWS,Python,PostgreSQL"
+1117,Michelle Nixon,38,QA Engineer,65,Available,E-commerce,"React,GCP"
+1118,Jordan Thompson,26,Tech Lead,119,Available,E-commerce,"React,SQL,Vue.js"
+1119,Ronald Stephens,43,Junior Developer,74,Available,Retail,"Azure,Kafka"
+1120,Ryan Paul,59,Lead Architect,124,Available,SaaS,"Go,Angular"
+1121,Ashley Jones,31,QA Engineer,76,Available,Fintech,"PostgreSQL,AWS,React,Java"
+1122,Taylor Davis,31,Data Scientist,103,Available,Fintech,"Kafka,Kubernetes"
+1123,Cynthia Douglas,23,Tech Lead,106,Available,Fintech,"Java,Kubernetes,React,PostgreSQL"
+1124,Jenna Reed DDS,33,Tech Lead,121,Available,E-commerce,"MongoDB,React,Docker,SQL"
+1125,April Kirby,44,Project Manager,93,On Project,Healthcare,"Azure,TensorFlow,Python"
+1126,Tracy Thomas,30,Project Manager,104,Available,Cybersecurity,"Elasticsearch,Bash,Python"
+1127,John Smith,29,QA Engineer,82,On Project,Cybersecurity,"Kubernetes,Elasticsearch"
+1128,Roberto Cook,54,Data Scientist,99,On Project,SaaS,"PostgreSQL,Go"
+1129,Sarah Sullivan,51,Senior Developer,85,Available,Fintech,"Python,Kubernetes,Kafka"
+1130,Christopher Brown,55,Lead Architect,138,Available,Logistics,"Kafka,React,GCP,Java"
+1131,Kyle Hernandez,31,Project Manager,97,On Project,Logistics,"Python,Docker"
+1132,Andrea Brown,59,DevOps Engineer,106,On Project,Retail,"Kafka,SQL"
+1133,Jessica Smith,48,Junior Developer,60,Available,Fintech,"Python,Kubernetes,Java,React"
+1134,Kristin Holland,26,Tech Lead,108,On Project,Fintech,"React,AWS,Java,Python"
+1135,Joseph Burke,40,Senior Developer,114,On Project,AI/ML,"Spark,PyTorch,TensorFlow,Kubernetes"
+1136,Justin Lee,37,Data Scientist,127,Available,Logistics,"GCP,Kafka"
+1137,Ashley Rivera DVM,46,UI/UX Designer,81,Available,Cybersecurity,"Bash,Elasticsearch,Python"
+1138,Kelly Escobar,50,QA Engineer,81,On Project,Cybersecurity,"Kubernetes,Bash,AWS"
+1139,Jennifer West,56,QA Engineer,78,Available,AI/ML,"TensorFlow,PyTorch,Spark,AWS"
+1140,Andrew Harvey,23,UI/UX Designer,72,Available,SaaS,"Kubernetes,Go,Python"
+1141,William Barrera,55,Lead Architect,128,On Project,AI/ML,"PyTorch,Python,TensorFlow"
+1142,Mark Irwin,44,Data Scientist,119,Available,Healthcare,"TensorFlow,Docker,Python"
+1143,Tiffany Chandler,45,DevOps Engineer,82,On Project,Retail,"Azure,SQL,MongoDB"
+1144,Kevin Brown,42,UI/UX Designer,84,Available,E-commerce,"SQL,Docker,React,MongoDB"
+1145,Kathy Benjamin,53,Tech Lead,114,Available,E-commerce,"Docker,React,MongoDB,Vue.js"
+1146,Steven Williams,37,Lead Architect,124,On Project,SaaS,"PostgreSQL,Go,Python,AWS"
+1147,Jill Flores,30,Junior Developer,72,Available,Logistics,"Java,Docker,Kafka,React"
+1148,Katie Green,47,Senior Developer,92,On Project,Fintech,"React,Java"
+1149,Rebecca Garza,59,Lead Architect,131,Available,Retail,"Azure,Kafka,MongoDB"
+1150,Damon Elliott,37,QA Engineer,68,On Project,Logistics,"React,PostgreSQL,GCP,Python"
+1151,Joan Johnson,60,Lead Architect,150,Available,Cybersecurity,"Go,Bash,Elasticsearch"
+1152,Jennifer Lopez,38,Junior Developer,72,Available,Logistics,"Java,Docker,Python"
+1153,Kristy Orr,23,Junior Developer,64,On Project,Fintech,"Python,Kafka,PostgreSQL,Kubernetes"
+1154,Tammy Green,27,DevOps Engineer,92,On Project,Fintech,"Java,React,Kubernetes,PostgreSQL"
+1155,Mark Rivera,53,Data Scientist,91,Available,SaaS,"Angular,PostgreSQL"
+1156,Phillip Jackson,51,Lead Architect,118,Available,Retail,"MongoDB,Kafka,Azure"
+1157,Jennifer Woods,47,Tech Lead,116,Available,Cybersecurity,"Elasticsearch,AWS,Bash"
+1158,Nicole Davidson,58,Senior Developer,115,Available,Retail,"Azure,MongoDB,Kafka,SQL"
+1159,Sarah Ramos,31,QA Engineer,71,Available,Retail,"SQL,Java,Kafka"
+1160,Debra Robbins,58,QA Engineer,78,Available,E-commerce,"MongoDB,SQL,React"
+1161,Cesar Mullen,24,DevOps Engineer,97,Available,Healthcare,"Azure,TensorFlow"
+1162,Daniel Wilson,39,Junior Developer,63,Available,Retail,"MongoDB,React,Java"
+1163,Scott Phillips,39,Junior Developer,59,On Project,AI/ML,"Python,SQL,TensorFlow"
+1164,Chad Paul,33,QA Engineer,67,Available,Healthcare,"FHIR,SQL"
+1165,David Maldonado,44,Tech Lead,105,Available,E-commerce,"MongoDB,Java"
+1166,Glenn Mooney,55,QA Engineer,63,Available,Logistics,"Python,PostgreSQL,GCP"
+1167,Stacy Price,56,QA Engineer,78,On Project,Healthcare,"Python,Docker,SQL"
+1168,Adrian Benson,44,Data Scientist,94,Available,E-commerce,"React,Java,GCP"
+1169,Ronnie Estrada,55,DevOps Engineer,85,Available,Retail,"MongoDB,Azure"
+1170,Mark Cox,55,UI/UX Designer,95,Available,Fintech,"Kubernetes,React"
+1171,Nicole Ewing,59,Junior Developer,56,Available,Healthcare,"TensorFlow,Python"
+1172,Ryan Ferguson,42,Senior Developer,115,Available,AI/ML,"SQL,PyTorch"
+1173,Brian Poole,48,Tech Lead,139,Available,Logistics,"Python,PostgreSQL"
+1174,Jill Freeman,37,Project Manager,108,Available,Logistics,"React,Java,Python"
+1175,Andrea Chambers,58,Project Manager,90,Available,Logistics,"Java,Kafka,PostgreSQL"
+1176,Randy Perez,50,Tech Lead,114,On Project,SaaS,"Angular,AWS"
+1177,David Hernandez,50,QA Engineer,64,Available,Healthcare,"Azure,Docker"
+1178,Diana Roberts,43,Project Manager,97,Available,E-commerce,"Vue.js,MongoDB"
+1179,Kimberly Donaldson,50,Project Manager,104,Available,Cybersecurity,"Python,Elasticsearch,Kubernetes,Go"
+1180,Breanna Johnson,49,Tech Lead,132,Available,Cybersecurity,"Python,Bash,Kubernetes,AWS"
+1181,Kelly Martinez,41,Project Manager,91,Available,E-commerce,"GCP,Vue.js"
+1182,Michelle Smith,35,Lead Architect,117,Available,Retail,"React,Azure"
+1183,Tanner Ferrell,38,Lead Architect,112,Available,Logistics,"Python,Kafka,GCP,Java"
+1184,Dawn Christensen,58,Tech Lead,140,Available,Healthcare,"Java,Azure,Docker"
+1185,Bradley Palmer,49,Project Manager,95,Available,E-commerce,"React,Vue.js"
+1186,David Nguyen,51,Project Manager,94,Available,SaaS,"Angular,PostgreSQL,Kubernetes,AWS"
+1187,Melinda Gutierrez,50,Project Manager,93,Available,AI/ML,"Spark,SQL,Kubernetes"
+1188,Mary Conrad,36,Data Scientist,102,Available,Healthcare,"Azure,Docker,Python,Java"
+1189,James Reeves,22,UI/UX Designer,80,Available,AI/ML,"Spark,AWS"
+1190,Lance Gomez,57,Data Scientist,110,Available,Logistics,"React,Docker"
+1191,Michael Williams,31,Data Scientist,128,On Project,Fintech,"AWS,Java"
+1192,Mr. Jacob Butler,31,DevOps Engineer,88,Available,Cybersecurity,"Python,AWS"
+1193,Haley Cameron,60,Senior Developer,88,Available,Cybersecurity,"Elasticsearch,Go,Python,Kubernetes"
+1194,Kimberly Boyer,47,UI/UX Designer,95,On Project,Fintech,"AWS,Python,PostgreSQL"
+1195,Jason Gill,51,Senior Developer,111,Available,AI/ML,"PyTorch,AWS,Kubernetes,SQL"
+1196,Jerry Reed,34,UI/UX Designer,74,Available,Retail,"React,MongoDB,Java,Azure"
+1197,Heather Bright,33,DevOps Engineer,87,Available,E-commerce,"GCP,SQL,MongoDB"
+1198,Michael Lopez,46,Project Manager,100,On Project,AI/ML,"AWS,Kubernetes,SQL"
+1199,Katie Davis,35,QA Engineer,76,Available,Logistics,"Python,React"
+1200,Andrew Johns,23,DevOps Engineer,94,Available,SaaS,"PostgreSQL,Python,Angular,Kubernetes"
+1201,Stacey Russell,32,Lead Architect,128,On Project,Logistics,"Java,PostgreSQL,Docker"
+1202,Micheal Aguilar,35,Junior Developer,56,Available,E-commerce,"MongoDB,Docker,GCP,Vue.js"
+1203,Samantha Henderson,39,QA Engineer,71,Available,E-commerce,"GCP,MongoDB,Vue.js"
+1204,Hunter Day,46,QA Engineer,74,On Project,Fintech,"AWS,PostgreSQL,Python"
+1205,Casey Edwards,36,DevOps Engineer,85,Available,Healthcare,"Java,Python"
+1206,Nicole Phillips,35,DevOps Engineer,84,Available,E-commerce,"SQL,GCP"
+1207,Jason Mccoy,35,DevOps Engineer,93,Available,Healthcare,"Python,FHIR,Azure"
+1208,Robert Hancock,46,Data Scientist,104,Available,Cybersecurity,"Go,Kubernetes,Python"
+1209,Richard Lopez,49,DevOps Engineer,96,Available,Cybersecurity,"Elasticsearch,Go"
+1210,Krista Ward,47,Lead Architect,140,On Project,Logistics,"Java,React"
+1211,Jamie Baker,33,Tech Lead,115,Available,Logistics,"GCP,Java"
+1212,Christian Norman,34,Tech Lead,132,On Project,Cybersecurity,"Go,Elasticsearch,Python"
+1213,Jacqueline Simon,51,DevOps Engineer,88,On Project,Retail,"Azure,Kafka,MongoDB"
+1214,Tara Russell,51,UI/UX Designer,82,Available,Fintech,"PostgreSQL,Kafka,React"
+1215,Steven Walker,47,UI/UX Designer,72,Available,Logistics,"Java,React"
+1216,Kathleen Williams,45,UI/UX Designer,75,Available,SaaS,"Go,Kubernetes,Angular,Python"
+1217,Monica Moore,52,Junior Developer,62,Available,Logistics,"Docker,Java,Kafka"
+1218,Jenna Brown,33,Tech Lead,133,Available,Healthcare,"Azure,Java"
+1219,Donna Blackwell,34,Data Scientist,120,Available,E-commerce,"SQL,Vue.js,Docker,React"
+1220,Melissa Stewart,41,Junior Developer,72,Available,Healthcare,"SQL,Python"
+1221,Victor Smith,28,QA Engineer,62,On Project,E-commerce,"SQL,Vue.js,MongoDB"
+1222,Christopher Smith,56,Data Scientist,119,Available,SaaS,"Python,AWS"
+1223,Douglas Ross,55,Junior Developer,63,On Project,E-commerce,"MongoDB,GCP"
+1224,Stephanie Patterson,36,Data Scientist,93,Available,AI/ML,"AWS,Spark,TensorFlow"
+1225,Peter Adams,58,Data Scientist,111,On Project,SaaS,"Python,AWS"
+1226,Diane Berg,46,Junior Developer,64,Available,Fintech,"PostgreSQL,AWS"
+1227,Brett Kennedy,54,Data Scientist,105,Available,AI/ML,"Python,Kubernetes,Spark"
+1228,Brian White,58,QA Engineer,81,Available,Retail,"SQL,React"
+1229,James Pruitt,35,Tech Lead,129,Available,SaaS,"Python,Go,Angular"
+1230,Michelle Garcia,40,Project Manager,104,Available,Cybersecurity,"Python,AWS,Bash"
+1231,Jessica Stewart,46,Project Manager,92,On Project,SaaS,"AWS,Angular,Kubernetes"
+1232,Larry Doyle,29,Lead Architect,130,Available,Fintech,"PostgreSQL,React,AWS,Kafka"
+1233,Robert Turner,29,UI/UX Designer,67,Available,Retail,"Azure,MongoDB,Java"
+1234,Carrie Hudson,52,Project Manager,104,Available,E-commerce,"GCP,MongoDB"
+1235,Sharon Chase,37,Data Scientist,109,Available,E-commerce,"SQL,Java"
+1236,Cassandra Wilson,28,Lead Architect,147,On Project,Retail,"Azure,React,MongoDB,Java"
+1237,Jason Stephens,38,DevOps Engineer,106,On Project,Retail,"React,Java,Azure,MongoDB"
+1238,James Morrison,42,Senior Developer,112,On Project,SaaS,"PostgreSQL,AWS"
+1239,Alexander Morris,42,Junior Developer,57,Available,SaaS,"Python,Go,Angular,Kubernetes"
+1240,Michelle Stewart,30,Senior Developer,112,Available,Logistics,"Python,GCP"
+1241,Jacob Miller,51,Data Scientist,119,On Project,Healthcare,"FHIR,Java"
+1242,Dominic Green,34,Senior Developer,96,On Project,Fintech,"Kafka,PostgreSQL,React,Java"
+1243,Paul Hale,53,Project Manager,81,Available,Logistics,"Python,Kafka,React"
+1244,David Browning,57,Senior Developer,118,Available,Retail,"Java,Kafka,Azure"
+1245,Philip Fields,29,DevOps Engineer,96,Available,E-commerce,"Docker,SQL,GCP"
+1246,Valerie Collins,39,Project Manager,108,On Project,Cybersecurity,"Bash,Go,Elasticsearch"
+1247,Jordan May,54,Tech Lead,121,Available,Retail,"React,SQL,Kafka,Azure"
+1248,Gregory Thomas,40,QA Engineer,68,Available,E-commerce,"MongoDB,React,Docker"
+1249,Alicia Gonzales,28,DevOps Engineer,87,Available,SaaS,"Python,Go,Angular"
+1250,Tyler Cochran,42,UI/UX Designer,82,Available,E-commerce,"Java,React"
+1251,Debra Davis,26,DevOps Engineer,108,Available,Logistics,"Java,PostgreSQL,Docker,GCP"
+1252,Paul Webb,25,Lead Architect,127,On Project,Retail,"React,MongoDB"
+1253,Erin Terrell,37,Junior Developer,67,Available,Retail,"Java,MongoDB"
+1254,Philip Kim,42,Data Scientist,95,Available,Healthcare,"TensorFlow,Python"
+1255,Tyler Graves,49,QA Engineer,70,On Project,Cybersecurity,"Python,AWS,Bash"
+1256,Tara Martinez,27,Senior Developer,86,Available,SaaS,"PostgreSQL,Angular"
+1257,Jenny Smith,39,Lead Architect,120,Available,AI/ML,"SQL,Kubernetes,Spark,PyTorch"
+1258,Kevin Anderson,58,UI/UX Designer,74,Available,Fintech,"Kubernetes,React,PostgreSQL"
+1259,Christopher Petty,41,Lead Architect,125,On Project,Cybersecurity,"Kubernetes,Python"
+1260,Todd Fleming,25,Data Scientist,105,Available,Cybersecurity,"Elasticsearch,AWS"
+1261,Chad Houston,23,Lead Architect,131,Available,Fintech,"Java,Kubernetes,Kafka"
+1262,Michael Schultz,43,Senior Developer,87,On Project,Retail,"MongoDB,React,Kafka,Azure"
+1263,David Medina,57,Junior Developer,67,Available,Fintech,"Python,PostgreSQL,Kafka"
+1264,Sean Martin,55,Junior Developer,57,On Project,SaaS,"Go,PostgreSQL,Python,AWS"
+1265,Jennifer Ortiz,23,Senior Developer,117,Available,Retail,"Kafka,Java,React"
+1266,Jeffrey Avila,34,Lead Architect,116,Available,E-commerce,"SQL,GCP"
+1267,Julie Graves,49,Project Manager,82,Available,Fintech,"Python,React,Java,Kafka"
+1268,Adam Gonzalez,59,QA Engineer,67,Available,Healthcare,"Java,Docker,FHIR,Azure"
+1269,Jasmine Potter,28,QA Engineer,81,Available,Cybersecurity,"Bash,Elasticsearch"
+1270,Briana Daniel DDS,45,Data Scientist,120,Available,SaaS,"Go,PostgreSQL"
+1271,Danielle Wall PhD,33,Project Manager,81,Available,Cybersecurity,"Python,Bash,Elasticsearch,Kubernetes"
+1272,Melanie Brooks,23,Project Manager,94,On Project,SaaS,"Go,Kubernetes"
+1273,Anthony Cobb,44,Senior Developer,99,On Project,Cybersecurity,"Python,Go,Kubernetes,Bash"
+1274,Chad Combs,32,UI/UX Designer,67,Available,Healthcare,"SQL,Docker,Azure,Java"
+1275,Jennifer Flores,33,Lead Architect,135,On Project,E-commerce,"GCP,MongoDB,React,Docker"
+1276,Tracy Jensen,26,Senior Developer,113,On Project,Fintech,"PostgreSQL,AWS,Kafka,Java"
+1277,Alyssa Peterson,54,Data Scientist,105,Available,Logistics,"PostgreSQL,Docker"
+1278,Richard Armstrong,48,Lead Architect,124,Available,Cybersecurity,"Kubernetes,Python,AWS,Go"
+1279,Krystal Petersen,31,Tech Lead,102,Available,Healthcare,"Python,Java"
+1280,Kyle Wright,32,Tech Lead,107,On Project,Retail,"Azure,MongoDB,Java,Kafka"
+1281,Jorge Hancock,33,Lead Architect,130,Available,Fintech,"Python,Kafka,Java"
+1282,James Johnson,34,UI/UX Designer,86,On Project,Fintech,"Python,Kubernetes,React,Java"
+1283,Dylan Hayes,46,Senior Developer,105,Available,SaaS,"Go,Python,AWS"
+1284,Thomas Long,36,Data Scientist,90,Available,Logistics,"Kafka,Docker,PostgreSQL"
+1285,Victoria Hill,54,DevOps Engineer,87,Available,Fintech,"AWS,Python"
+1286,Sergio Waters,55,DevOps Engineer,92,Available,AI/ML,"AWS,PyTorch,TensorFlow,Spark"
+1287,Allison Bush,50,DevOps Engineer,98,On Project,Retail,"Java,Kafka,Azure"
+1288,Sandra Davis,49,Senior Developer,106,On Project,Cybersecurity,"Kubernetes,Python,AWS,Go"
+1289,Brandon Holmes DDS,50,Project Manager,102,Available,Fintech,"Python,AWS,Kafka,PostgreSQL"
+1290,Autumn Gordon,25,Senior Developer,120,Available,Fintech,"Python,AWS,Kafka,React"
+1291,Brian Fisher,38,Tech Lead,121,Available,AI/ML,"AWS,Kubernetes,Spark"
+1292,Austin Johnson,55,UI/UX Designer,79,Available,E-commerce,"Java,MongoDB"
+1293,Nancy Edwards,47,Tech Lead,115,On Project,Cybersecurity,"Go,Elasticsearch,Python,Kubernetes"
+1294,Kristin Ware,56,Senior Developer,116,Available,SaaS,"Kubernetes,AWS,Go"
+1295,Michael Schultz,55,QA Engineer,73,On Project,Logistics,"GCP,Docker"
+1296,Michael Stevens,27,Junior Developer,64,Available,SaaS,"AWS,Kubernetes"
+1297,Thomas Schultz,42,QA Engineer,77,Available,Logistics,"Kafka,PostgreSQL"
+1298,Kim Gutierrez,50,UI/UX Designer,84,Available,Retail,"Java,SQL,Kafka,MongoDB"
+1299,Alicia Ramirez,39,Project Manager,87,Available,Cybersecurity,"Elasticsearch,Kubernetes,Python,Go"
+1300,Morgan Brown,49,Senior Developer,112,Available,Fintech,"Java,React,Python"
+1301,Ruth Martinez,34,Senior Developer,115,On Project,Logistics,"Python,React,Java"
+1302,Roger Foster,32,Project Manager,108,Available,Cybersecurity,"Kubernetes,Go,Python"
+1303,Scott Sanders,23,Project Manager,95,Available,Cybersecurity,"Python,Bash,Elasticsearch"
+1304,Mario Williams,43,Lead Architect,139,Available,Fintech,"AWS,PostgreSQL,Java,React"
+1305,Cynthia Weber,25,Junior Developer,62,On Project,Healthcare,"Java,SQL,FHIR"
+1306,Jacob Wagner,56,Lead Architect,130,Available,Fintech,"AWS,Java,Kafka"
+1307,Jacob Santos,25,Lead Architect,138,Available,Fintech,"AWS,Python,Kubernetes"
+1308,Travis Li,22,DevOps Engineer,102,Available,AI/ML,"PyTorch,Spark,Python,AWS"
+1309,Lindsey Johnson,59,QA Engineer,76,Available,Logistics,"Kafka,Docker,Python,PostgreSQL"
+1310,Karen Richardson,55,Project Manager,99,Available,SaaS,"Angular,Go,PostgreSQL"
+1311,John Edwards,37,Senior Developer,85,On Project,Healthcare,"FHIR,Azure"
+1312,Joseph Green,27,QA Engineer,63,Available,Fintech,"PostgreSQL,Python"
+1313,Michelle Holland,58,Junior Developer,74,On Project,Fintech,"Kafka,Java"
+1314,Cody Aguilar,56,Lead Architect,136,On Project,Healthcare,"FHIR,Azure,TensorFlow,Docker"
+1315,Jennifer Miller,41,UI/UX Designer,86,Available,Retail,"Java,SQL,React,MongoDB"
+1316,Rachel Ortiz,48,Lead Architect,122,Available,Retail,"SQL,Kafka"
+1317,Robert Rosario,49,QA Engineer,77,Available,AI/ML,"SQL,Python,TensorFlow,PyTorch"
+1318,Stacey Huff,31,Senior Developer,104,Available,SaaS,"Angular,AWS,Python"
+1319,Amber Reed,40,UI/UX Designer,76,Available,AI/ML,"Kubernetes,Spark"
+1320,Alejandro Gibbs,32,Junior Developer,63,On Project,Cybersecurity,"Python,Kubernetes,Elasticsearch"
+1321,Kevin Robinson,58,Lead Architect,110,Available,SaaS,"Angular,PostgreSQL"
+1322,Spencer Clark,27,Junior Developer,64,On Project,AI/ML,"AWS,Kubernetes,TensorFlow,PyTorch"
+1323,Scott Carson,60,QA Engineer,78,Available,E-commerce,"MongoDB,Vue.js"
+1324,Gregory Cunningham,41,Project Manager,97,On Project,Cybersecurity,"Bash,Python,Kubernetes"
+1325,Donald Stein,46,DevOps Engineer,96,Available,Retail,"React,MongoDB,Kafka"
+1326,Ashlee Stewart,56,Junior Developer,71,On Project,Fintech,"Java,Python"
+1327,Angela Douglas,24,UI/UX Designer,73,On Project,AI/ML,"PyTorch,Spark"
+1328,Tanya Weaver,57,DevOps Engineer,99,Available,Logistics,"GCP,Java,PostgreSQL,Kafka"
+1329,Elaine Hamilton,54,Senior Developer,88,Available,Cybersecurity,"Go,Bash"
+1330,Joshua Larson,22,Project Manager,81,On Project,Logistics,"React,GCP,Python,Java"
+1331,Michael Peterson,43,QA Engineer,64,On Project,Fintech,"Kafka,React"
+1332,Tammie Allen,28,Project Manager,108,On Project,E-commerce,"SQL,Vue.js,Docker,React"
+1333,Jacqueline Marshall,38,QA Engineer,83,Available,E-commerce,"GCP,React"
+1334,Angela Perez,54,Tech Lead,134,Available,Logistics,"Docker,Java"
+1335,Thomas Short,38,Project Manager,107,On Project,Cybersecurity,"Elasticsearch,Python,Bash"
+1336,Todd Woodward,31,Senior Developer,117,Available,Retail,"Java,Kafka"
+1337,Helen Alvarez,25,Senior Developer,116,Available,AI/ML,"AWS,Kubernetes,TensorFlow,PyTorch"
+1338,John Perkins,60,Tech Lead,122,Available,Cybersecurity,"Bash,Elasticsearch"
+1339,Kelly Hopkins,40,Data Scientist,106,Available,Logistics,"Python,Docker"
+1340,Joshua Gardner,50,Senior Developer,107,Available,Fintech,"Kafka,Kubernetes,Java"
+1341,Paula Williams,26,DevOps Engineer,109,On Project,Retail,"SQL,Azure"
+1342,Douglas Rodriguez,57,QA Engineer,69,Available,Retail,"Kafka,React"
+1343,Kendra Wheeler,27,QA Engineer,69,Available,Fintech,"Java,React"
+1344,Eric Castro,37,DevOps Engineer,95,Available,SaaS,"Angular,AWS,Go"
+1345,Collin Reed,60,Project Manager,91,Available,AI/ML,"Kubernetes,AWS"
+1346,Laura Mcguire,34,Project Manager,97,Available,Retail,"React,SQL,Kafka"
+1347,Sara Mayer,27,Senior Developer,120,On Project,Cybersecurity,"AWS,Kubernetes,Python,Go"
+1348,Justin Garcia,44,Tech Lead,112,Available,Cybersecurity,"Bash,AWS"
+1349,Lauren May,36,Project Manager,97,Available,Fintech,"AWS,Kubernetes,Kafka,React"
+1350,Patricia Hardy,27,Lead Architect,110,On Project,Retail,"Java,SQL,React"
+1351,Jeffrey Williams,42,Senior Developer,103,Available,AI/ML,"SQL,Spark,Kubernetes"
+1352,Tom Harris,27,Tech Lead,125,Available,AI/ML,"PyTorch,Kubernetes,Spark,TensorFlow"
+1353,Barbara Thomas,32,QA Engineer,77,On Project,Fintech,"Kubernetes,Java"
+1354,Wesley Thomas,31,DevOps Engineer,90,Available,Logistics,"PostgreSQL,Python,Docker"
+1355,Kristin Patel,34,UI/UX Designer,73,On Project,Cybersecurity,"Bash,Elasticsearch"
+1356,Gregory Ramirez,48,Project Manager,107,Available,Retail,"MongoDB,Azure"
+1357,Lisa Krause,54,DevOps Engineer,92,Available,Cybersecurity,"AWS,Go,Bash"
+1358,Michael Ramirez,30,QA Engineer,75,On Project,Fintech,"React,AWS,Kubernetes"
+1359,Eddie Webb,34,Junior Developer,64,Available,Retail,"Java,React,SQL"
+1360,Karina Miranda,41,Senior Developer,101,Available,E-commerce,"Docker,GCP"
+1361,Megan Allen,40,DevOps Engineer,83,On Project,Cybersecurity,"Go,Bash"
+1362,Jeffrey Perez,26,Junior Developer,71,On Project,Fintech,"Python,Java,Kafka"
+1363,Desiree Wilson,38,Senior Developer,109,On Project,Cybersecurity,"AWS,Python,Bash,Kubernetes"
+1364,Robert Patterson,39,Junior Developer,69,Available,Logistics,"Docker,PostgreSQL,Kafka"
+1365,Richard Roth,33,Tech Lead,136,On Project,E-commerce,"React,SQL"
+1366,Albert Hammond,57,Project Manager,84,On Project,Healthcare,"Java,Docker,Python,Azure"
+1367,Annette Brown,42,DevOps Engineer,99,Available,Cybersecurity,"Bash,AWS,Python,Elasticsearch"
+1368,Corey Williams,43,QA Engineer,75,Available,AI/ML,"Kubernetes,Spark,PyTorch"
+1369,Catherine Valenzuela,51,Lead Architect,140,On Project,Fintech,"Python,PostgreSQL"
+1370,Jessica Smith,49,Senior Developer,97,On Project,Healthcare,"Azure,SQL"
+1371,Tracy Morales,57,DevOps Engineer,83,Available,Retail,"SQL,Java,React"
+1372,Janice Blevins,38,Senior Developer,86,Available,SaaS,"PostgreSQL,Go"
+1373,Kyle Foley,26,DevOps Engineer,92,Available,AI/ML,"PyTorch,SQL,Python,TensorFlow"
+1374,Catherine Lee,33,Project Manager,105,On Project,Cybersecurity,"Go,AWS,Python,Elasticsearch"
+1375,Dustin Williams Jr.,33,Lead Architect,147,Available,SaaS,"Kubernetes,Angular,AWS"
+1376,Charlotte Young,34,DevOps Engineer,105,Available,AI/ML,"Kubernetes,AWS,PyTorch"
+1377,Andrea Dudley,25,Data Scientist,91,Available,Fintech,"Python,React"
+1378,Ashley Berry,24,Junior Developer,56,Available,AI/ML,"TensorFlow,Kubernetes,PyTorch"
+1379,Patrick Wilson,50,QA Engineer,72,On Project,Healthcare,"SQL,Java,TensorFlow,Azure"
+1380,Eddie Melton,60,UI/UX Designer,74,Available,Fintech,"AWS,Kubernetes"
+1381,Kimberly Knight,56,QA Engineer,76,On Project,Healthcare,"Python,Azure,Java"
+1382,James Meyer,59,Project Manager,99,Available,AI/ML,"PyTorch,TensorFlow,Kubernetes,Python"
+1383,Robert Lawson,54,DevOps Engineer,98,Available,Cybersecurity,"Go,Python,AWS,Bash"
+1384,Bobby Pacheco,37,Junior Developer,63,On Project,Logistics,"Kafka,Docker,PostgreSQL"
+1385,Rebecca Wong,45,Project Manager,89,Available,Logistics,"PostgreSQL,Docker"
+1386,Jason Hull,57,QA Engineer,61,Available,E-commerce,"Docker,Java,GCP,React"
+1387,Jeffrey Vargas,39,Senior Developer,108,Available,Logistics,"Docker,PostgreSQL,Python,React"
+1388,Richard Perez,36,Project Manager,98,Available,SaaS,"Angular,AWS,Go,PostgreSQL"
+1389,Diane Hebert,32,Junior Developer,55,Available,Logistics,"PostgreSQL,Java,Kafka,GCP"
+1390,Kristin Kennedy,34,UI/UX Designer,72,Available,Logistics,"GCP,Kafka"
+1391,Jacob Roberts,52,Senior Developer,119,Available,SaaS,"PostgreSQL,AWS"
+1392,Gloria Lewis,39,DevOps Engineer,111,Available,Cybersecurity,"Python,Go"
+1393,Holly Hoover,41,Lead Architect,148,Available,AI/ML,"Python,AWS,SQL"
+1394,Jeffery Estrada,32,Lead Architect,141,Available,Retail,"MongoDB,Java,Kafka"
+1395,Shaun Jones,59,Tech Lead,125,Available,Cybersecurity,"Kubernetes,Python"
+1396,Kathleen Tucker,29,Senior Developer,116,Available,Fintech,"Kafka,PostgreSQL,Python,React"
+1397,Angela Sanchez,34,DevOps Engineer,96,Available,AI/ML,"TensorFlow,AWS,Python,SQL"
+1398,Lori Evans,25,Senior Developer,94,On Project,AI/ML,"TensorFlow,Spark,AWS"
+1399,Jonathan Stephens,51,Data Scientist,108,Available,SaaS,"Python,AWS"
+1400,Abigail Harris,32,UI/UX Designer,68,On Project,Cybersecurity,"Elasticsearch,Go"
+1401,Crystal Jones,42,Junior Developer,70,On Project,E-commerce,"GCP,Docker,React,Vue.js"
+1402,Amanda Graham,60,Tech Lead,101,Available,AI/ML,"Spark,SQL,TensorFlow,PyTorch"
+1403,James Rodriguez,41,DevOps Engineer,87,Available,SaaS,"Kubernetes,Python"
+1404,Tonya Bowman,32,QA Engineer,61,Available,Cybersecurity,"AWS,Bash"
+1405,April Clark,32,Senior Developer,93,Available,AI/ML,"PyTorch,Spark"
+1406,Megan Pearson,24,UI/UX Designer,65,Available,Fintech,"Java,Python,React,Kafka"
+1407,Juan Carr,30,Senior Developer,116,Available,Logistics,"PostgreSQL,Docker,Kafka,Java"
+1408,Jesse Lopez,48,Senior Developer,88,Available,Cybersecurity,"Elasticsearch,Go,AWS"
+1409,Christina Thomas,40,Tech Lead,108,Available,SaaS,"Python,PostgreSQL,Kubernetes"
+1410,Joshua Chapman,60,Lead Architect,116,On Project,Fintech,"React,AWS,Kafka,PostgreSQL"
+1411,Nicole Parker,24,DevOps Engineer,103,On Project,Cybersecurity,"Bash,Elasticsearch,Python,Kubernetes"
+1412,Donna Obrien,48,QA Engineer,73,Available,AI/ML,"AWS,Spark"
+1413,Maria Fisher,44,QA Engineer,69,Available,Healthcare,"Docker,FHIR,SQL"
+1414,Christopher Smith,24,Senior Developer,93,Available,Healthcare,"Azure,Java"
+1415,Brandon Ballard,38,Lead Architect,134,On Project,SaaS,"AWS,Angular,Python,Go"
+1416,Samuel Silva,22,Data Scientist,108,Available,Healthcare,"TensorFlow,SQL"
+1417,Mark Villarreal,25,Project Manager,81,On Project,Retail,"SQL,Java"
+1418,Margaret Schmidt,37,Lead Architect,139,On Project,Cybersecurity,"Bash,Kubernetes"
+1419,Douglas Vargas,23,Senior Developer,120,Available,Fintech,"Kafka,React"
+1420,Bryan Hudson,39,Tech Lead,102,Available,Healthcare,"TensorFlow,Python,SQL"
+1421,Anthony Jones,24,UI/UX Designer,82,Available,E-commerce,"MongoDB,SQL"
+1422,Katrina Love,27,DevOps Engineer,95,Available,AI/ML,"Python,Spark,SQL"
+1423,Dr. Michael Baker,44,Project Manager,102,Available,Retail,"SQL,Azure,MongoDB"
+1424,Aaron Lamb,40,Tech Lead,124,Available,Cybersecurity,"Python,Elasticsearch,Kubernetes"
+1425,John White,50,QA Engineer,77,Available,Retail,"SQL,Java,Azure,MongoDB"
+1426,Amanda Price,58,Lead Architect,113,On Project,Healthcare,"Azure,Python"
+1427,Paul Robinson,23,UI/UX Designer,68,Available,SaaS,"Go,Angular,Kubernetes"
+1428,Joshua Reid,48,Lead Architect,145,Available,E-commerce,"SQL,Vue.js,React"
+1429,James Walker,29,Senior Developer,104,On Project,Healthcare,"Docker,SQL,FHIR"
+1430,Darrell Martin,29,UI/UX Designer,76,Available,AI/ML,"Kubernetes,SQL"
+1431,Bruce Cooley,45,Senior Developer,118,On Project,Logistics,"Docker,Java,Python"
+1432,Dr. Michael Morales II,41,Data Scientist,129,Available,Healthcare,"FHIR,Docker,Python,SQL"
+1433,Aaron Ferguson,46,Junior Developer,64,Available,Healthcare,"SQL,Azure,Docker,TensorFlow"
+1434,Kimberly Thompson,25,Data Scientist,112,Available,Cybersecurity,"Go,Bash,Python,Elasticsearch"
+1435,Tiffany Hernandez,37,DevOps Engineer,103,Available,AI/ML,"Kubernetes,AWS,Python,Spark"
+1436,Anita Fuller,44,Data Scientist,109,Available,Cybersecurity,"AWS,Go,Python"
+1437,Joshua Watkins,27,Project Manager,86,Available,SaaS,"AWS,PostgreSQL,Angular"
+1438,Joseph Blair,35,QA Engineer,74,Available,Fintech,"Kubernetes,AWS,Python,Kafka"
+1439,Alexis Reid MD,50,Data Scientist,124,Available,Retail,"MongoDB,Azure,React,Kafka"
+1440,Christopher Ball,36,Senior Developer,103,On Project,Healthcare,"TensorFlow,Java,Azure,FHIR"
+1441,Jaclyn Nguyen,46,Junior Developer,61,Available,Logistics,"React,PostgreSQL,Docker,Java"
+1442,John Blackwell,45,DevOps Engineer,107,Available,Retail,"SQL,Java,Azure"
+1443,Dennis Parker PhD,50,Project Manager,95,Available,Fintech,"React,Kubernetes,AWS"
+1444,Sean Stone,55,Junior Developer,66,Available,Cybersecurity,"AWS,Python,Elasticsearch"
+1445,Keith Liu,59,Lead Architect,129,On Project,AI/ML,"Kubernetes,PyTorch,Spark"
+1446,Kelsey Lee,30,Junior Developer,74,Available,E-commerce,"Docker,Vue.js,React"
+1447,Tammy Munoz,54,UI/UX Designer,93,Available,Healthcare,"Python,TensorFlow"
+1448,Mrs. Stephanie Snyder,48,Junior Developer,62,On Project,Retail,"Java,Kafka"
+1449,Keith Dixon,56,UI/UX Designer,78,Available,E-commerce,"Vue.js,MongoDB"
+1450,Joshua Palmer,33,Senior Developer,89,Available,AI/ML,"Python,PyTorch,Spark"
+1451,Shari Sullivan,37,UI/UX Designer,65,Available,Retail,"Azure,MongoDB"
+1452,Cody Armstrong,27,Senior Developer,87,Available,AI/ML,"AWS,Kubernetes"
+1453,Natalie Anderson,46,DevOps Engineer,92,Available,E-commerce,"SQL,Vue.js"
+1454,Justin Page,39,UI/UX Designer,95,Available,AI/ML,"PyTorch,Spark"
+1455,Eric Sanchez,44,Senior Developer,93,Available,Logistics,"React,GCP"
+1456,Jared Mcneil,58,Data Scientist,97,On Project,E-commerce,"MongoDB,SQL,React"
+1457,Lisa Wood,55,Lead Architect,134,Available,Logistics,"PostgreSQL,Kafka"
+1458,Angela Johnson,60,Lead Architect,137,Available,Cybersecurity,"AWS,Go,Kubernetes,Bash"
+1459,David Valencia,30,Project Manager,106,On Project,SaaS,"Python,Go,PostgreSQL,AWS"
+1460,Andrew Alexander,27,Tech Lead,119,On Project,SaaS,"Go,Kubernetes,PostgreSQL,Angular"
+1461,Monica Quinn,46,Senior Developer,92,Available,Retail,"Java,Kafka"
+1462,Lisa Hopkins,57,Project Manager,96,Available,E-commerce,"GCP,Vue.js"
+1463,Jack Taylor,55,Project Manager,86,On Project,Retail,"Azure,MongoDB"
+1464,Nicole Elliott,47,Junior Developer,56,Available,SaaS,"Go,Kubernetes,AWS,PostgreSQL"
+1465,Julie Morales,53,DevOps Engineer,91,On Project,Fintech,"AWS,PostgreSQL,React"
+1466,James Griffith,50,Lead Architect,119,On Project,Cybersecurity,"Bash,AWS,Kubernetes,Python"
+1467,Margaret Walter,57,DevOps Engineer,102,On Project,Retail,"Kafka,MongoDB,React,SQL"
+1468,Katherine Small,54,Project Manager,107,Available,E-commerce,"React,GCP,Docker,SQL"
+1469,Krystal Murray,42,Data Scientist,102,On Project,Retail,"MongoDB,Java"
+1470,Amanda Blankenship,53,UI/UX Designer,80,On Project,AI/ML,"SQL,Spark,PyTorch,Python"
+1471,Rodney Wright,35,Junior Developer,65,Available,Cybersecurity,"Bash,Elasticsearch,Go"
+1472,Amber Velasquez,29,Lead Architect,135,Available,SaaS,"AWS,Go"
+1473,Randall Byrd,60,QA Engineer,70,On Project,Retail,"Java,React,SQL"
+1474,Alicia Stewart,53,Senior Developer,90,Available,Retail,"SQL,Java,Kafka,MongoDB"
+1475,Brenda Freeman,54,Project Manager,104,On Project,Retail,"React,Java"
+1476,Pamela Gordon,38,Project Manager,88,Available,Retail,"SQL,Kafka,Java,MongoDB"
+1477,Jeffrey Jensen,28,Senior Developer,117,Available,Cybersecurity,"Bash,AWS"
+1478,Michael Carter,60,Project Manager,107,Available,AI/ML,"SQL,TensorFlow"
+1479,Tiffany Nelson,43,QA Engineer,77,Available,Logistics,"Java,Python"
+1480,Linda Cook,59,UI/UX Designer,86,On Project,SaaS,"Python,AWS"
+1481,Douglas Bailey,29,Lead Architect,138,Available,Cybersecurity,"Kubernetes,Bash,Python,Elasticsearch"
+1482,Ronald Alvarez,32,Senior Developer,106,On Project,AI/ML,"TensorFlow,AWS"
+1483,John Smith,41,UI/UX Designer,80,Available,Retail,"Kafka,Java,SQL"
+1484,Joe Ford,34,Tech Lead,124,Available,E-commerce,"SQL,GCP"
+1485,Kyle Campbell,47,QA Engineer,77,Available,Fintech,"Kafka,AWS,Java,Kubernetes"
+1486,Toni Davis,36,DevOps Engineer,83,Available,Healthcare,"FHIR,Docker,SQL"
+1487,Christopher Guzman,47,Project Manager,85,On Project,Retail,"Azure,MongoDB,Java"
+1488,Brandon Garcia,28,Tech Lead,108,On Project,E-commerce,"React,Docker,Vue.js"
+1489,Wayne Avila,43,Senior Developer,87,Available,Retail,"SQL,Kafka,Java"
+1490,Aaron Williams,55,Senior Developer,104,Available,AI/ML,"Python,AWS,Kubernetes"
+1491,Jose Huffman,55,Tech Lead,140,Available,Logistics,"React,PostgreSQL,GCP"
+1492,Linda Pitts,50,Senior Developer,98,Available,E-commerce,"Java,GCP,React,MongoDB"
+1493,Travis Trevino,43,Junior Developer,64,Available,AI/ML,"TensorFlow,AWS,Spark"
+1494,Sonia Hayes,51,Senior Developer,98,Available,Fintech,"Java,Kubernetes"
+1495,Melvin Johnson,30,Project Manager,96,On Project,AI/ML,"Python,Kubernetes,PyTorch,SQL"
+1496,Amanda Harrell,49,QA Engineer,63,Available,Retail,"Azure,SQL,MongoDB,React"
+1497,Vincent Price,57,DevOps Engineer,99,On Project,Retail,"SQL,Kafka,Java"
+1498,Joseph Thompson,45,Tech Lead,114,On Project,SaaS,"PostgreSQL,Python,Angular"
+1499,Michael Hernandez,51,Tech Lead,115,Available,Fintech,"Kubernetes,React,PostgreSQL,AWS"
+1500,Joshua Hendrix,60,Lead Architect,136,On Project,Logistics,"PostgreSQL,Python"
+1501,Hannah Gibson,49,Tech Lead,111,On Project,E-commerce,"GCP,SQL"
+1502,Elizabeth Blackburn,26,Lead Architect,124,Available,E-commerce,"Java,React,SQL,GCP"
+1503,Mr. Robert Jones Jr.,34,QA Engineer,73,Available,E-commerce,"React,Docker"
+1504,Amanda Johnson,51,UI/UX Designer,86,Available,Fintech,"Kafka,Kubernetes"
+1505,Jennifer Kaiser,56,Project Manager,107,Available,SaaS,"AWS,PostgreSQL,Go,Angular"
+1506,Lisa Williams,32,Data Scientist,94,Available,Fintech,"AWS,Kubernetes"
+1507,John Wilson,34,Tech Lead,124,On Project,Fintech,"PostgreSQL,Java"
+1508,Suzanne Payne,23,Tech Lead,126,Available,E-commerce,"GCP,React"
+1509,James Warren,48,Tech Lead,106,Available,AI/ML,"PyTorch,TensorFlow,SQL"
+1510,Sandra Myers,58,UI/UX Designer,83,Available,AI/ML,"SQL,Python"
+1511,Susan Ramirez,33,Project Manager,102,Available,Fintech,"React,PostgreSQL,Kafka"
+1512,Lindsey Robinson,42,Data Scientist,98,Available,SaaS,"Go,AWS,Python,Angular"
+1513,Claudia Wise,32,Project Manager,91,On Project,AI/ML,"Python,AWS"
+1514,Manuel Delgado,37,UI/UX Designer,80,Available,Cybersecurity,"Go,Python"
+1515,Andrea Mcdonald,29,Data Scientist,109,On Project,Healthcare,"Docker,Azure,Java,Python"
+1516,Brian Mendez,27,Senior Developer,111,Available,E-commerce,"Docker,GCP,Java"
+1517,Joseph Phelps,40,Lead Architect,117,Available,SaaS,"Kubernetes,Angular,PostgreSQL"
+1518,Sandra Novak,37,Project Manager,109,On Project,SaaS,"PostgreSQL,Go"
+1519,William Smith,26,QA Engineer,64,On Project,Logistics,"Kafka,Python"
+1520,Brian Ferguson,44,Junior Developer,75,On Project,AI/ML,"TensorFlow,PyTorch"
+1521,Brianna Ramirez,24,UI/UX Designer,92,Available,E-commerce,"Java,Docker,MongoDB"
+1522,Carl Wallace,55,DevOps Engineer,93,On Project,Healthcare,"FHIR,Python,SQL"
+1523,Nicholas Zimmerman,52,UI/UX Designer,76,Available,SaaS,"Kubernetes,Python,PostgreSQL"
+1524,Margaret Moreno,56,Tech Lead,130,Available,Healthcare,"TensorFlow,FHIR,Java"
+1525,Eric Miller,55,UI/UX Designer,68,On Project,Fintech,"React,Kubernetes,Kafka,Java"
+1526,Gail Nash,44,UI/UX Designer,91,On Project,AI/ML,"SQL,Spark,TensorFlow"
+1527,Taylor Hernandez,30,UI/UX Designer,91,Available,Retail,"SQL,Azure,MongoDB,Kafka"
+1528,Tracey Myers,27,DevOps Engineer,105,On Project,Healthcare,"Python,TensorFlow,Docker,SQL"
+1529,Sharon Mason,57,Project Manager,102,Available,E-commerce,"React,SQL"
+1530,Jason Harvey,53,QA Engineer,84,On Project,Healthcare,"TensorFlow,Azure"
+1531,David Flores,23,Senior Developer,113,Available,Logistics,"PostgreSQL,Java,Python"
+1532,Matthew Sanders,52,UI/UX Designer,94,On Project,Retail,"MongoDB,Azure,Kafka"
+1533,Ashley Ruiz,32,Tech Lead,127,On Project,Cybersecurity,"Python,Go,Bash"
+1534,Randy Ortiz,51,UI/UX Designer,78,Available,Fintech,"AWS,Python"
+1535,Paul Dorsey,25,Junior Developer,73,On Project,Retail,"SQL,Java,MongoDB,React"
+1536,Timothy Wade,30,Tech Lead,136,Available,Healthcare,"TensorFlow,SQL"
+1537,Wayne Walker,45,DevOps Engineer,108,Available,Retail,"React,Azure"
+1538,Justin Sullivan,28,Project Manager,101,On Project,AI/ML,"Kubernetes,AWS"
+1539,Ryan Young,55,DevOps Engineer,90,Available,SaaS,"Angular,AWS"
+1540,Michael Weeks,25,Senior Developer,104,Available,Fintech,"PostgreSQL,Python,React"
+1541,John Wade,29,Project Manager,98,Available,SaaS,"Kubernetes,AWS"
+1542,Hannah Anderson,22,UI/UX Designer,80,Available,Logistics,"Python,Java,PostgreSQL,Kafka"
+1543,Elizabeth Hicks,35,Project Manager,101,Available,Retail,"React,Azure,MongoDB,SQL"
+1544,Jessica Bishop,32,Project Manager,108,Available,Fintech,"React,Kubernetes"
+1545,Jessica Martinez,29,Data Scientist,98,On Project,Retail,"Azure,SQL,React,Kafka"
+1546,Deborah Mills,58,Senior Developer,97,Available,Healthcare,"Docker,FHIR,Python"
+1547,Nina Jordan,29,Junior Developer,61,Available,AI/ML,"Python,Kubernetes,Spark"
+1548,Rachel Warren,30,UI/UX Designer,67,Available,Cybersecurity,"Go,Elasticsearch,Kubernetes,Python"
+1549,Thomas Trujillo PhD,44,Data Scientist,126,Available,SaaS,"Angular,AWS,Python,PostgreSQL"
+1550,Edward Gutierrez,49,UI/UX Designer,92,Available,Logistics,"Kafka,Python,React,GCP"
+1551,Lindsey Dean,47,Lead Architect,115,Available,Cybersecurity,"Go,Kubernetes,Python,Bash"
+1552,Robert Phelps,54,Lead Architect,128,Available,Logistics,"Kafka,Python,React"
+1553,Sean Luna,34,Data Scientist,96,Available,Fintech,"Java,React,Kafka"
+1554,Emily Flores MD,57,UI/UX Designer,93,Available,E-commerce,"Java,MongoDB,GCP"
+1555,Evan Sloan,38,QA Engineer,78,Available,AI/ML,"Kubernetes,SQL,TensorFlow"
+1556,Lee Kramer,23,Lead Architect,120,Available,E-commerce,"React,MongoDB"
+1557,Jeremy Jones,58,Tech Lead,139,On Project,AI/ML,"Spark,AWS"
+1558,Renee Harrison,29,Senior Developer,115,Available,SaaS,"Kubernetes,PostgreSQL,Go"
+1559,Seth Watkins,23,Junior Developer,59,Available,Fintech,"AWS,PostgreSQL"
+1560,Rachel Knight,47,Tech Lead,106,Available,Retail,"MongoDB,Java"
+1561,Dr. Robin Thompson,31,Data Scientist,122,Available,Fintech,"Python,Kafka,Kubernetes,Java"
+1562,Steven Gonzalez,57,Senior Developer,95,Available,AI/ML,"Kubernetes,Python,Spark,SQL"
+1563,Janice Smith,30,DevOps Engineer,107,Available,Retail,"SQL,Java"
+1564,Dawn Sanchez,46,Tech Lead,134,Available,Retail,"MongoDB,Kafka,Java,React"
+1565,Eric Morgan,36,DevOps Engineer,101,Available,Retail,"Azure,SQL"
+1566,Monica Diaz PhD,44,Lead Architect,125,Available,Cybersecurity,"AWS,Python,Kubernetes,Elasticsearch"
+1567,Bill Vargas,23,UI/UX Designer,78,Available,E-commerce,"Docker,MongoDB,SQL,GCP"
+1568,Teresa Holland,51,DevOps Engineer,111,Available,Cybersecurity,"Kubernetes,Go,Python,Bash"
+1569,Malik Robinson,39,Tech Lead,115,Available,SaaS,"PostgreSQL,Kubernetes,Angular,AWS"
+1570,James Miller,59,Data Scientist,124,Available,E-commerce,"GCP,React"
+1571,Taylor Martinez II,50,Data Scientist,128,On Project,AI/ML,"PyTorch,Python"
+1572,Lisa Gordon,60,Lead Architect,118,On Project,Retail,"Java,SQL,Azure,Kafka"
+1573,Alison Strong,24,UI/UX Designer,88,Available,AI/ML,"Kubernetes,AWS"
+1574,Samuel Rodriguez,53,UI/UX Designer,70,On Project,Retail,"MongoDB,SQL,Azure,React"
+1575,Jacqueline Franklin,25,Data Scientist,123,On Project,Healthcare,"Azure,SQL,Java"
+1576,Mark Martinez,33,QA Engineer,83,Available,Logistics,"PostgreSQL,GCP,Java,Docker"
+1577,Melissa Short,38,Project Manager,89,Available,Retail,"SQL,React,MongoDB,Azure"
+1578,Steven Garcia,60,Data Scientist,98,Available,Logistics,"Kafka,React,Java"
+1579,Stephanie May,24,DevOps Engineer,99,Available,SaaS,"Python,AWS"
+1580,Michelle Guerrero,29,Junior Developer,71,Available,Fintech,"Kubernetes,React,Java,Kafka"
+1581,Jill Williams,46,Junior Developer,62,On Project,SaaS,"Go,Angular,PostgreSQL"
+1582,Jerry House,44,QA Engineer,61,On Project,SaaS,"AWS,Angular"
+1583,Katelyn Ward,28,Tech Lead,122,Available,Cybersecurity,"Go,Bash"
+1584,Nathan Garcia,37,DevOps Engineer,82,On Project,E-commerce,"SQL,GCP,Java"
+1585,Levi Davis,42,Senior Developer,107,Available,E-commerce,"SQL,React,Vue.js"
+1586,Amber Jones,46,Project Manager,101,Available,AI/ML,"Python,TensorFlow"
+1587,Elizabeth Burton,38,UI/UX Designer,77,On Project,Cybersecurity,"Go,Elasticsearch,Kubernetes"
+1588,Marie Henderson,42,Project Manager,100,On Project,Healthcare,"FHIR,Azure,TensorFlow,SQL"
+1589,Dean Garcia,22,Tech Lead,132,Available,Cybersecurity,"Kubernetes,Go"
+1590,Cynthia Barnes,38,Senior Developer,85,Available,Healthcare,"Java,Azure"
+1591,Shawn Moore,40,Data Scientist,97,Available,AI/ML,"Python,SQL,TensorFlow"
+1592,Grant Cunningham,36,Lead Architect,117,Available,Fintech,"React,Kubernetes"
+1593,Kimberly Gomez,34,Project Manager,110,Available,E-commerce,"Docker,SQL,Java,GCP"
+1594,Bridget Sloan,51,Lead Architect,137,Available,AI/ML,"TensorFlow,Kubernetes,AWS"
+1595,Don Moody,60,QA Engineer,63,On Project,AI/ML,"TensorFlow,PyTorch,AWS"
+1596,Glenda Collier,50,Tech Lead,119,Available,Healthcare,"SQL,FHIR"
+1597,Tracy Oneill,24,Data Scientist,100,Available,Logistics,"Kafka,Docker"
+1598,Clifford Ward,32,Project Manager,83,On Project,Cybersecurity,"Elasticsearch,Go,Kubernetes"
+1599,Jacqueline Nicholson,38,UI/UX Designer,71,Available,AI/ML,"SQL,AWS"
+1600,Christopher Bell,29,QA Engineer,70,Available,Retail,"React,SQL"
+1601,Gwendolyn Mcconnell,28,Data Scientist,102,Available,Logistics,"PostgreSQL,Docker"
+1602,David Ray,57,UI/UX Designer,89,Available,Retail,"React,Azure"
+1603,Anne Scott MD,57,Data Scientist,119,Available,E-commerce,"GCP,Vue.js"
+1604,Dylan Smith,30,DevOps Engineer,109,Available,E-commerce,"Java,Vue.js,React"
+1605,Jonathan Lewis,58,Senior Developer,90,Available,Logistics,"React,Java,Python"
+1606,Michael Weeks,26,Data Scientist,111,On Project,Cybersecurity,"Kubernetes,Python"
+1607,Nicholas Holden,36,Senior Developer,100,Available,Logistics,"GCP,PostgreSQL,Docker"
+1608,Evelyn Hall,22,Tech Lead,132,Available,Fintech,"Kubernetes,Java,AWS,Kafka"
+1609,Hector Allen,31,Tech Lead,134,Available,Cybersecurity,"Kubernetes,Python,AWS"
+1610,Caleb Clark,22,QA Engineer,76,Available,E-commerce,"React,Vue.js,MongoDB,GCP"
+1611,David Williamson,31,Senior Developer,101,On Project,Cybersecurity,"Python,Go,AWS,Kubernetes"
+1612,Kelly Miller,45,UI/UX Designer,78,Available,Cybersecurity,"Go,Elasticsearch"
+1613,Joshua Haley,58,DevOps Engineer,91,On Project,SaaS,"PostgreSQL,Go"
+1614,Peter Mooney,52,Project Manager,90,Available,Fintech,"Java,React,AWS,Python"
+1615,Alexander Gomez,57,Tech Lead,115,On Project,SaaS,"Python,Kubernetes,AWS,Angular"
+1616,Frank Robbins,25,DevOps Engineer,91,Available,Retail,"SQL,MongoDB"
+1617,Brian Martin,55,Junior Developer,73,Available,SaaS,"Angular,Kubernetes"
+1618,Mr. Tyrone Gardner,37,Data Scientist,119,Available,Fintech,"React,Kubernetes"
+1619,Chelsea Schwartz,50,QA Engineer,82,Available,SaaS,"Angular,Go,AWS,Python"
+1620,Amber Kim,48,QA Engineer,64,Available,Retail,"Java,Kafka,React"
+1621,Bryan Hodge,29,Tech Lead,133,Available,Retail,"SQL,Azure,Java,Kafka"
+1622,Vanessa Clark,50,Data Scientist,109,Available,E-commerce,"React,Vue.js"
+1623,Julie Mcclure,55,Tech Lead,128,Available,Healthcare,"TensorFlow,Java"
+1624,Terri Hicks,50,DevOps Engineer,99,Available,Fintech,"PostgreSQL,Kafka,Python,Java"
+1625,Susan Vaughn,53,Tech Lead,133,Available,Cybersecurity,"Elasticsearch,Bash"
+1626,Steven Hudson,58,DevOps Engineer,94,Available,Healthcare,"SQL,Python,TensorFlow"
+1627,Tracy Williams,39,Lead Architect,127,On Project,E-commerce,"Docker,MongoDB,React"
+1628,Samantha Osborne,51,QA Engineer,80,On Project,Cybersecurity,"Elasticsearch,Kubernetes,Bash"
+1629,Brittany Gomez,34,Data Scientist,127,Available,Healthcare,"Java,Azure,Python"
+1630,Robert Palmer,32,Tech Lead,114,Available,Logistics,"Kafka,Java,React,PostgreSQL"
+1631,Todd Williams,26,Senior Developer,114,On Project,Retail,"Azure,Java,React,MongoDB"
+1632,Jacqueline Bauer,33,Project Manager,107,On Project,SaaS,"Go,Kubernetes"
+1633,Brian Hobbs,30,QA Engineer,61,On Project,AI/ML,"Kubernetes,Python,Spark,PyTorch"
+1634,Kayla Brown,50,UI/UX Designer,72,Available,AI/ML,"Python,Spark"
+1635,Philip Rice,49,QA Engineer,71,On Project,E-commerce,"MongoDB,Docker,SQL,Java"
+1636,Hannah Wheeler,29,Tech Lead,140,On Project,Logistics,"Java,PostgreSQL,Python"
+1637,Timothy Wyatt,23,QA Engineer,62,Available,Logistics,"Docker,Java"
+1638,Jose Allen,46,Tech Lead,116,Available,Logistics,"Python,Java,Docker"
+1639,Nathan Anderson,52,Project Manager,99,On Project,Cybersecurity,"Go,Kubernetes,AWS"
+1640,Nichole Warren,51,DevOps Engineer,98,On Project,Logistics,"GCP,React,Java,Docker"
+1641,Brandon Johnson,40,Tech Lead,130,On Project,AI/ML,"TensorFlow,PyTorch,AWS,Spark"
+1642,Valerie Mora,49,QA Engineer,79,Available,AI/ML,"TensorFlow,Spark,Kubernetes"
+1643,Annette Frazier,22,Senior Developer,116,Available,Fintech,"Kafka,Python,PostgreSQL,AWS"
+1644,Stephanie Harvey,45,Lead Architect,133,Available,AI/ML,"Python,Kubernetes,PyTorch"
+1645,Cory Dalton,50,Project Manager,103,On Project,Logistics,"Docker,PostgreSQL,Kafka"
+1646,Carrie Brown,58,Tech Lead,105,Available,Cybersecurity,"Go,Kubernetes"
+1647,Leah Johnson,49,Project Manager,92,Available,Logistics,"GCP,Python,Docker"
+1648,Alicia Clay,37,Lead Architect,134,Available,E-commerce,"React,MongoDB"
+1649,Francis Allen,50,QA Engineer,60,Available,AI/ML,"AWS,TensorFlow,PyTorch"
+1650,Sarah Smith,44,Junior Developer,69,On Project,E-commerce,"Vue.js,Java,Docker,React"
+1651,Jasmin Sparks,38,Tech Lead,103,Available,Healthcare,"Java,Python,TensorFlow,FHIR"
+1652,Jennifer Sims,46,QA Engineer,82,On Project,Retail,"MongoDB,SQL,React"
+1653,Jackie Daniel,27,Junior Developer,65,Available,E-commerce,"GCP,Docker,React"
+1654,Patty Welch,25,Senior Developer,114,Available,Logistics,"React,Python,Java"
+1655,Karen Ford,43,Lead Architect,149,Available,Healthcare,"Python,FHIR"
+1656,Brittany Price,38,Junior Developer,73,Available,Logistics,"Python,Kafka"
+1657,Dawn Castillo,30,Tech Lead,128,On Project,AI/ML,"PyTorch,Python"
+1658,Thomas Fuller,51,Senior Developer,97,Available,Healthcare,"FHIR,Docker"
+1659,Anna Harris,39,Lead Architect,141,Available,E-commerce,"React,Docker"
+1660,Matthew Ibarra,47,Data Scientist,98,Available,Healthcare,"FHIR,Azure"
+1661,Susan Moore,27,Data Scientist,130,Available,Retail,"React,SQL"
+1662,Kirk Cannon,28,DevOps Engineer,98,Available,Logistics,"Kafka,PostgreSQL,Docker"
+1663,Peter Sanchez,26,Tech Lead,122,On Project,Fintech,"Kubernetes,AWS,Java,Python"
+1664,Chelsea Ballard,23,DevOps Engineer,80,Available,Logistics,"React,GCP"
+1665,John Miller,31,Senior Developer,105,On Project,Retail,"SQL,Azure,Java"
+1666,Jonathan Wilson,23,Project Manager,88,Available,Healthcare,"SQL,TensorFlow,Azure"
+1667,Aaron Watts,42,Junior Developer,68,Available,AI/ML,"AWS,Spark,TensorFlow,Python"
+1668,Laura Jordan,26,Tech Lead,136,On Project,Logistics,"Kafka,GCP"
+1669,Melissa Morris,37,QA Engineer,62,On Project,SaaS,"AWS,Angular"
+1670,Cynthia Ortiz,53,Project Manager,105,Available,Healthcare,"Azure,TensorFlow,FHIR"
+1671,Jessica Smith,31,Data Scientist,112,Available,AI/ML,"AWS,Spark"
+1672,Karen Brady,59,Project Manager,94,On Project,Logistics,"GCP,Docker"
+1673,Leah Thomas,60,QA Engineer,82,On Project,Logistics,"Java,Kafka"
+1674,Steve Rice,38,Project Manager,108,Available,AI/ML,"Kubernetes,Python,SQL"
+1675,Donna Warren,53,DevOps Engineer,113,On Project,Retail,"Kafka,MongoDB"
+1676,Sarah Andrews,25,QA Engineer,74,Available,Cybersecurity,"Go,Python,Elasticsearch,AWS"
+1677,Edward Morgan,28,DevOps Engineer,88,Available,E-commerce,"Docker,React"
+1678,Derek Ramirez,36,Tech Lead,140,Available,Cybersecurity,"Bash,Python,AWS"
+1679,Michael Johnson,60,DevOps Engineer,86,Available,Fintech,"Java,React,PostgreSQL"
+1680,Marcus Nielsen,47,DevOps Engineer,107,On Project,Retail,"MongoDB,SQL"
+1681,Angela Hamilton,35,DevOps Engineer,83,Available,Logistics,"Java,Kafka,PostgreSQL"
+1682,Aaron Fisher DDS,58,Junior Developer,74,On Project,SaaS,"Kubernetes,Go,Angular"
+1683,Patricia Kelly,43,Data Scientist,108,Available,Healthcare,"SQL,Python,TensorFlow"
+1684,Cynthia Mendoza,56,QA Engineer,85,Available,AI/ML,"TensorFlow,Python"
+1685,Kristin Smith,31,Senior Developer,111,Available,AI/ML,"Kubernetes,AWS,Spark,SQL"
+1686,Mason Beard,49,Project Manager,108,On Project,Cybersecurity,"Kubernetes,Python"
+1687,James Maddox,55,Senior Developer,103,Available,Fintech,"Kubernetes,Java,AWS"
+1688,Robert Lynn,42,Junior Developer,56,On Project,Cybersecurity,"Python,Bash,AWS,Elasticsearch"
+1689,David Williams,46,Data Scientist,120,On Project,Healthcare,"Docker,Azure,FHIR,Java"
+1690,Mark Jones,34,Data Scientist,90,On Project,Logistics,"Python,React"
+1691,Jared Rios,58,UI/UX Designer,91,On Project,AI/ML,"Spark,AWS,Python"
+1692,Scott Gross,22,Junior Developer,60,On Project,SaaS,"Go,PostgreSQL"
+1693,Jennifer Dean,22,Lead Architect,127,Available,Retail,"SQL,Azure,MongoDB"
+1694,Laurie Shah,53,DevOps Engineer,88,Available,Healthcare,"Java,SQL,Python,Docker"
+1695,Brendan Hunt,50,Project Manager,104,On Project,Healthcare,"TensorFlow,Java"
+1696,Logan Hernandez,33,UI/UX Designer,90,Available,Cybersecurity,"Elasticsearch,Bash,Python,Go"
+1697,Kari Young,48,Data Scientist,122,Available,SaaS,"Python,AWS,PostgreSQL"
+1698,Anita Andrade,47,Junior Developer,60,On Project,Logistics,"React,GCP,Python,PostgreSQL"
+1699,Daniel Jones,50,QA Engineer,72,On Project,E-commerce,"MongoDB,GCP"
+1700,Sandra Murphy,46,QA Engineer,81,Available,AI/ML,"SQL,Kubernetes"
+1701,Susan Cross,33,QA Engineer,64,On Project,Cybersecurity,"Python,Kubernetes,Elasticsearch,Bash"
+1702,Darren Robertson,36,Tech Lead,138,Available,Healthcare,"Python,FHIR"
+1703,Gabriel Davis,54,QA Engineer,64,Available,Logistics,"React,Java"
+1704,Christopher Day,26,UI/UX Designer,72,On Project,Cybersecurity,"Kubernetes,AWS,Go,Python"
+1705,Alan Carter,59,UI/UX Designer,73,Available,SaaS,"Python,AWS,Angular"
+1706,Joshua Holden PhD,50,Data Scientist,94,On Project,SaaS,"Python,AWS,Kubernetes"
+1707,Joseph Bennett,31,Project Manager,83,On Project,Logistics,"Kafka,React,PostgreSQL,Java"
+1708,Matthew Gregory,58,Lead Architect,137,Available,Cybersecurity,"Elasticsearch,Python"
+1709,Tyler Horton,45,UI/UX Designer,82,Available,E-commerce,"MongoDB,SQL,GCP,Docker"
+1710,Michelle Mills MD,31,Data Scientist,92,Available,Fintech,"Kubernetes,Java"
+1711,Meghan Gill,36,Tech Lead,123,Available,E-commerce,"GCP,Java,Vue.js"
+1712,Maria Jenkins,39,Junior Developer,58,Available,AI/ML,"TensorFlow,SQL"
+1713,Bradley Kelly,59,Tech Lead,107,Available,Fintech,"PostgreSQL,Kafka"
+1714,Jason Brock,22,Project Manager,92,On Project,Retail,"Kafka,React"
+1715,Shelia Lopez,59,DevOps Engineer,99,Available,Retail,"Java,SQL,MongoDB,Kafka"
+1716,Ryan Nixon,40,Project Manager,100,Available,Logistics,"PostgreSQL,GCP"
+1717,Daniel Roberts,47,Tech Lead,127,Available,E-commerce,"React,MongoDB,GCP"
+1718,Andrew Strickland,46,Tech Lead,100,Available,Retail,"React,MongoDB"
+1719,Benjamin Daniels,58,Tech Lead,100,On Project,E-commerce,"React,Vue.js"
+1720,Donna Keller,36,Project Manager,103,Available,E-commerce,"MongoDB,Vue.js"
+1721,James Jones,60,Tech Lead,101,Available,Retail,"SQL,React,Azure"
+1722,Jonathan Lopez,51,Senior Developer,112,Available,E-commerce,"MongoDB,React,SQL"
+1723,Laura Maxwell,47,Lead Architect,123,Available,Healthcare,"Python,SQL"
+1724,Lauren Ruiz,35,QA Engineer,64,On Project,AI/ML,"AWS,SQL"
+1725,Patricia Perkins,31,Project Manager,94,On Project,Retail,"MongoDB,Kafka,React,Azure"
+1726,Kara Robinson,41,QA Engineer,75,On Project,Healthcare,"Python,Docker,Java"
+1727,Michelle Moyer,44,QA Engineer,71,Available,Fintech,"React,Python,Kubernetes,PostgreSQL"
+1728,Wendy Fleming,55,Junior Developer,72,On Project,Healthcare,"TensorFlow,Java,Docker,FHIR"
+1729,Lisa White,45,QA Engineer,67,Available,Cybersecurity,"AWS,Python,Kubernetes"
+1730,Nicole Gonzalez,59,Project Manager,104,Available,E-commerce,"React,MongoDB"
+1731,Ronnie Patterson,40,UI/UX Designer,78,On Project,Logistics,"Python,React,PostgreSQL"
+1732,Deborah Bradley,22,QA Engineer,72,Available,SaaS,"Python,Go"
+1733,Hannah Garcia,48,QA Engineer,82,Available,SaaS,"AWS,Angular,Kubernetes"
+1734,Eric George,27,Lead Architect,127,On Project,SaaS,"Angular,Kubernetes"
+1735,Rachael Ryan,31,Junior Developer,75,Available,Cybersecurity,"Elasticsearch,Python,Go"
+1736,Richard Moore,29,Senior Developer,99,Available,Healthcare,"FHIR,Java,Docker"
+1737,Maria Williams,47,DevOps Engineer,102,Available,AI/ML,"AWS,PyTorch,Kubernetes,Spark"
+1738,David Buchanan,38,QA Engineer,75,Available,Fintech,"AWS,Python"
+1739,Brandon Hendrix,33,UI/UX Designer,68,On Project,SaaS,"Angular,Go,PostgreSQL"
+1740,David Ware,42,QA Engineer,79,On Project,Healthcare,"TensorFlow,FHIR,Docker,Azure"
+1741,Manuel Clark,37,Lead Architect,148,Available,Fintech,"React,PostgreSQL,AWS,Kafka"
+1742,Kimberly Davis,38,Project Manager,103,Available,Retail,"Azure,Kafka,MongoDB,React"
+1743,Jonathan Parrish,60,UI/UX Designer,88,On Project,Cybersecurity,"Python,Bash,Kubernetes,Elasticsearch"
+1744,Francis Carter,35,Senior Developer,112,Available,AI/ML,"Python,AWS"
+1745,Courtney Martinez,42,Senior Developer,102,Available,Cybersecurity,"Elasticsearch,Kubernetes"
+1746,Daniel Burton,41,Project Manager,106,Available,Healthcare,"Java,Python,Docker"
+1747,John Mason,33,UI/UX Designer,88,Available,AI/ML,"PyTorch,Kubernetes"
+1748,Yolanda Hill,48,Tech Lead,117,Available,E-commerce,"SQL,Docker"
+1749,Eric Brown,36,Tech Lead,134,Available,Cybersecurity,"AWS,Go,Bash,Kubernetes"
+1750,Brian Mitchell,31,Data Scientist,126,Available,SaaS,"Angular,Kubernetes,AWS,PostgreSQL"
+1751,Stephanie Moore,51,Project Manager,88,Available,SaaS,"Angular,AWS,Go,PostgreSQL"
+1752,Thomas Chan,23,Lead Architect,146,Available,SaaS,"Go,Kubernetes,AWS,Python"
+1753,Leah Miranda,57,Junior Developer,60,Available,Fintech,"Java,PostgreSQL,AWS"
+1754,Grant Smith,48,Senior Developer,85,Available,SaaS,"AWS,PostgreSQL"
+1755,Tyler Good,34,DevOps Engineer,113,Available,E-commerce,"SQL,Vue.js,React"
+1756,William Morris,22,Senior Developer,109,Available,E-commerce,"MongoDB,Vue.js"
+1757,James Pierce,45,Project Manager,98,Available,Fintech,"PostgreSQL,Java"
+1758,Kathleen Barrera,49,Data Scientist,117,On Project,AI/ML,"PyTorch,SQL"
+1759,Tony Rodriguez,41,UI/UX Designer,83,Available,AI/ML,"TensorFlow,PyTorch,Kubernetes,Python"
+1760,Donald Martinez,54,Project Manager,102,On Project,Logistics,"Kafka,Python,PostgreSQL,React"
+1761,Morgan Brown,58,UI/UX Designer,69,On Project,Retail,"MongoDB,SQL,Kafka,Java"
+1762,Sarah Pope,42,Data Scientist,98,Available,Logistics,"Java,PostgreSQL,Kafka"
+1763,Jenny Myers,28,Lead Architect,144,Available,Logistics,"Kafka,React,Python"
+1764,Henry Chang,56,UI/UX Designer,71,Available,E-commerce,"React,Vue.js"
+1765,Jason Moss,52,QA Engineer,61,On Project,Healthcare,"Docker,TensorFlow"
+1766,John Farley,25,Tech Lead,122,Available,SaaS,"Python,Angular,AWS"
+1767,Gregory Cannon,41,QA Engineer,61,On Project,Cybersecurity,"Bash,Go"
+1768,Nancy Carter,59,Project Manager,101,On Project,AI/ML,"AWS,PyTorch"
+1769,Christopher Campbell,52,UI/UX Designer,82,On Project,Logistics,"Java,GCP,Kafka,Docker"
+1770,Edward Ramirez,32,Junior Developer,58,On Project,SaaS,"Python,Kubernetes,AWS"
+1771,Arthur Harris,57,Junior Developer,73,On Project,Retail,"SQL,Kafka,React"
+1772,Aaron Young,59,DevOps Engineer,101,Available,SaaS,"Python,PostgreSQL,Angular,Kubernetes"
+1773,Ashley Robertson,38,Lead Architect,146,Available,Cybersecurity,"Elasticsearch,AWS,Python,Kubernetes"
+1774,James Ellison III,43,Tech Lead,115,On Project,Retail,"Azure,SQL,Kafka,Java"
+1775,Tony Mcbride,36,DevOps Engineer,96,Available,AI/ML,"SQL,PyTorch,Python,Spark"
+1776,Erika Schwartz,28,UI/UX Designer,65,Available,Healthcare,"FHIR,Docker,TensorFlow"
+1777,Meghan Conrad,28,QA Engineer,68,On Project,SaaS,"Angular,PostgreSQL,Kubernetes,Python"
+1778,Vanessa Tucker,53,Tech Lead,138,Available,E-commerce,"Docker,Java"
+1779,Heather Washington,31,DevOps Engineer,93,Available,Cybersecurity,"Elasticsearch,AWS"
+1780,Amy Johnson,45,UI/UX Designer,69,Available,E-commerce,"Docker,Java"
+1781,Mary Decker,49,DevOps Engineer,104,On Project,Retail,"SQL,Azure,React,Java"
+1782,Amy Brown,31,Tech Lead,122,On Project,E-commerce,"Docker,GCP,MongoDB"
+1783,Eric Hobbs,44,Project Manager,84,Available,AI/ML,"TensorFlow,PyTorch,AWS"
+1784,Julian Knight,59,Data Scientist,99,On Project,Logistics,"React,Python,GCP,Java"
+1785,Dana David,57,QA Engineer,85,Available,Retail,"React,MongoDB,Kafka"
+1786,Austin Smith,48,DevOps Engineer,103,On Project,Retail,"Java,SQL"
+1787,Lauren Huang,30,Junior Developer,57,Available,Fintech,"Kubernetes,Python,AWS,Kafka"
+1788,Donna Moore,30,Junior Developer,71,Available,E-commerce,"Java,GCP"
+1789,Susan Ross,56,Data Scientist,94,On Project,Retail,"Kafka,Java"
+1790,Melissa Mcguire,24,Lead Architect,126,On Project,Retail,"Java,Azure"
+1791,Jason Collins,33,Data Scientist,96,Available,Cybersecurity,"AWS,Elasticsearch,Bash"
+1792,Adam Johnson,28,QA Engineer,83,On Project,Cybersecurity,"Elasticsearch,AWS"
+1793,Taylor Holloway,48,Project Manager,108,On Project,Cybersecurity,"Go,Bash,AWS"
+1794,Tiffany Spencer,57,Project Manager,92,Available,Cybersecurity,"Python,Kubernetes,Elasticsearch,AWS"
+1795,Eric Terrell,28,Senior Developer,96,On Project,Healthcare,"Azure,SQL,TensorFlow"
+1796,Donald Tran,58,Tech Lead,132,Available,E-commerce,"Docker,GCP,React,Vue.js"
+1797,Sheila Brady,53,DevOps Engineer,85,Available,SaaS,"Angular,AWS,PostgreSQL,Kubernetes"
+1798,David Cole,59,Senior Developer,104,Available,Fintech,"Kubernetes,Python,React,Java"
+1799,Hayley Davis,43,Junior Developer,66,Available,Healthcare,"FHIR,Azure,Python"
+1800,Steven Garcia,37,Project Manager,86,Available,Fintech,"Java,React,Kafka"
+1801,Alan Beard,48,Data Scientist,97,Available,AI/ML,"Spark,Python,Kubernetes,PyTorch"
+1802,Julia Santana,37,DevOps Engineer,110,Available,Retail,"Java,React,SQL"
+1803,Richard Perry,46,DevOps Engineer,112,On Project,Fintech,"PostgreSQL,AWS,Kubernetes,Java"
+1804,Pamela Banks,49,Lead Architect,132,On Project,E-commerce,"Docker,React,SQL,Java"
+1805,Laura Pollard,48,DevOps Engineer,114,Available,SaaS,"Angular,PostgreSQL,Go"
+1806,Amber Michael,27,Project Manager,108,On Project,SaaS,"Angular,Kubernetes,Go"
+1807,Kevin Cooper,41,QA Engineer,83,On Project,Logistics,"Kafka,GCP,Docker,Java"
+1808,Deborah Allison,30,Project Manager,92,Available,Cybersecurity,"AWS,Kubernetes,Bash,Go"
+1809,Joan Heath,33,Junior Developer,57,Available,Retail,"Java,Azure,React"
+1810,Samuel Gonzalez,34,Junior Developer,63,Available,Retail,"Kafka,Java,React,MongoDB"
+1811,John Howard,48,Tech Lead,127,Available,Fintech,"Kafka,PostgreSQL,React,Kubernetes"
+1812,Ashley Black,47,Tech Lead,129,On Project,Fintech,"AWS,PostgreSQL,Python"
+1813,Wendy Harris,34,Senior Developer,101,Available,E-commerce,"Vue.js,SQL,MongoDB"
+1814,Michele Brown,40,UI/UX Designer,67,Available,AI/ML,"Python,AWS,SQL"
+1815,Gregory Jenkins,24,Tech Lead,113,Available,AI/ML,"Python,Kubernetes,TensorFlow"
+1816,Samantha Barnett,32,Project Manager,92,On Project,E-commerce,"Java,React,Vue.js"
+1817,Angela Higgins,53,Lead Architect,119,Available,Cybersecurity,"Elasticsearch,Kubernetes,Bash"
+1818,Jesse Martinez,30,Senior Developer,107,On Project,AI/ML,"PyTorch,Spark,SQL,TensorFlow"
+1819,Heather Cabrera,32,UI/UX Designer,82,On Project,Healthcare,"Docker,TensorFlow"
+1820,Charles Lopez,30,Junior Developer,56,Available,Cybersecurity,"Kubernetes,Python"
+1821,Troy Pham,45,Junior Developer,59,Available,Healthcare,"Docker,Azure,Python,SQL"
+1822,Casey Rodgers,50,Tech Lead,120,Available,Cybersecurity,"AWS,Go"
+1823,Pamela Rich,57,QA Engineer,71,Available,SaaS,"PostgreSQL,Go,Kubernetes"
+1824,Brian Wilkerson,26,Junior Developer,57,On Project,Healthcare,"Azure,TensorFlow,FHIR"
+1825,Ian Friedman,40,Project Manager,86,On Project,Retail,"Java,MongoDB,Azure,Kafka"
+1826,Charles Smith,42,Tech Lead,103,Available,Fintech,"AWS,Kubernetes"
+1827,Joshua Silva,35,UI/UX Designer,70,Available,E-commerce,"Docker,Java,MongoDB,SQL"
+1828,John Jordan,30,Senior Developer,91,Available,E-commerce,"React,GCP,Vue.js"
+1829,John James,23,Lead Architect,149,Available,AI/ML,"Spark,AWS,SQL,TensorFlow"
+1830,Leslie Simmons,55,Tech Lead,110,Available,Fintech,"PostgreSQL,Java"
+1831,Meredith Wyatt,37,DevOps Engineer,87,Available,SaaS,"Go,PostgreSQL"
+1832,Sara Chan,56,Project Manager,96,Available,Healthcare,"Java,Docker,Python"
+1833,Patrick Hudson,43,Tech Lead,132,Available,E-commerce,"SQL,Docker"
+1834,Timothy Spencer,37,UI/UX Designer,74,Available,SaaS,"Python,PostgreSQL,Kubernetes"
+1835,Michael Smith,48,UI/UX Designer,79,Available,Retail,"SQL,MongoDB,Java"
+1836,Gregory Morton,47,Junior Developer,57,On Project,Logistics,"GCP,Kafka,Docker"
+1837,Mackenzie Shaw,58,UI/UX Designer,65,Available,Cybersecurity,"Elasticsearch,AWS,Kubernetes"
+1838,John Gilbert,51,QA Engineer,62,Available,SaaS,"AWS,Kubernetes,Angular"
+1839,Suzanne Paul,39,QA Engineer,64,Available,Healthcare,"Docker,TensorFlow"
+1840,Derek Riddle,36,Lead Architect,138,Available,SaaS,"Python,AWS,Angular,PostgreSQL"
+1841,Jaime Chaney,23,Tech Lead,104,Available,SaaS,"Python,Go"
+1842,Charlotte Lynn,59,Senior Developer,97,Available,AI/ML,"Python,Kubernetes,SQL,Spark"
+1843,Amanda Riggs,28,Data Scientist,114,Available,Cybersecurity,"AWS,Kubernetes"
+1844,Patricia Martinez,41,Tech Lead,122,On Project,SaaS,"Kubernetes,PostgreSQL"
+1845,Franklin Reilly,30,Data Scientist,98,On Project,Retail,"Azure,MongoDB,React"
+1846,Karen Martin,30,Data Scientist,127,Available,SaaS,"Python,Kubernetes"
+1847,Aaron Martin,40,QA Engineer,73,On Project,Cybersecurity,"AWS,Bash"
+1848,Tracy Hebert,29,Lead Architect,132,Available,AI/ML,"TensorFlow,AWS,Spark"
+1849,Crystal Gray,56,UI/UX Designer,78,Available,Cybersecurity,"Elasticsearch,Python,Kubernetes"
+1850,Stacey Conway,23,Tech Lead,124,Available,E-commerce,"MongoDB,Java"
+1851,Nicole Cruz,40,Lead Architect,122,Available,Healthcare,"Docker,Java,Python,SQL"
+1852,David Barnes,41,DevOps Engineer,84,On Project,Logistics,"Java,Python,Docker"
+1853,Hector Ochoa,29,QA Engineer,72,Available,Cybersecurity,"AWS,Elasticsearch,Go"
+1854,Kathleen Shelton,41,Junior Developer,66,Available,Retail,"Java,Kafka,MongoDB,Azure"
+1855,Kathleen Andrews,24,Project Manager,84,Available,Logistics,"Java,Kafka,React"
+1856,Christina Smith,26,QA Engineer,64,Available,Retail,"MongoDB,Azure,React"
+1857,Joshua Herring,39,Junior Developer,64,Available,Logistics,"Docker,Java,Kafka"
+1858,Brenda Mitchell,45,Tech Lead,108,On Project,Cybersecurity,"Python,Bash,Elasticsearch,AWS"
+1859,Rebecca Jackson,22,Junior Developer,73,Available,E-commerce,"Java,GCP"
+1860,Christine Franklin,36,Lead Architect,115,Available,E-commerce,"MongoDB,SQL,GCP"
+1861,Kimberly Tapia,33,Project Manager,106,Available,Logistics,"PostgreSQL,Python,GCP,Kafka"
+1862,Daniel Greer,29,Lead Architect,146,Available,AI/ML,"Kubernetes,AWS,Spark"
+1863,Connie Love,22,Data Scientist,106,Available,E-commerce,"Vue.js,React"
+1864,Robert Lawson,50,Junior Developer,56,Available,Logistics,"GCP,Docker,Java"
+1865,Michael Simmons,60,UI/UX Designer,79,On Project,E-commerce,"Docker,MongoDB,Vue.js,React"
+1866,Jason Ewing,42,Senior Developer,96,Available,Logistics,"GCP,Java,Python"
+1867,Katie Hicks,56,Junior Developer,68,Available,Healthcare,"SQL,TensorFlow"
+1868,Amanda Beard,39,Tech Lead,127,Available,Cybersecurity,"Bash,Kubernetes,Python"
+1869,Rachel Banks,31,Senior Developer,89,On Project,Logistics,"Python,Kafka,GCP"
+1870,Henry Ayers,59,Lead Architect,115,Available,Fintech,"Kafka,Kubernetes,Python,React"
+1871,Martin French,26,Tech Lead,118,On Project,Healthcare,"Docker,SQL"
+1872,Bernard Smith,25,Data Scientist,99,On Project,SaaS,"Python,Go"
+1873,John Perez,33,DevOps Engineer,102,On Project,Retail,"Kafka,SQL,React"
+1874,Jeffrey Herrera,25,Tech Lead,101,On Project,Cybersecurity,"Python,Elasticsearch,Bash,AWS"
+1875,Charlene Conley,40,QA Engineer,76,Available,Logistics,"Docker,Kafka,Python"
+1876,Sophia Alvarado,40,DevOps Engineer,90,On Project,Cybersecurity,"Go,Kubernetes,Bash,AWS"
+1877,Evan Herrera,28,Senior Developer,108,Available,AI/ML,"TensorFlow,SQL,Python"
+1878,Benjamin Lambert,36,Lead Architect,110,Available,Retail,"MongoDB,Kafka"
+1879,Nicholas Adams,43,Lead Architect,124,Available,Logistics,"Java,PostgreSQL"
+1880,Brandon Wilson,55,Data Scientist,104,Available,Healthcare,"Java,SQL,Docker"
+1881,John Newton,46,DevOps Engineer,82,Available,Fintech,"Python,Kafka,AWS,React"
+1882,Angela Simpson,43,Junior Developer,64,On Project,SaaS,"PostgreSQL,AWS,Python"
+1883,Emily Berger,32,Data Scientist,93,On Project,Healthcare,"Python,SQL,FHIR,Java"
+1884,Katherine Ramirez,56,Senior Developer,93,On Project,E-commerce,"Docker,Vue.js"
+1885,Brian Walsh,45,Senior Developer,99,Available,Logistics,"Docker,React"
+1886,Angela Lee,50,UI/UX Designer,78,Available,Fintech,"AWS,Kubernetes,React,Python"
+1887,Rickey Finley,28,UI/UX Designer,88,Available,Cybersecurity,"Bash,Python"
+1888,Amanda Mcguire,32,QA Engineer,85,Available,Retail,"React,Azure,Kafka"
+1889,William Brennan,38,DevOps Engineer,96,Available,Cybersecurity,"Kubernetes,Elasticsearch,Go,AWS"
+1890,Ruben Cameron,32,UI/UX Designer,81,Available,E-commerce,"Vue.js,Java,MongoDB"
+1891,Alyssa Woodard,30,Senior Developer,118,Available,E-commerce,"MongoDB,Java,SQL"
+1892,Isaac Mcintosh,34,UI/UX Designer,82,Available,Cybersecurity,"Python,Kubernetes"
+1893,Bryce Johnson,33,QA Engineer,83,Available,E-commerce,"Docker,Java,GCP"
+1894,Kent Snyder,28,QA Engineer,67,Available,Healthcare,"Python,SQL,Java,Docker"
+1895,Gregory Barber,54,DevOps Engineer,110,Available,Fintech,"Kubernetes,Python,AWS,Kafka"
+1896,Daniel Durham,22,Data Scientist,116,Available,SaaS,"PostgreSQL,AWS"
+1897,Latoya Hunt,53,Data Scientist,109,On Project,SaaS,"PostgreSQL,Python,Go,Kubernetes"
+1898,Rachael Herrera,47,Senior Developer,114,On Project,Cybersecurity,"Bash,Elasticsearch,Python,AWS"
+1899,Katherine Montgomery,47,Project Manager,95,On Project,Retail,"MongoDB,Azure"
+1900,Mary Henderson,49,Project Manager,108,Available,Retail,"MongoDB,Java"
+1901,Angela Wiggins,43,Junior Developer,66,Available,Cybersecurity,"Kubernetes,Go"
+1902,Cindy Colon,44,Tech Lead,130,On Project,Cybersecurity,"Go,Bash,Elasticsearch"
+1903,Ian Poole,57,UI/UX Designer,92,On Project,Logistics,"Kafka,GCP,Python"
+1904,Brandon Skinner,44,QA Engineer,85,On Project,Retail,"MongoDB,Kafka,SQL"
+1905,Andrew Martinez,24,Senior Developer,112,On Project,Logistics,"Java,Kafka"
+1906,Jacob Gray,51,Senior Developer,117,On Project,AI/ML,"Python,AWS,PyTorch,TensorFlow"
+1907,Jonathan Owens,32,QA Engineer,62,Available,Healthcare,"FHIR,TensorFlow"
+1908,Angela Roy,38,Lead Architect,140,Available,Retail,"SQL,Java,Azure"
+1909,Joshua Martinez DVM,59,DevOps Engineer,106,Available,Retail,"Kafka,React"
+1910,Susan Crawford,50,QA Engineer,79,Available,E-commerce,"Java,Docker,React,Vue.js"
+1911,Paula Arroyo,30,Junior Developer,73,Available,AI/ML,"SQL,AWS"
+1912,Dawn Johnson,36,Junior Developer,68,Available,Logistics,"Kafka,Python,Java,GCP"
+1913,James Adams,45,DevOps Engineer,101,Available,E-commerce,"Docker,Vue.js"
+1914,Joseph Williams,35,Junior Developer,68,On Project,Logistics,"Kafka,React,Java,Docker"
+1915,Ethan Mckenzie,49,Data Scientist,104,On Project,Fintech,"AWS,Python"
+1916,Deborah Anderson,57,Senior Developer,91,Available,E-commerce,"Docker,GCP"
+1917,Bradley Jackson,50,Project Manager,105,On Project,E-commerce,"Vue.js,SQL"
+1918,April Sharp,50,Lead Architect,132,Available,Healthcare,"SQL,Azure"
+1919,Donald Gibson,31,Data Scientist,122,Available,Fintech,"Python,Kafka,Kubernetes,Java"
+1920,Charles Perez,36,Data Scientist,124,On Project,Logistics,"PostgreSQL,Java"
+1921,Sara Gallagher,33,Tech Lead,118,Available,Healthcare,"SQL,Docker,Python"
+1922,Karen Nelson,41,QA Engineer,65,Available,Healthcare,"TensorFlow,Java,FHIR,Docker"
+1923,Shawn Stewart,45,Junior Developer,69,Available,Logistics,"Python,Java"
+1924,John Taylor,43,Junior Developer,75,On Project,Logistics,"PostgreSQL,Docker,Java"
+1925,Sarah Hamilton,38,Senior Developer,102,Available,E-commerce,"Vue.js,Java,GCP,SQL"
+1926,Edward Henry,42,Project Manager,81,Available,Fintech,"PostgreSQL,Python"
+1927,Michael Pearson,25,QA Engineer,68,Available,AI/ML,"Kubernetes,Python,PyTorch,Spark"
+1928,Kathleen Collins,48,Data Scientist,126,Available,Retail,"Java,Azure,React"
+1929,Tony Moran,31,Junior Developer,57,Available,Retail,"React,Java,Azure"
+1930,Edward Stokes,37,Lead Architect,137,Available,Cybersecurity,"Kubernetes,AWS,Bash"
+1931,Dustin Mayer,31,DevOps Engineer,81,Available,Logistics,"Docker,React"
+1932,Ariel Cook,32,UI/UX Designer,69,Available,E-commerce,"Docker,Vue.js,React"
+1933,Amy Smith,56,Senior Developer,120,Available,AI/ML,"TensorFlow,Python"
+1934,Alexander Gibson,40,Junior Developer,72,On Project,Logistics,"Python,Docker,PostgreSQL,GCP"
+1935,Joseph Fox,30,Lead Architect,149,Available,AI/ML,"Python,Kubernetes"
+1936,Donna Robbins,27,Lead Architect,110,On Project,Cybersecurity,"Kubernetes,AWS"
+1937,Linda Tucker,56,Data Scientist,115,On Project,Healthcare,"SQL,Python"
+1938,Antonio Conrad,25,Data Scientist,99,Available,Retail,"React,SQL,Java"
+1939,Sarah Garner,35,Junior Developer,62,On Project,Retail,"Kafka,MongoDB,Azure"
+1940,Edward Lawson,22,Data Scientist,94,Available,Fintech,"Kubernetes,AWS,Kafka,Java"
+1941,Stephanie Arnold,60,Junior Developer,72,On Project,Retail,"MongoDB,Kafka"
+1942,Natalie Hampton,51,QA Engineer,78,Available,E-commerce,"React,MongoDB,Vue.js"
+1943,Matthew Burns,30,Data Scientist,122,On Project,SaaS,"Kubernetes,Python"
+1944,Timothy Williams,49,Data Scientist,128,Available,AI/ML,"TensorFlow,Spark"
+1945,Deborah Jackson,29,QA Engineer,74,Available,SaaS,"Go,Angular,PostgreSQL"
+1946,Robert Molina,55,QA Engineer,71,Available,Fintech,"Python,Kubernetes"
+1947,Allen Wells,26,UI/UX Designer,66,Available,Retail,"Kafka,React,MongoDB"
+1948,Shelly Horn,46,UI/UX Designer,81,On Project,Fintech,"React,Kubernetes"
+1949,James Scott,57,Senior Developer,113,On Project,E-commerce,"Docker,Vue.js"
+1950,James Winters,43,DevOps Engineer,96,On Project,Retail,"MongoDB,SQL"
+1951,Jessica Orozco,46,Project Manager,98,Available,SaaS,"Go,Kubernetes,Python"
+1952,Jeffrey Long,44,Data Scientist,102,Available,AI/ML,"AWS,PyTorch,Python,Kubernetes"
+1953,Ryan Cortez MD,45,DevOps Engineer,101,Available,SaaS,"Angular,PostgreSQL,Go,AWS"
+1954,Richard Liu Jr.,47,Lead Architect,135,Available,Healthcare,"FHIR,Docker"
+1955,James Young,40,Lead Architect,111,On Project,AI/ML,"TensorFlow,PyTorch,AWS,Kubernetes"
+1956,Michael Pennington PhD,30,Data Scientist,96,Available,E-commerce,"Java,MongoDB"
+1957,David Williams,48,Lead Architect,130,On Project,E-commerce,"Java,React"
+1958,Robin Smith,42,Senior Developer,86,On Project,Fintech,"React,AWS,Java,Python"
+1959,Johnny Jacobs,30,Lead Architect,116,Available,Logistics,"Kafka,Python"
+1960,Kathryn Owens,52,DevOps Engineer,105,Available,SaaS,"PostgreSQL,Go,Angular"
+1961,Brittany Preston,27,QA Engineer,62,On Project,Healthcare,"Docker,SQL,FHIR,Python"
+1962,Jeanette White,24,Tech Lead,101,Available,AI/ML,"Python,PyTorch"
+1963,Mr. Gregory Fry,48,Junior Developer,58,Available,Fintech,"Java,Python,AWS,Kubernetes"
+1964,Brian Wood,58,Lead Architect,116,On Project,Healthcare,"Docker,Python,Azure,Java"
+1965,Taylor Bartlett,49,UI/UX Designer,87,On Project,Logistics,"Java,Docker,React,GCP"
+1966,Travis Martin,53,Project Manager,108,Available,AI/ML,"Kubernetes,Python"
+1967,Mark Wolfe,40,QA Engineer,61,Available,Healthcare,"SQL,Docker"
+1968,Christopher Perez,60,Senior Developer,102,On Project,Healthcare,"Azure,SQL,Docker"
+1969,Sarah Fox,58,Tech Lead,103,On Project,SaaS,"PostgreSQL,Kubernetes"
+1970,Andrea Cruz,49,Lead Architect,150,Available,Cybersecurity,"Elasticsearch,Python,Kubernetes,Bash"
+1971,Jacob Johnson,33,Senior Developer,118,Available,Healthcare,"FHIR,SQL"
+1972,Joshua Bishop,46,Lead Architect,147,Available,Retail,"React,MongoDB,SQL,Kafka"
+1973,Brooke Castro,45,Senior Developer,103,Available,Retail,"Java,Azure,MongoDB"
+1974,James Bradley,33,Lead Architect,113,Available,Healthcare,"SQL,Java"
+1975,Isaiah Williams,57,QA Engineer,74,On Project,Fintech,"Kubernetes,Kafka,Java"
+1976,Alison Smith,39,Senior Developer,107,Available,Fintech,"Java,Kubernetes,AWS,Kafka"
+1977,Peter Clark,60,DevOps Engineer,97,On Project,E-commerce,"SQL,GCP"
+1978,Matthew Pierce,25,Data Scientist,100,Available,Fintech,"React,Java,Python"
+1979,Robert Ochoa,49,Data Scientist,115,Available,Fintech,"Java,Kafka"
+1980,Amanda Hayes,41,Junior Developer,60,Available,AI/ML,"TensorFlow,Kubernetes,Python"
+1981,Amy Scott,35,Project Manager,93,Available,Cybersecurity,"Python,Bash,Elasticsearch,AWS"
+1982,Tammy Jacobs,30,UI/UX Designer,89,On Project,Fintech,"React,Python"
+1983,Michelle Keith,39,Junior Developer,74,Available,Cybersecurity,"Kubernetes,Bash,Go"
+1984,Kathryn Hall,46,Lead Architect,111,Available,E-commerce,"GCP,SQL,Vue.js"
+1985,Jeffrey Navarro,56,DevOps Engineer,97,On Project,Logistics,"Python,Kafka,Java"
+1986,Douglas Parker,24,DevOps Engineer,86,On Project,E-commerce,"SQL,React,MongoDB"
+1987,Christopher Rojas,57,Lead Architect,140,Available,E-commerce,"React,Java"
+1988,Robin Henry,31,Senior Developer,104,Available,Cybersecurity,"Kubernetes,Elasticsearch,AWS"
+1989,Robin Cole,31,UI/UX Designer,90,Available,Logistics,"Kafka,Java"
+1990,Arthur Miller,52,QA Engineer,81,On Project,Healthcare,"Java,SQL,TensorFlow"
+1991,Savannah Davis,59,Senior Developer,104,Available,SaaS,"Angular,AWS,Go"
+1992,Derek Erickson,24,Lead Architect,126,Available,Retail,"MongoDB,React,SQL"
+1993,Kim Park,51,QA Engineer,74,Available,E-commerce,"Java,Docker"
+1994,Julie Singleton,28,Junior Developer,75,Available,Retail,"Java,Kafka"
+1995,Ashley Newton,34,Junior Developer,69,On Project,E-commerce,"GCP,Vue.js,SQL,MongoDB"
+1996,Megan Jones,31,Junior Developer,69,Available,Cybersecurity,"AWS,Bash,Elasticsearch"
+1997,Katherine Martin,30,Junior Developer,69,Available,Retail,"MongoDB,SQL"
+1998,Emily Rodgers,38,QA Engineer,60,Available,Logistics,"GCP,Kafka,React"
+1999,Kayla Miller,43,QA Engineer,70,Available,Fintech,"AWS,PostgreSQL,React,Kubernetes"
+2000,Jill Allen,33,Lead Architect,141,On Project,AI/ML,"AWS,SQL,Kubernetes"
+2001,Jacob Little,38,Tech Lead,104,On Project,Healthcare,"FHIR,Azure,Docker,Java"
+2002,Megan Mccullough,31,Tech Lead,121,On Project,Healthcare,"Azure,Python"
+2003,Lisa Parker,27,DevOps Engineer,90,On Project,E-commerce,"Java,Vue.js,React,Docker"
+2004,Kenneth Campos,46,Tech Lead,121,On Project,Cybersecurity,"Kubernetes,Bash,Python,AWS"
+2005,Mikayla Franklin,53,Senior Developer,114,Available,Retail,"Java,MongoDB,SQL,Azure"
+2006,Andrew Martin,47,UI/UX Designer,85,On Project,Cybersecurity,"Python,Bash"
+2007,Elizabeth Taylor,24,Data Scientist,129,On Project,Cybersecurity,"Bash,Elasticsearch"
+2008,Mark Davis,41,DevOps Engineer,84,Available,AI/ML,"AWS,Spark,SQL"
+2009,David Soto,36,DevOps Engineer,88,Available,SaaS,"Angular,PostgreSQL,Kubernetes"
+2010,Eric Smith,22,Junior Developer,67,On Project,Healthcare,"Java,Docker"
+2011,Belinda Williams,50,Junior Developer,61,Available,Retail,"React,Azure,Kafka"
+2012,Tyler Gibson,57,UI/UX Designer,89,Available,Healthcare,"SQL,Java,Docker"
+2013,Caitlyn Smith,43,DevOps Engineer,93,Available,SaaS,"Python,AWS"
+2014,Christopher Brown,56,UI/UX Designer,85,Available,SaaS,"Go,Python"
+2015,Melanie Montgomery,32,DevOps Engineer,98,Available,Healthcare,"Python,TensorFlow,Azure,FHIR"
+2016,Laurie Obrien,55,Junior Developer,71,Available,Retail,"React,Kafka,SQL"
+2017,Dr. Alyssa Herrera,47,UI/UX Designer,68,On Project,Healthcare,"Java,FHIR,Python"
+2018,Christopher Mayo,24,Junior Developer,63,Available,E-commerce,"Vue.js,SQL,Docker"
+2019,Scott Willis,25,Tech Lead,117,Available,SaaS,"PostgreSQL,Kubernetes"
+2020,Shawn Love,36,Tech Lead,137,Available,Fintech,"PostgreSQL,Kafka"
+2021,Brandon Hubbard,38,Data Scientist,106,Available,Cybersecurity,"Bash,AWS,Elasticsearch"
+2022,Dominique Kelly,28,Tech Lead,116,Available,SaaS,"AWS,PostgreSQL,Kubernetes"
+2023,Courtney Watkins,38,Data Scientist,108,Available,SaaS,"PostgreSQL,Kubernetes,AWS,Angular"
+2024,Nicole Wallace,24,QA Engineer,72,On Project,SaaS,"Python,PostgreSQL,Go"
+2025,Kelly Davis,37,Lead Architect,149,Available,E-commerce,"Vue.js,MongoDB,React"
+2026,Victor Parker,40,DevOps Engineer,88,Available,Healthcare,"Python,Docker,TensorFlow"
+2027,Corey Williams,53,Project Manager,107,Available,Fintech,"Java,Python,AWS,Kubernetes"
+2028,Megan Young,49,Senior Developer,118,Available,Healthcare,"FHIR,Java,SQL"
+2029,Mercedes Sanchez,47,Data Scientist,95,On Project,Fintech,"Java,React,PostgreSQL"
+2030,Michael Evans,58,Lead Architect,126,Available,Fintech,"Java,Python,AWS,PostgreSQL"
+2031,John Hammond,28,Lead Architect,144,On Project,SaaS,"PostgreSQL,AWS,Angular,Go"
+2032,Walter Juarez,33,Data Scientist,109,On Project,Healthcare,"Docker,Java,Azure,SQL"
+2033,David Terry,26,Project Manager,105,Available,E-commerce,"Vue.js,Docker,GCP,MongoDB"
+2034,Timothy Waller,60,QA Engineer,79,Available,Healthcare,"Docker,Java,FHIR"
+2035,Joseph Williamson,42,QA Engineer,78,Available,Healthcare,"SQL,FHIR,Docker"
+2036,Adam Vasquez,59,Project Manager,98,Available,Fintech,"Java,React,Kubernetes"
+2037,Brandon Cruz,37,Data Scientist,106,Available,Cybersecurity,"Python,AWS,Elasticsearch"
+2038,Kayla Thompson,35,DevOps Engineer,110,On Project,E-commerce,"React,SQL"
+2039,Luis Andrews,27,QA Engineer,79,Available,E-commerce,"GCP,SQL,MongoDB"
+2040,Brandon Ramos,53,QA Engineer,85,Available,E-commerce,"Docker,SQL,React,Java"
+2041,Deborah Brown,46,Junior Developer,57,Available,SaaS,"PostgreSQL,Kubernetes,Angular,Python"
+2042,Jeffery Bell,33,Junior Developer,61,Available,Logistics,"Docker,Kafka,Java,GCP"
+2043,Jennifer Hampton,54,Lead Architect,139,Available,Healthcare,"Docker,Azure,FHIR"
+2044,Misty Arnold,24,Data Scientist,106,Available,Retail,"Java,React"
+2045,Donald Harrison,36,Data Scientist,102,On Project,SaaS,"PostgreSQL,Go,AWS,Kubernetes"
+2046,Nicholas Sanchez,58,UI/UX Designer,87,On Project,AI/ML,"Spark,AWS,Python,TensorFlow"
+2047,Sarah Valencia,25,Senior Developer,97,On Project,Logistics,"Kafka,PostgreSQL,Java"
+2048,Stephanie Nguyen,33,UI/UX Designer,78,Available,AI/ML,"PyTorch,SQL,AWS,Python"
+2049,Christopher Howard,25,QA Engineer,65,On Project,Cybersecurity,"Python,AWS,Bash,Go"
+2050,Thomas Montoya,43,Tech Lead,138,On Project,AI/ML,"Python,AWS"
+2051,David Johnson,46,UI/UX Designer,94,On Project,Retail,"Kafka,React"
+2052,Reginald Burton,23,Data Scientist,104,Available,SaaS,"Angular,Go"
+2053,Mrs. Kimberly Boyer DDS,43,Data Scientist,91,On Project,E-commerce,"MongoDB,GCP,React,Vue.js"
+2054,Angela Holmes,56,DevOps Engineer,96,Available,Healthcare,"Docker,Azure,TensorFlow"
+2055,Kevin Gutierrez,30,Lead Architect,132,On Project,AI/ML,"TensorFlow,Python,Spark,SQL"
+2056,Kevin Washington,35,Project Manager,109,Available,SaaS,"Go,Python,Kubernetes"
+2057,Carlos Martinez,49,DevOps Engineer,94,On Project,E-commerce,"SQL,Docker"
+2058,Felicia Simpson,38,QA Engineer,71,Available,Retail,"SQL,Azure"
+2059,Brandon Chandler,33,Tech Lead,132,Available,SaaS,"AWS,Kubernetes"
+2060,Kevin West,45,QA Engineer,71,Available,SaaS,"AWS,Go,PostgreSQL,Python"
+2061,April Livingston,40,Data Scientist,126,Available,Logistics,"GCP,Docker,Kafka"
+2062,Richard Brown,47,Data Scientist,113,On Project,Logistics,"PostgreSQL,GCP,Kafka"
+2063,Becky Macdonald,39,QA Engineer,85,Available,Retail,"Kafka,Java,React,Azure"
+2064,Carolyn Frank,23,QA Engineer,68,On Project,Logistics,"Python,PostgreSQL,Docker,Java"
+2065,Spencer Davis,43,Senior Developer,118,On Project,AI/ML,"AWS,SQL"
+2066,Tracy Whitaker,42,Lead Architect,135,Available,Fintech,"Kubernetes,Kafka,Python,React"
+2067,Martin Page,32,Lead Architect,147,On Project,Healthcare,"Docker,Java"
+2068,Benjamin Salinas,44,Junior Developer,66,Available,Healthcare,"SQL,Java,Python,FHIR"
+2069,Paul Miller,23,UI/UX Designer,88,Available,Healthcare,"Docker,FHIR,Python,SQL"
+2070,Jordan Clay,45,UI/UX Designer,95,Available,Logistics,"GCP,Docker,PostgreSQL"
+2071,Marco Campbell,25,UI/UX Designer,90,Available,E-commerce,"React,MongoDB,Java,SQL"
+2072,Tracy Daniels,55,Lead Architect,120,Available,AI/ML,"TensorFlow,PyTorch,Spark"
+2073,Eric Nelson,28,Tech Lead,121,Available,Fintech,"Kafka,AWS,PostgreSQL"
+2074,Ryan Jensen,26,DevOps Engineer,111,Available,Retail,"SQL,Java"
+2075,Cynthia Howard DDS,39,Project Manager,90,Available,Logistics,"GCP,Kafka,PostgreSQL"
+2076,Timothy Martinez,31,UI/UX Designer,79,Available,Retail,"Kafka,React,Java,MongoDB"
+2077,Christopher Clark,48,Lead Architect,142,On Project,Logistics,"PostgreSQL,GCP,Kafka,Java"
+2078,Ethan Yoder,52,Junior Developer,60,Available,Retail,"MongoDB,React,SQL,Kafka"
+2079,Allison Bryant PhD,53,DevOps Engineer,100,Available,Healthcare,"Docker,Azure,SQL,FHIR"
+2080,Katelyn Martin,52,Lead Architect,140,On Project,Healthcare,"SQL,Python"
+2081,Brenda Walker,38,Data Scientist,109,Available,AI/ML,"TensorFlow,Python,Spark"
+2082,Harold Mills,32,Senior Developer,101,Available,E-commerce,"Java,SQL,MongoDB,React"
+2083,Kenneth Smith,27,UI/UX Designer,82,Available,Healthcare,"SQL,Azure"
+2084,Melissa Fisher,40,Senior Developer,94,Available,Fintech,"Kubernetes,Python,AWS"
+2085,Dylan Rodriguez,57,Junior Developer,61,Available,Healthcare,"Azure,Python"
+2086,Craig Powell,24,Project Manager,89,On Project,AI/ML,"PyTorch,Python,Spark"
+2087,Melissa Harris,29,Junior Developer,56,Available,Logistics,"Python,GCP,Kafka,React"
+2088,James Thompson,50,Junior Developer,70,Available,SaaS,"PostgreSQL,Go"
+2089,Laura Alexander,27,Project Manager,102,On Project,AI/ML,"Spark,AWS,TensorFlow"
+2090,Nathan Meyer,49,Lead Architect,110,Available,Healthcare,"FHIR,Azure,SQL,TensorFlow"
+2091,Justin Ayala,29,Junior Developer,68,On Project,SaaS,"Angular,Kubernetes"
+2092,Michelle Lucas,56,Tech Lead,100,Available,AI/ML,"TensorFlow,Spark,SQL,Kubernetes"
+2093,Frank Bray,49,Senior Developer,100,On Project,Logistics,"React,PostgreSQL,Java"
+2094,Jessica Bennett,49,QA Engineer,69,Available,SaaS,"Go,Kubernetes,Angular,Python"
+2095,Diane Huerta,39,Senior Developer,99,On Project,E-commerce,"GCP,SQL"
+2096,Timothy Maddox,46,Project Manager,81,Available,E-commerce,"MongoDB,Java,React"
+2097,Megan Lewis,48,Project Manager,98,Available,Fintech,"PostgreSQL,Python,Java,Kafka"
+2098,Dennis Lester,46,DevOps Engineer,101,On Project,E-commerce,"SQL,MongoDB,Java,React"
+2099,Melissa Arellano,40,Tech Lead,124,On Project,Cybersecurity,"Elasticsearch,Python"
+2100,Erica Fisher,45,QA Engineer,74,On Project,AI/ML,"SQL,PyTorch"
+2101,Dr. Mary King,56,Senior Developer,97,Available,Retail,"Kafka,MongoDB,React,SQL"
+2102,Sara Parker,26,Junior Developer,66,Available,Healthcare,"Python,FHIR,Docker,Java"
+2103,Richard Whitney,45,UI/UX Designer,74,Available,Retail,"Azure,Kafka,Java,SQL"
+2104,Donna Johnson,28,Senior Developer,91,Available,Retail,"MongoDB,SQL,Java"
+2105,Thomas Taylor Jr.,24,Junior Developer,72,On Project,E-commerce,"Vue.js,Java,React,Docker"
+2106,Timothy Copeland,25,DevOps Engineer,114,On Project,AI/ML,"AWS,PyTorch,Spark"
+2107,Janet Bates,43,Tech Lead,113,Available,Healthcare,"Java,FHIR,Python"
+2108,Cheyenne Holden,60,Project Manager,85,On Project,Healthcare,"Java,FHIR,Azure"
+2109,Jennifer Harding,31,Tech Lead,129,Available,SaaS,"AWS,Go,Angular"
+2110,Jack Johnson,49,UI/UX Designer,82,On Project,Logistics,"React,Docker"
+2111,David Barrera,25,Senior Developer,104,On Project,Cybersecurity,"Bash,AWS"
+2112,Emily Austin MD,33,Data Scientist,121,On Project,Healthcare,"Docker,Azure,FHIR"
+2113,Philip Garcia,29,UI/UX Designer,94,Available,E-commerce,"MongoDB,React"
+2114,Katie Griffith,51,Junior Developer,73,Available,Healthcare,"SQL,TensorFlow,Python,Azure"
+2115,Kenneth Tyler,39,Senior Developer,117,On Project,SaaS,"Angular,Python"
+2116,Jason Foster,25,QA Engineer,75,Available,Logistics,"Kafka,GCP,Java"
+2117,Robert Lane,23,Lead Architect,119,On Project,AI/ML,"Spark,Kubernetes,Python,SQL"
+2118,Richard Waters,36,Junior Developer,63,Available,SaaS,"Angular,PostgreSQL"
+2119,Juan Wright,56,QA Engineer,73,Available,AI/ML,"TensorFlow,PyTorch,AWS"
+2120,Steven Velez,23,Lead Architect,125,Available,Healthcare,"Docker,FHIR,TensorFlow,Python"
+2121,Joseph Sharp,34,Data Scientist,126,Available,Healthcare,"Java,FHIR,Docker,TensorFlow"
+2122,Christopher Mckinney,52,Lead Architect,137,Available,Healthcare,"Python,Docker,Azure,TensorFlow"
+2123,Sharon Haas,44,Lead Architect,125,Available,Retail,"Kafka,SQL"
+2124,Kevin Fuller,43,Project Manager,87,Available,Cybersecurity,"Bash,Go,AWS,Elasticsearch"
+2125,Paul Bradford,57,Junior Developer,57,Available,E-commerce,"Vue.js,GCP"
+2126,Elizabeth Davidson,27,DevOps Engineer,110,On Project,Healthcare,"Python,Java"
+2127,Stacey Burton,58,Senior Developer,107,On Project,Cybersecurity,"Bash,AWS"
+2128,Brian May,38,Senior Developer,102,On Project,E-commerce,"React,GCP,Vue.js"
+2129,Deborah Smith,43,Senior Developer,103,On Project,AI/ML,"Spark,SQL,TensorFlow"
+2130,Megan Johnson,59,UI/UX Designer,81,Available,Healthcare,"Python,TensorFlow"
+2131,Andrew Harrison,27,Senior Developer,91,On Project,Cybersecurity,"Elasticsearch,Go,AWS"
+2132,Tracy Harris,44,Junior Developer,55,Available,AI/ML,"Python,TensorFlow,AWS"
+2133,Anna Gibson,60,UI/UX Designer,69,On Project,Logistics,"PostgreSQL,Kafka,Python,GCP"
+2134,Devon Brooks,28,Lead Architect,132,Available,SaaS,"AWS,PostgreSQL,Go"
+2135,Amy Crawford,52,Tech Lead,116,On Project,AI/ML,"Spark,Kubernetes"
+2136,Melanie Jones,47,Data Scientist,111,On Project,SaaS,"Angular,PostgreSQL,Go"
+2137,Lori Thomas,41,Tech Lead,104,On Project,SaaS,"AWS,PostgreSQL,Kubernetes,Go"
+2138,Misty Noble,50,DevOps Engineer,92,Available,AI/ML,"Spark,Python,TensorFlow,PyTorch"
+2139,Mark Smith,22,Tech Lead,122,Available,AI/ML,"Kubernetes,SQL,Python"
+2140,Robin Cruz,53,Project Manager,98,Available,Fintech,"React,PostgreSQL,Java"
+2141,Charlotte Johnson,48,DevOps Engineer,90,On Project,Cybersecurity,"Elasticsearch,Bash,Go"
+2142,Zachary Gray,60,Data Scientist,113,Available,SaaS,"PostgreSQL,Kubernetes,Python"
+2143,Mia Curtis,58,Junior Developer,65,On Project,Retail,"Azure,SQL,MongoDB,Java"
+2144,Tracy Kidd,22,UI/UX Designer,77,Available,Cybersecurity,"AWS,Bash"
+2145,Brittany Thomas,31,Data Scientist,101,Available,Logistics,"GCP,Docker"
+2146,Patrick Flowers,44,UI/UX Designer,69,On Project,Retail,"Azure,SQL,MongoDB"
+2147,Ann Jackson,26,DevOps Engineer,112,Available,Cybersecurity,"Python,Bash,Elasticsearch"
+2148,Casey Phillips,35,Project Manager,103,Available,SaaS,"Go,Kubernetes,AWS,Python"
+2149,Sherri Levine,42,UI/UX Designer,65,On Project,Retail,"Azure,MongoDB,React"
+2150,Elizabeth Anderson,59,UI/UX Designer,75,Available,Logistics,"React,PostgreSQL"
+2151,Valerie Smith,31,UI/UX Designer,77,On Project,AI/ML,"PyTorch,SQL,TensorFlow"
+2152,Caleb Perez,30,UI/UX Designer,95,On Project,E-commerce,"React,Vue.js"
+2153,Kathleen Harrison,39,QA Engineer,73,Available,AI/ML,"TensorFlow,Spark,AWS"
+2154,Lisa Noble,57,Lead Architect,114,Available,Fintech,"Java,Kafka,Python"
+2155,Amanda Powell,34,UI/UX Designer,83,Available,Cybersecurity,"Kubernetes,AWS,Elasticsearch"
+2156,Derek Mcclain,46,UI/UX Designer,85,Available,E-commerce,"GCP,Java"
+2157,Deborah Allen,49,Senior Developer,119,Available,SaaS,"AWS,Python,PostgreSQL"
+2158,Melanie Nguyen,46,QA Engineer,83,On Project,AI/ML,"TensorFlow,SQL,PyTorch,Kubernetes"
+2159,Walter Trevino,27,Data Scientist,97,Available,AI/ML,"SQL,Kubernetes"
+2160,Shirley White,45,Data Scientist,108,Available,E-commerce,"GCP,MongoDB,React,Vue.js"
+2161,Mary Taylor,31,Junior Developer,65,Available,Retail,"SQL,Kafka,Java,Azure"
+2162,John Moody,32,Tech Lead,112,Available,AI/ML,"TensorFlow,SQL,AWS"
+2163,William Chen,40,Data Scientist,111,On Project,Retail,"Kafka,SQL,MongoDB,React"
+2164,Gregory Wyatt,24,Lead Architect,113,On Project,AI/ML,"AWS,SQL,Kubernetes"
+2165,Jennifer Johnson,40,Data Scientist,99,Available,Cybersecurity,"Go,Bash,Elasticsearch"
+2166,Mr. Jeffrey Rodriguez,32,Lead Architect,143,Available,Logistics,"PostgreSQL,Java"
+2167,Bryan Moore,43,Project Manager,99,On Project,SaaS,"AWS,PostgreSQL,Kubernetes"
+2168,Shawn Diaz,37,Project Manager,101,Available,AI/ML,"SQL,Python,Kubernetes,AWS"
+2169,Rhonda Hanson,52,Senior Developer,92,On Project,Cybersecurity,"Elasticsearch,AWS,Go"
+2170,Julie Collier,40,Data Scientist,124,On Project,AI/ML,"AWS,SQL,TensorFlow,Kubernetes"
+2171,Shannon Williams,32,Senior Developer,96,Available,Healthcare,"SQL,Azure"
+2172,Amber Knight,57,DevOps Engineer,91,On Project,AI/ML,"AWS,Spark,TensorFlow,Python"
+2173,Darin Nelson,42,Lead Architect,133,Available,Fintech,"Kubernetes,Java,React,AWS"
+2174,James Thomas,37,UI/UX Designer,73,Available,AI/ML,"AWS,Python,Kubernetes"
+2175,Brandy Marsh,60,Project Manager,81,Available,Retail,"SQL,MongoDB,Java"
+2176,Brian Leonard,38,DevOps Engineer,115,Available,AI/ML,"TensorFlow,PyTorch,SQL"
+2177,Kristin Gray,53,Junior Developer,62,On Project,Fintech,"Java,AWS,React,Python"
+2178,Richard Torres,49,Junior Developer,62,On Project,Retail,"Java,Azure,MongoDB,React"
+2179,Kayla Kelly,43,Lead Architect,139,Available,E-commerce,"Java,SQL,GCP,Vue.js"
+2180,Michael Lewis,23,DevOps Engineer,98,On Project,Retail,"SQL,Azure,React,Java"
+2181,Mark Parker,27,DevOps Engineer,101,On Project,Retail,"Azure,SQL,Java"
+2182,Tony Adams,26,Project Manager,109,Available,Fintech,"AWS,Java"
+2183,Joshua Olson,38,UI/UX Designer,81,Available,E-commerce,"GCP,SQL,Java,Vue.js"
+2184,Cheryl Preston,34,DevOps Engineer,112,Available,Healthcare,"Java,FHIR,Azure"
+2185,Ryan Sanchez,48,UI/UX Designer,81,Available,AI/ML,"Spark,AWS"
+2186,John Atkinson,48,Data Scientist,93,On Project,Retail,"React,Azure,Java,Kafka"
+2187,Amy Boyd,29,Senior Developer,85,On Project,Logistics,"Java,React,PostgreSQL"
+2188,Rachel Little,29,Junior Developer,62,Available,Fintech,"PostgreSQL,AWS,React,Kubernetes"
+2189,Samuel Rosales,44,Junior Developer,60,On Project,Retail,"Kafka,Java,Azure"
+2190,John Reyes,23,DevOps Engineer,96,On Project,Healthcare,"SQL,Azure,TensorFlow,FHIR"
+2191,Michele Rice,38,Lead Architect,113,Available,Cybersecurity,"Python,Go"
+2192,Brett Graham,33,Data Scientist,99,Available,Logistics,"React,Docker,PostgreSQL"
+2193,Christopher Campbell,59,UI/UX Designer,70,On Project,Logistics,"GCP,Java,React,Python"
+2194,Charles Warren,28,UI/UX Designer,70,On Project,Cybersecurity,"Elasticsearch,Python"
+2195,Brenda Rosales,37,Project Manager,92,On Project,Cybersecurity,"Python,Go,Elasticsearch"
+2196,Cynthia Smith,31,QA Engineer,68,On Project,Fintech,"Python,Kubernetes,Java"
+2197,Valerie Moss,28,Junior Developer,72,Available,Fintech,"AWS,PostgreSQL,Kafka,Python"
+2198,Tammy Melton,25,Junior Developer,75,Available,SaaS,"Python,AWS"
+2199,Krystal Mendez,46,Senior Developer,97,Available,Healthcare,"FHIR,SQL,Docker,TensorFlow"
+2200,Jose Christensen,43,DevOps Engineer,107,Available,Retail,"MongoDB,Java,Kafka,SQL"
