@@ -30,8 +30,10 @@ def load_and_prepare_data(_spark):
     employees_df_spark = _spark.read.csv("employees.csv", header=True, inferSchema=True)
     projects_df_spark = _spark.read.csv("projects_history.csv", header=True, inferSchema=True)
 
+
     avg_performance = projects_df_spark.groupBy("EmployeeID") \
         .agg(avg("Individual_Performance_Score").alias("Avg_Performance"))
+
 
     employees_df_spark = employees_df_spark.join(avg_performance, "EmployeeID", "left")
     
@@ -49,6 +51,7 @@ def initialize_shared_models_and_db():
     collection = db_client.get_collection(name="projects")
     print("Shared models and DB initialized.")
     return embedding_model, collection
+
 
 spark = initialize_spark_session()
 employees_df, projects_df = load_and_prepare_data(spark)
@@ -78,7 +81,8 @@ def generate_justification_with_ai(team_df, analysis, query, llm_model):
         "Highlight how their combined skills and experience make them a perfect fit for the project described in the user's query. "
         "Be persuasive and data-driven in your summary."
     )
-   
+    
+    chain = prompt | llm_model
     response = chain.invoke({
         "query": query,
         "team_details": team_df.to_string(index=False),
@@ -96,8 +100,8 @@ with st.sidebar:
 
     if ai_provider == "Google Gemini":
         google_api_key = st.text_input("Enter Google API Key", type="password")
-        gemini_model = st.selectbox("Choose Gemini Model", ["gemini-1.5-flash-latest", "gemini-1.5-pro-latest"])
-    else: # Ollama
+        gemini_model = st.selectbox("Choose Gemini Model", ["gemini-1.5-flash", "gemini-1.5-pro"])
+    else: 
         ollama_model = st.text_input("Enter Ollama Model Name", value="llama3:8b")
         st.info("Ensure your Ollama server is running locally to use this option.")
 
@@ -110,6 +114,7 @@ with st.form("project_form"):
     submitted = st.form_submit_button("Assemble Optimal Team")
 
 if submitted and user_query:
+    
     
     llm = None
     try:
@@ -125,7 +130,7 @@ if submitted and user_query:
 
     if llm:
         with st.spinner("Cortex is analyzing... Please wait."):
-      
+            
             st.info("Step 1: Parsing your request with AI...")
             parsed_request = parse_request_with_ai(user_query, llm)
             required_skills = parsed_request.get('required_skills', [])
@@ -140,9 +145,10 @@ if submitted and user_query:
             if similar_projects['ids']:
                 similar_project_ids = [int(pid) for pid in similar_projects['ids'][0]]
                 relevant_employees = projects_df[projects_df['ProjectID'].isin(similar_project_ids)]
-            
+
                 fit_counts = relevant_employees['EmployeeID'].value_counts()
                 project_fit_scores = (fit_counts / fit_counts.max()).to_dict()
+
             st.info("Step 3: Running the optimization engine to find the perfect team...")
             recommended_ids, analysis = find_optimal_team(
                 employees_df=employees_df,
