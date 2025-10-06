@@ -2,7 +2,7 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 from pyspark.sql import SparkSession
 import time
-
+#This file was responsible for setting up the vector database using ChromaDB and generating embeddings using a sentence-transformer model for testing/learning purposes. it is no longer used in the app
 def main():
     """
     This script performs a one-time setup of the local vector database.

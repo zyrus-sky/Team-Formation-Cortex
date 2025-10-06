@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
-
+#This file was responsible for ingesting and exploring the data using Spark SQL for testing/learning purposes. it is no longer used in the app
 def main():
     """
     Main function to initialize Spark, ingest data, and perform basic exploration.

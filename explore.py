@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
-
+# This file was responsible for exploring the data using Spark SQL. it was made for testing/learning purposes and is no longer used in the app
+# However, it can be useful for future data exploration tasks.
 def main():
     """
     Initializes Spark, loads data, and runs several analytical queries using Spark SQL.
