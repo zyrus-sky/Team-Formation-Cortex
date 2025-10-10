@@ -4,6 +4,8 @@ import sys
 import shutil
 import time
 import random
+import re
+import json
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -33,6 +35,7 @@ RANDOM_SEED = 42
 random.seed(RANDOM_SEED)
 
 st.set_page_config(layout="wide", page_title="Team-Formation-Cortex", page_icon="🧠")
+# Hide Streamlit help panels in case of accidental object rendering (defensive)
 st.markdown("<style>div[data-testid='stHelp']{display:none!important}</style>", unsafe_allow_html=True)
 st.help = lambda *a, **k: None
 
@@ -88,7 +91,6 @@ embedding_model = initialize_embedding_model()
 # -----------------------------------------------------------------------------
 # Caching helpers (Spark vs Pandas split)
 # -----------------------------------------------------------------------------
-# Spark-returning helper must be resource-cached (non-pickle)
 @st.cache_resource
 def get_delta_dataframe(path: str, version: int | None = None):
     reader = spark.read.format("delta")
@@ -96,7 +98,6 @@ def get_delta_dataframe(path: str, version: int | None = None):
         reader = reader.option("versionAsOf", str(version))
     return reader.load(path)
 
-# Pandas-returning helper can be data-cached (pickle-safe)
 @st.cache_data
 def read_delta_as_pandas(path: str, version: int | None = None) -> pd.DataFrame:
     reader = spark.read.format("delta")
@@ -116,6 +117,54 @@ def get_builder_data():
     return emp_pdf, proj_pdf
 
 # -----------------------------------------------------------------------------
+# Skill helpers (canonicalization + inference)
+# -----------------------------------------------------------------------------
+def get_canonical_skills(employees_pdf: pd.DataFrame) -> list[str]:
+    tokens = set()
+    for s in employees_pdf["Skills"].dropna().astype(str):
+        for t in s.split(","):
+            tok = t.strip()
+            if tok:
+                tokens.add(tok)
+    return sorted(tokens)
+
+def infer_skills_from_history(user_text: str, projects_pdf: pd.DataFrame, client, embedding_model,
+                              top_k: int = 50, top_out: int = 6) -> list[str]:
+    q_emb = embedding_model.encode(user_text).tolist()
+    col = client.get_or_create_collection(name="projects")
+    res = col.query(query_embeddings=[q_emb], n_results=top_k)
+    if not res.get("ids") or len(res["ids"][0]) == 0:
+        return []
+    pids = [int(x) for x in res["ids"][0]]
+    sample = projects_pdf[projects_pdf["ProjectID"].isin(pids)]
+    bag = []
+    for s in sample["Tech_Stack_Used"].dropna().astype(str):
+        bag.extend([t.strip() for t in s.split(",") if t.strip()])
+    if "Domain" in sample.columns:
+        bag.extend(sample["Domain"].dropna().astype(str).tolist())
+    if not bag:
+        return []
+    return pd.Series(bag).value_counts().head(top_out).index.tolist()
+
+def normalize_to_canonical(inferred: list[str], canonical: list[str]) -> list[str]:
+    can_lower = {c.lower(): c for c in canonical}
+    out = []
+    for item in inferred:
+        low = str(item).strip().lower()
+        if not low:
+            continue
+        if low in can_lower:
+            out.append(can_lower[low]); continue
+        match = [can_lower[c] for c in can_lower if c in low or low in c]
+        if match:
+            out.append(match[0])
+    seen, uniq = set(), []
+    for it in out:
+        if it not in seen:
+            seen.add(it); uniq.append(it)
+    return uniq
+
+# -----------------------------------------------------------------------------
 # AI helpers
 # -----------------------------------------------------------------------------
 def parse_request_with_ai(user_query, llm_model):
@@ -125,6 +174,42 @@ def parse_request_with_ai(user_query, llm_model):
     )
     chain = prompt | llm_model | parser
     return chain.invoke({"query": user_query})
+
+def parse_hr_request_safe(text: str, llm_model):
+    """
+    Robust parser: tolerates code fences, // comments, /* */ comments, and nulls; falls back gracefully.
+    """
+    out = {"required_skills": [], "max_budget_per_hour": 0.0, "project_description": text}
+    try:
+        raw = parse_request_with_ai(text, llm_model) if llm_model else {}
+        if isinstance(raw, dict):
+            data = raw
+        else:
+            s = str(raw)
+            s = re.sub(r"``````", "", s)
+            s = re.sub(r"//.*?$", "", s, flags=re.MULTILINE)
+            s = re.sub(r"/\\*.*?\\*/", "", s, flags=re.DOTALL)
+            s = s.replace(": null", ": 0").replace(":null", ": 0")
+            data = json.loads(s)
+        req = data.get("required_skills") or []
+        bud = data.get("max_budget_per_hour") or 0
+        desc = data.get("project_description") or text
+        if not isinstance(req, list):
+            req = [str(req)]
+        try:
+            bud = float(bud or 0)
+        except Exception:
+            bud = 0.0
+        out = {
+            "required_skills": [str(x) for x in req],
+            "max_budget_per_hour": bud,
+            "project_description": str(desc),
+        }
+    except Exception:
+        m = re.search(r"(\$|usd\s*)?(\d{2,6})(?:\s*/?\s*hour)?", text.lower())
+        if m:
+            out["max_budget_per_hour"] = float(m.group(2))
+    return out
 
 def generate_justification_with_ai(team_df: pd.DataFrame, analysis: dict, query: str, llm_model):
     prompt = ChatPromptTemplate.from_template(
@@ -139,7 +224,7 @@ def generate_justification_with_ai(team_df: pd.DataFrame, analysis: dict, query:
 # -----------------------------------------------------------------------------
 def rebuild_vector_db(embedding_model, domain_filter: str | None = None) -> tuple[bool, str, int]:
     try:
-        proj_sdf = get_delta_dataframe(PROJECTS_DELTA)  # Spark via resource cache
+        proj_sdf = get_delta_dataframe(PROJECTS_DELTA)
         pdf = proj_sdf.select("ProjectID", "Project_Description", "Domain").distinct().toPandas()
         if domain_filter:
             pdf = pdf[pdf["Domain"] == domain_filter]
@@ -175,7 +260,6 @@ def ensure_vector_ready():
 # Pages
 # -----------------------------------------------------------------------------
 def page_setup_utilities():
-    
     st.title("⚙️ Setup & Utilities")
     st.caption("Run one-time data tasks, enrichment, governance, and health checks.")
 
@@ -299,6 +383,7 @@ def page_team_builder():
     st.title("🧠 Team Builder")
     st.caption("Describe a project, parse constraints with an LLM, retrieve similar history, and optimize a team.")
 
+    # ---------------- Sidebar controls ----------------
     with st.sidebar:
         st.subheader("AI & Solver Config")
         provider = st.selectbox("LLM", ["Google Gemini", "Ollama (Local)"])
@@ -313,15 +398,21 @@ def page_team_builder():
         perf_weight = st.slider("Performance weight", 1, 5, 2, 1)
         min_avg_age = st.slider("Min avg age", 25, 45, 30, 1)
         max_team_size = st.number_input("Max team size (0=unbounded)", min_value=0, value=0, step=1)
+        st.markdown("---")
+        safe_mode = st.checkbox("Return fallback team on errors", value=True)
 
+    # ---------------- HR brief form ----------------
     with st.form("project_form"):
-        user_query = st.text_area("Describe your new project:", height=140)
+        user_query = st.text_area(
+            "Describe your new project:",
+            height=160,
+            placeholder="Example: Build a healthcare website for doctors to analyze patient data, role-based dashboards, HIPAA, under $500."
+        )
         submitted = st.form_submit_button("Assemble Optimal Team")
-
     if not submitted:
         return
 
-    # LLM init
+    # ---------------- LLM init ----------------
     llm = None
     try:
         if provider == "Google Gemini":
@@ -333,59 +424,251 @@ def page_team_builder():
             llm = ChatOllama(model=ollama_model, temperature=0)
     except Exception as e:
         st.error(f"LLM init failed: {e}")
-        return
+        if not safe_mode:
+            return
 
-    # Ensure fresh data after enrichment
+    # ---------------- Cache freshness ----------------
     if st.session_state.get("data_enriched", False):
         get_builder_data.clear()
         st.session_state["data_enriched"] = False
 
     employees_df, projects_df = get_builder_data()
-    if employees_df is None:
-        st.error("Missing Delta tables. Initialize on Setup page.")
+    if employees_df is None or employees_df.empty:
+        st.error("Missing or empty Delta tables. Initialize on Setup page.")
         return
 
-    # Vector retrieval
+    # Ensure numeric columns are usable
+    employees_df["Cost_per_Hour"] = pd.to_numeric(employees_df["Cost_per_Hour"], errors="coerce").fillna(0.0)
+    employees_df["Age"] = pd.to_numeric(employees_df["Age"], errors="coerce").fillna(0.0)
+
+    # ---------------- Local helpers (in-scope) ----------------
+    def _get_canonical_skills_local(df: pd.DataFrame) -> list[str]:
+        tokens = set()
+        for s in df["Skills"].dropna().astype(str):
+            for t in s.split(","):
+                tok = t.strip()
+                if tok:
+                    tokens.add(tok)
+        return sorted(tokens)
+
+    def _normalize_to_canonical(inferred: list[str], canonical: list[str]) -> list[str]:
+        can_lower = {c.lower(): c for c in canonical}
+        out = []
+        for item in inferred:
+            low = str(item).strip().lower()
+            if not low:
+                continue
+            if low in can_lower:
+                out.append(can_lower[low]); continue
+            match = [can_lower[c] for c in can_lower if c in low or low in c]
+            if match:
+                out.append(match[0])
+        seen, uniq = set(), []
+        for it in out:
+            if it not in seen:
+                seen.add(it); uniq.append(it)
+        return uniq
+
+    # Generic phrases → canonical skills
+    GENERIC_SKILL_MAP = {
+        "web development": ["React", "Python", "SQL", "AWS"],
+        "website": ["React", "Python", "SQL", "AWS"],
+        "frontend": ["React"],
+        "backend": ["Python", "SQL"],
+        "api": ["Python", "SQL"],
+        "dashboard": ["Python", "SQL"],
+        "data streaming": ["Spark", "Delta Lake", "Airflow", "AWS"],
+        "streaming": ["Spark", "Delta Lake", "Airflow", "AWS"],
+        "cloud": ["AWS"],
+        "analytics": ["SQL", "Python"],
+        "machine learning": ["Python", "TensorFlow", "PyTorch"],
+        "healthcare": ["Python", "SQL", "AWS"],
+        "finance": ["Python", "SQL", "AWS"],
+        "retail": ["Python", "SQL", "AWS"],
+        "edtech": ["Python", "SQL", "AWS"],
+        "media": ["Python", "SQL", "AWS"],
+        "govtech": ["Python", "SQL", "AWS"],
+    }
+
+    DOMAIN_KEYWORDS = {
+        "Healthcare": ["health", "clinic", "patient", "medical", "ehr", "hipaa", "doctor", "hospital"],
+        "Finance": ["finance", "bank", "trading", "payment", "fintech", "investment", "credit", "risk"],
+        "Retail": ["retail", "ecommerce", "shop", "store", "inventory", "catalog", "pos"],
+        "EdTech": ["education", "student", "learning", "school", "course", "lms"],
+        "Media": ["media", "content", "stream", "video", "audio", "news", "advert"],
+        "GovTech": ["government", "public", "civic", "policy", "permit", "municipal", "ministry", "gov"],
+    }
+
+    def infer_domain_from_text(text: str) -> str | None:
+        lt = (text or "").lower()
+        for dom, kws in DOMAIN_KEYWORDS.items():
+            if any(k in lt for k in kws):
+                return dom
+        return None
+
+    def map_generic_phrases_to_skills(text: str) -> list[str]:
+        lt = (text or "").lower()
+        acc = []
+        for key, skills in GENERIC_SKILL_MAP.items():
+            if key in lt:
+                acc.extend(skills)
+        out, seen = [], set()
+        for s in acc:
+            if s not in seen:
+                seen.add(s); out.append(s)
+        return out
+
+    # ---------------- Retrieval objects ----------------
     client = chromadb.PersistentClient(path="./chroma_db")
     collection = client.get_or_create_collection(name="projects")
 
-    parsed = parse_request_with_ai(user_query, llm)
+    # ---------------- Parse HR brief (robust) ----------------
+    parsed = parse_hr_request_safe(user_query, llm)
     required_skills = parsed.get("required_skills", []) or []
-    max_budget = parsed.get("max_budget_per_hour", 0) or 0
+    max_budget = float(parsed.get("max_budget_per_hour", 0) or 0)
     description = parsed.get("project_description", "") or user_query
 
-    q_emb = embedding_model.encode(description).tolist()
-    similar = collection.query(query_embeddings=[q_emb], n_results=50)
+    # Canonical skills and cleaning
+    canonical = _get_canonical_skills_local(employees_df)
+    canon_set = {c.lower() for c in canonical}
+    explicit_clean = [s for s in required_skills if str(s).strip().lower() in canon_set]
+    missing = [s for s in required_skills if str(s).strip() and str(s).strip().lower() not in canon_set]
 
-    project_fit_scores = {}
-    if similar.get("ids") and projects_df is not None and len(similar["ids"]) > 0:
-        similar_pids = [int(pid) for pid in similar["ids"][0]]
-        relevant = projects_df[projects_df["ProjectID"].isin(similar_pids)]
-        counts = relevant["EmployeeID"].value_counts()
-        project_fit_scores = (counts / counts.max()).to_dict()
+    # Domain inference
+    inferred_domain = infer_domain_from_text(description)
 
-    rec_ids, analysis = find_optimal_team(
-        employees_df=employees_df,
-        project_fit_scores=project_fit_scores,
-        required_skills=required_skills,
-        max_budget_per_hour=max_budget,
-        min_avg_age=float(min_avg_age),
-        fit_weight=int(fit_weight),
-        performance_weight=int(perf_weight),
-        max_team_size=(int(max_team_size) if max_team_size > 0 else None),
-        time_limit_s=10,
-        workers=8,
+    # Vector-based similar projects
+    similar_ids = []
+    try:
+        q_emb = embedding_model.encode(description).tolist()
+        sim = collection.query(query_embeddings=[q_emb], n_results=50)
+        if sim.get("ids") and len(sim["ids"]) > 0:
+            similar_ids = [int(x) for x in sim["ids"][0]]
+            if not inferred_domain and "Domain" in projects_df.columns:
+                dom_top = projects_df[projects_df["ProjectID"].isin(similar_ids)]["Domain"].value_counts()
+                if len(dom_top) > 0:
+                    inferred_domain = str(dom_top.index[0])
+    except Exception as e:
+        st.warning(f"Vector retrieval issue: {e}. Continuing without similarity.")
+
+    # Skills from generic phrases + similar projects’ stacks
+    inferred_from_text = map_generic_phrases_to_skills(description)
+    inferred_from_vectors = []
+    if similar_ids:
+        sample = projects_df[projects_df["ProjectID"].isin(similar_ids)].copy()
+        bag = []
+        for s in sample["Tech_Stack_Used"].dropna().astype(str):
+            bag.extend([t.strip() for t in s.split(",") if t.strip()])
+        if bag:
+            inferred_from_vectors = list(pd.Series(bag).value_counts().head(8).index)
+
+    inferred_all = inferred_from_text + inferred_from_vectors
+    inferred_norm = _normalize_to_canonical(inferred_all, canonical)
+
+    # UI: domain override + strength
+    st.subheader("Inferred context")
+    dom_choice = st.selectbox(
+        "Preferred domain (used to boost candidates; optional)",
+        [""] + list(DOMAIN_KEYWORDS.keys()),
+        index=(list(DOMAIN_KEYWORDS.keys()).index(inferred_domain) + 1 if inferred_domain in DOMAIN_KEYWORDS else 0)
     )
+    inferred_domain = dom_choice if dom_choice else inferred_domain
+    dom_boost = st.slider("Domain boost strength", 0.0, 1.0, 0.30, 0.05)
+
+    # Inferred skills editor
+    st.subheader("Inferred skills")
+    if missing:
+        st.info(f"Mapped non-canonical tags: {', '.join(missing)}")
+    default_soft = inferred_norm or explicit_clean
+    chosen_soft = st.multiselect("Auto-detected skills (editable)", options=canonical, default=default_soft, key="soft_skills_box")
+
+    # Budget heuristic if none
+    if max_budget <= 0.0:
+        avail = employees_df[employees_df["Availability"] == "Available"]
+        if not avail.empty:
+            med = float(avail["Cost_per_Hour"].median())
+            max_budget = max(1.0, round(med * 4.0, 2))
+        else:
+            max_budget = 100.0
+
+    # Project fit + domain boost
+    project_fit_scores: dict[int, float] = {}
+    try:
+        if similar_ids and not projects_df.empty:
+            relevant = projects_df[projects_df["ProjectID"].isin(similar_ids)]
+            if relevant is not None and not relevant.empty and "EmployeeID" in relevant.columns:
+                counts = relevant["EmployeeID"].value_counts()
+                if counts.size > 0 and counts.max() > 0:
+                    base = (counts / counts.max()).to_dict()
+                    project_fit_scores = {int(k): float(v) for k, v in base.items()}
+    except Exception as e:
+        st.warning(f"Fit scoring issue: {e}. Continuing with domain boost only.")
+        project_fit_scores = {}
+
+    if inferred_domain and "Domain_Expertise" in employees_df.columns:
+        id_by_domain = employees_df[employees_df["Domain_Expertise"] == inferred_domain]["EmployeeID"].astype(int).tolist()
+        for emp_id in id_by_domain:
+            project_fit_scores[emp_id] = float(project_fit_scores.get(emp_id, 0.0) + float(dom_boost))
+
+    # Solve with soft constraints and safe fallback
+    try:
+        soft_payload = chosen_soft if not explicit_clean else None
+        rec_ids, analysis = find_optimal_team(
+            employees_df=employees_df,
+            project_fit_scores=project_fit_scores,
+            required_skills=explicit_clean,
+            max_budget_per_hour=float(max_budget),
+            min_avg_age=float(min_avg_age),
+            fit_weight=int(max(1, fit_weight)),
+            performance_weight=int(max(1, perf_weight)),
+            max_team_size=(int(max_team_size) if max_team_size and max_team_size > 0 else None),
+            time_limit_s=10,
+            workers=8,
+            soft_skills=soft_payload,
+            soft_penalty=1,
+        )
+    except Exception as e:
+        if not safe_mode:
+            st.error(f"Optimizer error: {e}")
+            return
+        st.warning(f"Optimizer fallback: {e}")
+        avail = employees_df[employees_df["Availability"] == "Available"].copy()
+        avail = avail.sort_values(["Cost_per_Hour"]).head(3) if not avail.empty else employees_df.head(3)
+        rec_ids = avail["EmployeeID"].astype(int).tolist()
+        analysis = {"status": "fallback", "note": "Returned a minimal low-cost team due to optimizer error."}
 
     if not rec_ids:
-        st.error(analysis.get("status", "No team found."))
-        return
+        st.warning("No feasible team under current constraints. Auto-relaxing and retrying…")
+        try:
+            rec_ids, analysis = find_optimal_team(
+                employees_df=employees_df,
+                project_fit_scores=project_fit_scores,
+                required_skills=[],  # relax to soft-only
+                max_budget_per_hour=float(round(float(max_budget) * 1.3, 2)),
+                min_avg_age=float(min_avg_age),
+                fit_weight=int(max(1, fit_weight)),
+                performance_weight=int(max(1, perf_weight)),
+                max_team_size=None,
+                time_limit_s=8,
+                workers=8,
+                soft_skills=(chosen_soft or inferred_norm),
+                soft_penalty=1,
+            )
+        except Exception:
+            rec_ids = []
+        if not rec_ids:
+            st.error("Still infeasible after auto-relax. Increase budget, adjust skills, or expand team size.")
+            return
 
+    # Results
     st.session_state["last_query"] = user_query
     st.session_state["recommended_team_ids"] = rec_ids
 
     team_df = employees_df[employees_df["EmployeeID"].isin(rec_ids)]
-    justif = generate_justification_with_ai(team_df, analysis, user_query, llm)
+    try:
+        justif = generate_justification_with_ai(team_df, analysis, user_query, llm) if llm else "LLM justification disabled."
+    except Exception as e:
+        justif = f"Justification unavailable: {e}"
 
     st.success("✅ Team Assembled")
     st.subheader("AI Justification")
@@ -483,7 +766,7 @@ def page_data_management():
     st.title("🗃️ Data Management (Delta)")
     st.caption("Time travel, history, MERGE updates, and live editing.")
 
-    # History + time travel
+    # History & Time Travel (Employees)
     st.subheader("History & Time Travel (Employees)")
     if os.path.exists(EMPLOYEES_DELTA):
         try:
@@ -551,7 +834,8 @@ def page_data_management():
                 st.rerun()
         except Exception as e:
             st.error(f"Live edit failed: {e}")
-    # Add a Projects history & time travel section like Employees
+
+    # History & Time Travel (Projects)
     st.subheader("History & Time Travel (Projects)")
     if os.path.exists(PROJECTS_DELTA):
         try:
@@ -608,7 +892,6 @@ def page_data_management():
             st.dataframe(proj_pdf_current, use_container_width=True)
         except Exception as e:
             st.warning(f"Could not load current projects: {e}")
-    
 
 def page_analytics():
     st.title("📊 Analytics")
@@ -691,6 +974,7 @@ def app_router():
     su = st.Page(page_setup_utilities, title="Setup & Utilities", icon="⚙️", url_path="setup", default=True)
     nav = st.navigation([tb, lc, dm, an, su])
     nav.run()
-    return None 
+    return None
+
 if __name__ == "__main__":
     app_router()
