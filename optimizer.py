@@ -1,93 +1,90 @@
 from ortools.sat.python import cp_model
 import pandas as pd
+import numpy as np
+from typing import Dict, List, Tuple
 
 def find_optimal_team(
     employees_df: pd.DataFrame,
-    project_fit_scores: dict,
-    required_skills: list,
-    max_budget_per_hour: float
-):
+    project_fit_scores: Dict[int, float],
+    required_skills: List[str],
+    max_budget_per_hour: float,
+    min_avg_age: float = 30.0,
+    fit_weight: int = 3,
+    performance_weight: int = 2,
+    max_team_size: int | None = None,
+    time_limit_s: int = 10,
+    workers: int = 8,
+) -> Tuple[List[int], Dict]:
     """
-    Finds the optimal project team based on multiple objectives using Google OR-Tools.
-    This version operates on a pre-filtered DataFrame of candidates for better performance.
+    CP-SAT model:
+    - Cover all required skills at least once
+    - Sum(cost) <= max_budget_per_hour
+    - Average age >= min_avg_age
+    - Optional: team size cap
+    Objective: maximize fit_weight*Fit + performance_weight*Avg_Performance
     """
+    df = employees_df.copy()
+    available = df[df["Availability"] == "Available"].reset_index(drop=True)
+    if available.empty:
+        return [], {"status": "No available employees."}
+
+    emp_ids = available["EmployeeID"].astype(int).tolist()
+    costs = available["Cost_per_Hour"].astype(float).to_numpy()
+    ages = available["Age"].astype(float).to_numpy()
+    skills_text = available["Skills"].astype(str).str.lower().tolist()
+    perf = available.get("Avg_Performance", pd.Series([0.0]*len(available))).astype(float).clip(0.0, 1.0).to_numpy()
+    fit = available["EmployeeID"].map(project_fit_scores).fillna(0.0).astype(float).to_numpy()
+
     model = cp_model.CpModel()
+    x = [model.NewBoolVar(f"x_{i}") for i in range(len(available))]
 
-    # --- 1. Create Decision Variables ---
-    # The incoming employees_df is already filtered for availability and at least one skill.
-    employee_vars = {
-        row['EmployeeID']: model.NewBoolVar(f"emp_{row['EmployeeID']}")
-        for index, row in employees_df[employees_df['Availability'] == 'Available'].iterrows()
-    }
+    # Budget (use cents to keep integers)
+    model.Add(sum(int(round(costs[i]*100)) * x[i] for i in range(len(x))) <= int(round(max_budget_per_hour*100)))
 
-    if not employee_vars:
-        return None, {"status": "No available employees match the initial skill filter."}
+    # Average age >= threshold => sum((age - tau)*x) >= 0
+    age_shift = [int(round((ages[i] - min_avg_age) * 100)) for i in range(len(x))]
+    model.Add(sum(age_shift[i] * x[i] for i in range(len(x))) >= 0)
 
-    # --- 2. Define Constraints ---
-    
-    # Constraint 1: All required skills must be covered by the selected team.
-    for skill in required_skills:
-        employees_with_skill = [
-            employee_vars[emp_id]
-            for emp_id in employee_vars
-            # Ensure the skill is present in the employee's skill list
-            if skill in str(employees_df.loc[employees_df['EmployeeID'] == emp_id, 'Skills'].iloc[0])
-        ]
-        if employees_with_skill:
-            model.Add(sum(employees_with_skill) >= 1)
+    # Team size cap (optional)
+    if max_team_size is not None and max_team_size > 0:
+        model.Add(sum(x) <= int(max_team_size))
 
-    # Constraint 2: The total team cost must not exceed the budget.
-    total_cost = sum(
-        employee_vars[emp_id] * employees_df.loc[employees_df['EmployeeID'] == emp_id, 'Cost_per_Hour'].iloc[0]
-        for emp_id in employee_vars
-    )
-    model.Add(total_cost <= max_budget_per_hour)
-    
-    # Constraint 3: Ensure average team age is above 30 (encourages experience)
-    team_size = sum(employee_vars.values())
-    total_age = sum(
-        employee_vars[emp_id] * employees_df.loc[employees_df['EmployeeID'] == emp_id, 'Age'].iloc[0]
-        for emp_id in employee_vars
-    )
+    # Skill coverage
+    req = [s.strip().lower() for s in required_skills if str(s).strip()]
+    for s in req:
+        mask = [1 if s in skills_text[i] else 0 for i in range(len(x))]
+        if sum(mask) == 0:
+            return [], {"status": f"Required skill '{s}' not found in workforce"}
+        model.Add(sum(mask[i] * x[i] for i in range(len(x))) >= 1)
 
-    is_team_non_empty = model.NewBoolVar('is_team_non_empty')
-    model.Add(team_size > 0).OnlyEnforceIf(is_team_non_empty)
-    model.Add(team_size == 0).OnlyEnforceIf(is_team_non_empty.Not())
-    model.Add(total_age >= 30 * team_size).OnlyEnforceIf(is_team_non_empty)
-    
-    # --- 3. Define the Multi-Objective Function ---
-    SCALE_FACTOR = 100 
-    
-    total_fit_score = sum(
-        employee_vars[emp_id] * int(project_fit_scores.get(emp_id, 0) * SCALE_FACTOR)
-        for emp_id in employee_vars
-    )
-    total_performance_score = sum(
-        employee_vars[emp_id] * int(employees_df.loc[employees_df['EmployeeID'] == emp_id, 'Avg_Performance'].iloc[0] * SCALE_FACTOR)
-        for emp_id in employee_vars
-    )
-    
-    fit_weight = 3
-    performance_weight = 2
-    
-    model.Maximize((fit_weight * total_fit_score) + (performance_weight * total_performance_score))
+    # Objective
+    SCALE = 1000
+    obj = sum((fit_weight*int(round(fit[i]*SCALE)) + performance_weight*int(round(perf[i]*SCALE))) * x[i] for i in range(len(x)))
+    model.Maximize(obj)
 
-    # --- 4. Solve the Model ---
     solver = cp_model.CpSolver()
+    solver.parameters.max_time_in_seconds = float(time_limit_s)
+    solver.parameters.num_search_workers = workers
+
     status = solver.Solve(model)
+    if status not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+        return [], {"status": f"Solver status {status}"}
 
-    # --- 5. Extract and Return Results ---
-    if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
-        recommended_ids = [emp_id for emp_id, var in employee_vars.items() if solver.Value(var) == 1]
-        
-        if not recommended_ids:
-             return None, {"status": "No feasible team could be formed with the given constraints (e.g., budget, skill combinations)."}
+    chosen_idx = [i for i in range(len(x)) if solver.Value(x[i]) == 1]
+    chosen_ids = [int(emp_ids[i]) for i in chosen_idx]
+    if not chosen_ids:
+        return [], {"status": "No feasible team under constraints"}
 
-        final_cost = sum(employees_df.loc[employees_df['EmployeeID'] == emp_id, 'Cost_per_Hour'].iloc[0] for emp_id in recommended_ids)
-        final_fit_score = sum(project_fit_scores.get(emp_id, 0) for emp_id in recommended_ids)
-        
-        analysis = { "status": "Optimal team found", "total_cost": final_cost, "avg_fit_score": final_fit_score / len(recommended_ids) if recommended_ids else 0 }
-        return recommended_ids, analysis
-    else:
-        return None, {"status": "Optimizer could not find a solution for the given constraints."}
-
+    analysis = {
+        "status": "ok",
+        "objective": float(solver.ObjectiveValue())/SCALE,
+        "total_cost_per_hour": float(np.sum(costs[chosen_idx])),
+        "avg_age": float(np.mean(ages[chosen_idx])),
+        "required_skills": req,
+        "fit_weight": fit_weight,
+        "performance_weight": performance_weight,
+        "solver_time_s": float(solver.WallTime()),
+        "solver_status": int(status),
+        "team_size": int(len(chosen_ids)),
+    }
+    return chosen_ids, analysis

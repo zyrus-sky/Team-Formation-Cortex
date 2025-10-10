@@ -1,143 +1,172 @@
-import csv
-import random
-from faker import Faker
-import numpy as np
+# data_generator.py
 import os
-from pyspark.sql.functions import avg, col, coalesce
+import random
+import pandas as pd
+import numpy as np
+from faker import Faker
+from pyspark.sql import SparkSession
+from pyspark.sql import functions as F
+from pyspark.sql.types import DoubleType
+from delta.tables import DeltaTable
 
-def generate_new_data():
-    """Generates new mock CSV files for employees and project history."""
-    
-    # --- Configuration ---
-    NUM_EMPLOYEES = 1200
-    NUM_PROJECTS = 3000
-    EMPLOYEES_CSV = "employees.csv"
-    PROJECTS_CSV = "projects_history.csv"
+# File and table locations (folder paths used as Delta table locations)
+EMPLOYEES_CSV = "employees.csv"
+PROJECTS_CSV = "projects_history.csv"
+EMPLOYEES_DELTA = "employees.delta"
+PROJECTS_DELTA = "projects.delta"
 
-    # --- Data Pools ---
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+
+ROLES = [
+    "Data Scientist", "ML Engineer", "Data Engineer", "Backend Engineer",
+    "Frontend Engineer", "DevOps Engineer", "Product Manager", "QA Engineer"
+]
+
+DOMAINS = ["Finance", "Healthcare", "Retail", "EdTech", "Media", "GovTech"]
+
+SKILLS = [
+    "Python", "SQL", "Spark", "Scala", "Java", "Go", "React", "Vue",
+    "Docker", "Kubernetes", "TensorFlow", "PyTorch", "NLP", "LLMs",
+    "Delta Lake", "Airflow", "DBT", "AWS", "GCP", "Azure"
+]
+
+def _random_skills():
+    k = random.randint(3, 7)
+    return ", ".join(random.sample(SKILLS, k))
+
+def generate_new_data(num_employees: int = 400, num_projects: int = 900):
+    """
+    Create fresh mock CSVs for employees and project histories with consistent columns.
+    """
     fake = Faker()
-    ROLES = {
-        "Lead Architect": (110, 150), "Senior Developer": (85, 120), "Project Manager": (80, 110),
-        "Data Scientist": (90, 130), "DevOps Engineer": (80, 115), "Junior Developer": (55, 75),
-        "UI/UX Designer": (65, 95), "QA Engineer": (60, 85), "Tech Lead": (100, 140)
-    }
-    AVAILABILITY = ["Available", "On Project", "Available"] 
-    DOMAINS = ["Fintech", "Healthcare", "E-commerce", "SaaS", "Logistics", "AI/ML", "Retail", "Cybersecurity"]
-    
-    PROJECT_ROLES = {
-        "Lead Architect": ["Solution Architect", "System Designer"],
-        "Senior Developer": ["Backend Lead", "Frontend Lead", "Module Owner", "Code Reviewer"],
-        "Project Manager": ["Scrum Master", "Product Owner", "Program Manager"],
-        "Data Scientist": ["ML Engineer", "Data Analyst", "Research Scientist"],
-        "DevOps Engineer": ["CI/CD Specialist", "Cloud Engineer", "SRE"],
-        "Junior Developer": ["Frontend Developer", "Backend Developer", "Bug Fixer", "Junior Coder"],
-        "UI/UX Designer": ["Lead Designer", "UX Researcher", "Interaction Designer"],
-        "QA Engineer": ["Automation Tester", "Manual Tester", "Performance Tester"],
-        "Tech Lead": ["Tech Lead", "Lead Developer"]
-    }
-    
-    TECH_STACKS = { "Fintech": ["Python", "Java", "PostgreSQL", "Kafka", "AWS", "Kubernetes", "React"], "Healthcare": ["Python", "Java", "SQL", "Azure", "Docker", "FHIR", "TensorFlow"], "E-commerce": ["Java", "React", "MongoDB", "GCP", "Docker", "Vue.js", "SQL"], "SaaS": ["Python", "Angular", "PostgreSQL", "AWS", "Kubernetes", "Go"], "Logistics": ["Java", "Kafka", "PostgreSQL", "GCP", "Docker", "Python", "React"], "AI/ML": ["Python", "PyTorch", "TensorFlow", "AWS", "Spark", "Kubernetes", "SQL"], "Retail": ["Java", "SQL", "Azure", "React", "MongoDB", "Kafka"], "Cybersecurity": ["Python", "Go", "AWS", "Kubernetes", "Elasticsearch", "Bash"] }
-    
-    PROJECT_TEMPLATES = { 
-        "Fintech": [ ("Payment Gateway Integration", "Developed a microservices-based payment gateway for processing credit card and ACH transactions, ensuring PCI compliance and high availability on AWS."), ("Real-time Fraud Detection Engine", "Built an AI/ML model using Python and TensorFlow to analyze transaction patterns in real-time, reducing fraudulent activities by 15%."), ("Portfolio Management Dashboard", "Created a React-based dashboard for financial advisors to manage client portfolios, with data streamed via Kafka from a PostgreSQL database.") ], 
-        "Healthcare": [ ("Patient Data Analytics Platform", "Engineered a HIPAA-compliant data platform on Azure to process electronic health records (EHR) using Spark, enabling predictive diagnostics."), ("Telemedicine Video Conferencing App", "Launched a cross-platform mobile app for secure doctor-patient video consultations, integrating with the FHIR standard for data exchange."), ("AI-Powered Medical Imaging Analysis", "Designed a deep learning model with PyTorch to detect anomalies in MRI scans, achieving 95% accuracy in clinical trials.") ], 
-        "E-commerce": [ ("Product Recommendation Engine", "Implemented a collaborative filtering recommendation system using Python and Spark, increasing average order value by 12%."), ("Scalable Shopping Cart API", "Built a highly available shopping cart and checkout service using Java and MongoDB, deployed on GCP with Kubernetes for auto-scaling during peak traffic."), ("Inventory Management System", "Developed a centralized system to track inventory across multiple warehouses, providing real-time updates to the storefront.") ], 
-        "SaaS": [ ("Multi-tenant User Authentication Service", "Created a secure and scalable authentication and authorization service for a B2B SaaS platform, supporting OAuth 2.0 and SAML."), ("Subscription Billing Platform", "Engineered a flexible billing system to handle various subscription tiers, usage-based pricing, and invoicing for a growing SaaS product."), ("Customer Data Platform (CDP)", "Built a platform to aggregate and unify customer data from multiple sources, providing a 360-degree view for marketing and support teams.") ], 
-        "Cybersecurity": [ ("SIEM Integration Pipeline", "Developed a data pipeline to ingest security logs from various sources into an Elasticsearch cluster for real-time threat analysis."), ("Automated Penetration Testing Framework", "Built a framework using Python and Go to automate routine security vulnerability scans across the company's web assets.") ] 
-    }
-    
-    # --- Employee Generation ---
     employees = []
-    for i in range(1, NUM_EMPLOYEES + 1):
-        role = random.choice(list(ROLES.keys()))
-        cost_range = ROLES[role]
-        employee_domain = random.choice(DOMAINS)
-        skills_for_domain = TECH_STACKS[employee_domain]
-        assigned_skills = random.sample(skills_for_domain, k=random.randint(2, 4))
-        employees.append({ 
-            "EmployeeID": 1000 + i, "Name": fake.name(), "Age": random.randint(22, 60), 
-            "Role": role, "Cost_per_Hour": random.randint(cost_range[0], cost_range[1]), 
-            "Availability": random.choice(AVAILABILITY), "Domain_Expertise": employee_domain, 
-            "Skills": ",".join(assigned_skills) 
+    for i in range(1000, 1000 + num_employees):
+        role = random.choice(ROLES)
+        domain = random.choice(DOMAINS)
+        employees.append({
+            "EmployeeID": i,
+            "Name": fake.name(),
+            "Age": random.randint(22, 58),
+            "Role": role,
+            "Domain_Expertise": domain,
+            "Availability": random.choice(["Available", "Busy"]),
+            "Skills": _random_skills(),
+            "Cost_per_Hour": round(random.uniform(20, 140), 2),
         })
 
-    # --- Project History Generation ---
     projects = []
-    for i in range(1, NUM_PROJECTS + 1):
-        domain = random.choice(list(PROJECT_TEMPLATES.keys()))
-        template = random.choice(PROJECT_TEMPLATES[domain])
-        team_size = random.randint(2, 6)
-        team_members_info = random.sample(employees, k=team_size)
-        project_tech = list(set(random.sample(TECH_STACKS[domain], k=random.randint(3, 5))))
-        overall_project_success = round(random.uniform(0.65, 0.99), 2)
-        for member_info in team_members_info:
-            main_role = member_info["Role"]
-            possible_project_roles = PROJECT_ROLES.get(main_role, [main_role])
-            project_role = random.choice(possible_project_roles)
-            performance_noise = np.random.normal(0, 0.05)
-            individual_performance = min(1.0, max(0.0, overall_project_success + performance_noise))
-            projects.append({ 
-                "ProjectID": 5000 + i, "EmployeeID": member_info["EmployeeID"], 
-                "Project_Name": template[0], 
-                "Project_Description": template[1] + f" Tech stack: {', '.join(project_tech)}.", 
-                "Tech_Stack_Used": ",".join(project_tech), "Domain": domain, 
-                "Project_Role": project_role, "Project_Success_Score": overall_project_success, 
-                "Individual_Performance_Score": round(individual_performance, 2) 
+    pid = 5000
+    for _ in range(num_projects):
+        pid += 1
+        domain = random.choice(DOMAINS)
+        techs = ", ".join(random.sample(SKILLS, random.randint(3, 6)))
+        desc = f"{domain} project using {techs} to deliver analytics and applications."
+        team_size = random.randint(3, 9)
+        member_ids = random.sample(range(1000, 1000 + num_employees), team_size)
+        success = round(random.uniform(0.55, 0.98), 2)
+        for eid in member_ids:
+            indiv = float(min(1.0, max(0.0, np.random.normal(loc=success, scale=0.08))))
+            projects.append({
+                "ProjectID": pid,
+                "EmployeeID": eid,
+                "Project_Name": f"Project-{pid}",
+                "Project_Description": desc,
+                "Tech_Stack_Used": techs,
+                "Domain": domain,
+                "Project_Role": random.choice(["Lead", "Developer", "Analyst", "Engineer", "QA"]),
+                "Project_Success_Score": success,
+                "Individual_Performance_Score": round(indiv, 2),
             })
 
-    # --- Write to CSV ---
-    with open(EMPLOYEES_CSV, "w", newline="", encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=employees[0].keys())
-        writer.writeheader()
-        writer.writerows(employees)
-    with open(PROJECTS_CSV, "w", newline="", encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=projects[0].keys())
-        writer.writeheader()
-        writer.writerows(projects)
-    
-    print(f"Generated {len(employees)} employees and {len(projects)} project history entries.")
+    pd.DataFrame(employees).to_csv(EMPLOYEES_CSV, index=False)
+    pd.DataFrame(projects).to_csv(PROJECTS_CSV, index=False)
 
-
-# --- NEW: Pre-processing Function ---
-def pre_process_and_enrich_data(spark):
+def _ensure_delta_tables(spark: SparkSession, employees_partition_col: str = "Domain_Expertise"):
     """
-    Performs a one-time batch job to calculate average employee performance
-    and enriches the main employees Parquet file with this data.
+    Create Delta tables from CSVs if the folders don't exist yet.
     """
-    EMPLOYEES_PARQUET = "employees.parquet"
-    PROJECTS_PARQUET = "projects.parquet"
+    if (not os.path.exists(EMPLOYEES_DELTA)) and os.path.exists(EMPLOYEES_CSV):
+        df = spark.read.csv(EMPLOYEES_CSV, header=True, inferSchema=True)
+        df.write.format("delta").partitionBy(employees_partition_col).mode("overwrite").save(EMPLOYEES_DELTA)
+    if (not os.path.exists(PROJECTS_DELTA)) and os.path.exists(PROJECTS_CSV):
+        df = spark.read.csv(PROJECTS_CSV, header=True, inferSchema=True)
+        df.write.format("delta").partitionBy("Domain").mode("overwrite").save(PROJECTS_DELTA)
 
-    print("Starting data pre-processing and enrichment job...")
-    
+def pre_process_and_enrich_data(spark: SparkSession) -> tuple[bool, str]:
+    """
+    Option A: Evolve schema via DataFrame write with overwriteSchema to add Avg_Performance,
+    then MERGE computed averages into employees.delta (ACID, auditable in history/time-travel).
+    Steps:
+      1) Compute Avg_Performance from projects.delta (mean of Individual_Performance_Score by EmployeeID).
+      2) If employees.delta lacks Avg_Performance, add it with an overwriteSchema write.
+      3) MERGE averages into employees.delta on EmployeeID to set values transactionally.
+    """
     try:
-        employees_df = spark.read.parquet(EMPLOYEES_PARQUET)
-        projects_df = spark.read.parquet(PROJECTS_PARQUET)
+        _ensure_delta_tables(spark)
+        if not (os.path.exists(EMPLOYEES_DELTA) and os.path.exists(PROJECTS_DELTA)):
+            return False, "Delta tables not initialized. Initialize from CSV first."
 
-        # Calculate average performance for each employee
-        print("Calculating average performance scores...")
-        avg_performance = projects_df.groupBy("EmployeeID") \
-            .agg(avg("Individual_Performance_Score").alias("Avg_Performance"))
+        # 1) Compute per-employee averages from projects.delta
+        proj = spark.read.format("delta").load(PROJECTS_DELTA)
+        if "Individual_Performance_Score" not in proj.columns:
+            return False, "projects.delta missing Individual_Performance_Score."
+        avg_df = (
+            proj.groupBy("EmployeeID")
+                .agg(F.avg("Individual_Performance_Score").alias("Avg_Performance"))
+                .withColumn("Avg_Performance", F.col("Avg_Performance").cast(DoubleType()))
+        )
 
-        # Join the average performance back to the main employees DataFrame
-        print("Joining performance scores with employee data...")
-        # Use a left join to keep all employees, even if they have no project history
-        enriched_employees_df = employees_df.join(avg_performance, "EmployeeID", "left") \
-            .fillna(0, subset=['Avg_Performance']) # Fill nulls for employees with no projects
+        # 2) Ensure employees.delta has Avg_Performance via overwriteSchema
+        emp = spark.read.format("delta").load(EMPLOYEES_DELTA)
+        if "Avg_Performance" not in emp.columns:
+            emp_add = emp.withColumn("Avg_Performance", F.lit(0.0).cast(DoubleType()))
+            # overwrite data+schema in a single commit so schema is time-travel visible
+            emp_add.write.format("delta").mode("overwrite").option("overwriteSchema", "true").save(EMPLOYEES_DELTA)
 
-        # Overwrite the existing employees Parquet file with the new, enriched data
-        print(f"Overwriting '{EMPLOYEES_PARQUET}' with enriched data...")
-        enriched_employees_df.write.mode("overwrite").parquet(EMPLOYEES_PARQUET)
-        
-        print("Data enrichment job completed successfully.")
-        return True, "Data successfully pre-processed and enriched."
+        # 3) MERGE averages (UPDATE when matched) into employees.delta
+        emp_dt = DeltaTable.forPath(spark, EMPLOYEES_DELTA)
+        (
+            emp_dt.alias("emp")
+            .merge(avg_df.alias("avg"), "emp.EmployeeID = avg.EmployeeID")
+            .whenMatchedUpdate(set={"Avg_Performance": F.col("avg.Avg_Performance")})
+            .execute()
+        )
+
+        return True, "Avg_Performance added and merged into employees.delta."
     except Exception as e:
-        print(f"An error occurred during data pre-processing: {e}")
-        return False, f"Error: {e}"
+        return False, f"Enrichment failed: {e}"
+def compact_and_sort_delta(
+    spark: SparkSession,
+    table_path: str,
+    partition_col: str | None,
+    zorder_like_cols: list[str] | None,
+    target_files_per_partition: int = 4,
+) -> tuple[bool, str]:
+    """
+    OSS-friendly 'OPTIMIZE-like' routine:
+      - Optionally sorts by provided columns to improve locality (emulates Z-Order behavior).
+      - Coalesces/repartitions to reduce small files and overwrites the table.
+      - Preserves partitioning by re-writing with partitionBy when partition_col is provided.
+    Note: This is for education/demo; actual OPTIMIZE/ZORDER are platform features.
+    """
+    try:
+        df = spark.read.format("delta").load(table_path)
+        # Sort to emulate locality benefits of Z-Order for common filter columns
+        if zorder_like_cols:
+            sort_exprs = [F.col(c) for c in zorder_like_cols if c in df.columns]
+            if sort_exprs:
+                df = df.sort(*sort_exprs)
 
+        if partition_col and partition_col in df.columns:
+            # approximate per-partition file reduction via repartition(partition_col)
+            df = df.repartition(target_files_per_partition, partition_col)
+            df.write.format("delta").partitionBy(partition_col).mode("overwrite").option("overwriteSchema", "true").save(table_path)
+        else:
+            df = df.coalesce(target_files_per_partition)
+            df.write.format("delta").mode("overwrite").option("overwriteSchema", "true").save(table_path)
 
-if __name__ == "__main__":
-    # This allows the script to be run standalone from the terminal
-    # to generate the initial CSV files.
-    print("Running data generator as a standalone script...")
-    generate_new_data()
-
+        return True, "Compaction and sort completed."
+    except Exception as e:
+        return False, f"Compaction failed: {e}"
