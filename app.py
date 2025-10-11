@@ -312,7 +312,7 @@ def page_setup_utilities():
             st.error(f"Initialization failed: {e}")
 
     # Enrichment (Option A: overwriteSchema + MERGE)
-    st.header("⚡ Enrich Employees with Avg_Performance (Option A)")
+    st.header("⚡ Enrich Employees with Avg_Performance")
     if st.button("Pre-process and Enrich Data"):
         success, msg = pre_process_and_enrich_data(spark)
         if success:
