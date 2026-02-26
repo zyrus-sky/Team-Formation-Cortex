@@ -9,9 +9,6 @@ The platform leverages Delta Lake for ACID transactions and data versioning, vec
 ---
 
 ## Project Philosophy: A Modern Approach to DBMS
-
-This project was deliberately designed to impress a university DBMS professor by moving beyond classic, textbook examples (like library or bank management systems) and tackling a real-world analytical problem with an industry-standard, modern data architecture.
-
 It demonstrates a deep understanding of core DBMS principles, but implements them in a more scalable, flexible, and powerful way.
 
 | **Traditional RDBMS (e.g., MySQL Library App)** | **Team-Formation-Cortex (Delta Lakehouse)** |
